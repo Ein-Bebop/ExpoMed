@@ -1,0 +1,24 @@
+$primaryColor : rgb(192, 109, 192);
+
+/*
+    Funciones importantes:
+        +variables $var: 
+        +añadir compounds dentro de otros compounds
+            {
+                {
+                }
+            }
+
+        +se puede hacer hover como: 
+            button {
+                color: red;
+                &:hover{
+                    color: blue;
+                }
+            }
+            
+        +importar otros archivos scss
+            @import ""
+*/ 
+
+@import "./afiliacion"

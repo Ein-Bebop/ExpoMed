@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAEA;;;;;;;;;;;;;;;;;;;EAmBE;ACrBF,AAAA,OAAO,CAAA;EACH,UAAU,EDDE,OAAkB;ECE9B,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "style.scss",
+        "_afiliacion.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
