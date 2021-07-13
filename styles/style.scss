@@ -1,4 +1,6 @@
 $primaryColor : rgb(192, 109, 192);
+$font-bold : url('../fonts/Montserrat-Bold.otf');
+
 
 /*
     Funciones importantes:
@@ -16,9 +18,16 @@ $primaryColor : rgb(192, 109, 192);
                     color: blue;
                 }
             }
-            
+
         +importar otros archivos scss
             @import ""
 */ 
 
-@import "./afiliacion"
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import "./afiliacion";
+@import "./directorio";
+@import "./home";

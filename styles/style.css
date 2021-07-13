@@ -15,14 +15,130 @@
                     color: blue;
                 }
             }
-            
+
         +importar otros archivos scss
             @import ""
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   background: #c06dc0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.home-bienestar {
+  height: 700px;
+  width: 100%;
+  background: #a975b2;
+  background: -webkit-gradient(linear, left top, right top, from(#a975b2), color-stop(45%, #84dade), to(#fecb8b));
+  background: linear-gradient(90deg, #a975b2 0%, #84dade 45%, #fecb8b 100%);
+}
+
+.header-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-white {
+  width: 30rem;
+}
+
+.nav-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  margin-left: 60rem;
+}
+
+.nav-item {
+  padding: 1rem;
+  font-family: url("../fonts/Montserrat-Bold.otf");
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  /*    background-color: #22313a;*/
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+#header-logo {
+  width: 460px;
+  padding-top: 60px;
+  margin-left: 110px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#header-logo img {
+  width: 100%;
+}
+
+#header-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-top: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: 5%;
+  font-size: 2em;
+  font-family: 'MontBold';
+  color: #fff;
+}
+
+.header-o {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  cursor: pointer;
+}
+
+.header-o a {
+  width: 100%;
+}
+
+#header-bar a:hover ~ #border-b {
+  width: 80%;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#border-b {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1%;
+  height: 2px;
+  background-color: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
