@@ -7,8 +7,6 @@ ___
 - Diego Garay
 - Diego Acosta
 
-Prueba de Push
-
 ___
 
 ***2021***
