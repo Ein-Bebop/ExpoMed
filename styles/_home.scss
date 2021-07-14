@@ -77,22 +77,28 @@
     font-size: .9rem;
     font-family: 'MontRegular';
     color:black;
+    border-top-right-radius: 500px; //TODO: No funciona el top right radius
+    width: 100%;
 }
 
 .message-contact{
-    padding-left: 45px;
+    width: 40%;
+    margin-right: 0;
+    margin-left: auto;
     padding-top: 1rem;
     h1{
         font-family: 'MontBold';
         letter-spacing: 4px;
         font-size: 3rem;
         color: $moradoOscuro;
+        text-transform: uppercase;
     }
     h2{
         font-family: 'MontUltraLight';
         font-size: 1rem;
         color: black;
         padding-top: 1rem;
+        line-height: 1.5;
     }
 }
 
@@ -101,15 +107,25 @@
     font-size: 1rem;
     font-family: 'MontHair';
     color: rgb(75, 75, 75);
+
+    h3{
+        padding-top: 1rem;
+        padding-left: 3rem;
+    }
 }
 
 .formcontact{
-    padding-left: 45px;
+    width: 40%;
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 50px;
     padding-top: 5.6rem;
 }
 
 .contact-form{
-    input{
+
+    font-size: 1.2rem;
+    input, select{
         border-top: none;
         border-left: none;
         border-right: none;
@@ -123,6 +139,7 @@
     ::placeholder{
         color: rgb(82, 82, 82);
         opacity: 1;
+        font-size: 1rem;
     }
 
     label{
@@ -130,14 +147,14 @@
     }
 
     .asunto-input{
-        width: 15rem;
+        width: 50%;
     }
     .telefono-input{
-        width: 15rem;
+        width: 49%;
     }
 
     #tel-label{
-        padding-left: 11.8rem;
+        padding-left: 12.7rem;
     }
 
     button{
@@ -148,15 +165,80 @@
         font-family: 'MontBold';
         font-size: 1rem;
         color: white;
-        background-color: $naranjaSuave;
+        background-color: $naranjaFuerte;
     }
 
 
 }
 
+// Footer
+
 .footer{
     margin-top: 3rem;
-    height: 100px;
+    height: 100%;
     width: 100%;
     background-color: $moradoOscuro;
+    color: white;
+    display: flex;
+    font-family: 'MontRegular';
+    font-size: .8rem;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
 }
+
+.footer-logo{
+    width: 35%;
+    padding-top: 7rem;
+
+    img{
+        width: 100%;
+    }
+}
+
+.mapa-sitio{
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    width: 15%;
+
+    ul {
+        font-family: 'MontUltraLight';
+        list-style-type: none;
+    }
+    li{
+        padding-top: .5rem;
+    }
+}
+
+.forma-parte-footer{
+    padding-top: .5rem;
+    width: 15%;
+    padding-top: 1.5rem;
+
+    ul {
+        font-family: 'MontUltraLight';
+        list-style-type: none;
+    }
+
+    li{
+        padding-top: .5rem;
+    }
+}
+
+.nuestras-redes{
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    width: 20%;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.footer-li-dir{
+    font-family: 'MontBold';
+}
+
