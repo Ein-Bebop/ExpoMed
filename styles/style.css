@@ -385,6 +385,7 @@
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   z-index: 1000;
+  position: absolute;
 }
 
 #header-logo {
@@ -458,10 +459,14 @@
   font-size: .9rem;
   font-family: 'MontRegular';
   color: black;
+  border-top-right-radius: 500px;
+  width: 100%;
 }
 
 .message-contact {
-  padding-left: 45px;
+  width: 40%;
+  margin-right: 0;
+  margin-left: auto;
   padding-top: 1rem;
 }
 
@@ -470,6 +475,7 @@
   letter-spacing: 4px;
   font-size: 3rem;
   color: #522d6d;
+  text-transform: uppercase;
 }
 
 .message-contact h2 {
@@ -477,6 +483,7 @@
   font-size: 1rem;
   color: black;
   padding-top: 1rem;
+  line-height: 1.5;
 }
 
 .datosExpo {
@@ -486,12 +493,24 @@
   color: #4b4b4b;
 }
 
+.datosExpo h3 {
+  padding-top: 1rem;
+  padding-left: 3rem;
+}
+
 .formcontact {
-  padding-left: 45px;
+  width: 40%;
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 50px;
   padding-top: 5.6rem;
 }
 
-.contact-form input {
+.contact-form {
+  font-size: 1.2rem;
+}
+
+.contact-form input, .contact-form select {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -505,21 +524,25 @@
 .contact-form ::-webkit-input-placeholder {
   color: #525252;
   opacity: 1;
+  font-size: 1rem;
 }
 
 .contact-form :-ms-input-placeholder {
   color: #525252;
   opacity: 1;
+  font-size: 1rem;
 }
 
 .contact-form ::-ms-input-placeholder {
   color: #525252;
   opacity: 1;
+  font-size: 1rem;
 }
 
 .contact-form ::placeholder {
   color: #525252;
   opacity: 1;
+  font-size: 1rem;
 }
 
 .contact-form label {
@@ -527,15 +550,15 @@
 }
 
 .contact-form .asunto-input {
-  width: 15rem;
+  width: 50%;
 }
 
 .contact-form .telefono-input {
-  width: 15rem;
+  width: 49%;
 }
 
 .contact-form #tel-label {
-  padding-left: 11.8rem;
+  padding-left: 12.7rem;
 }
 
 .contact-form button {
@@ -546,13 +569,77 @@
   font-family: 'MontBold';
   font-size: 1rem;
   color: white;
-  background-color: #ffb259;
+  background-color: #ff7f30;
 }
 
 .footer {
   margin-top: 3rem;
-  height: 100px;
+  height: 100%;
   width: 100%;
   background-color: #522d6d;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'MontRegular';
+  font-size: .8rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-logo {
+  width: 35%;
+  padding-top: 7rem;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.mapa-sitio {
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  width: 15%;
+}
+
+.mapa-sitio ul {
+  font-family: 'MontUltraLight';
+  list-style-type: none;
+}
+
+.mapa-sitio li {
+  padding-top: .5rem;
+}
+
+.forma-parte-footer {
+  padding-top: .5rem;
+  width: 15%;
+  padding-top: 1.5rem;
+}
+
+.forma-parte-footer ul {
+  font-family: 'MontUltraLight';
+  list-style-type: none;
+}
+
+.forma-parte-footer li {
+  padding-top: .5rem;
+}
+
+.nuestras-redes {
+  padding-top: 1.5rem;
+  font-size: 1rem;
+  width: 20%;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.footer-li-dir {
+  font-family: 'MontBold';
 }
 /*# sourceMappingURL=style.css.map */
