@@ -187,6 +187,175 @@
   width: 80%;
 }
 
+.se-vision {
+  width: 100%;
+  height: 65vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  position: relative;
+  margin-top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.se-vision .se-vision-info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.se-vision .se-vision-info .se-vision-tit {
+  widows: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10%;
+  font-family: MontExtraBold;
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: #522d6d;
+}
+
+.se-vision .se-vision-info .se-vision-desc {
+  margin-top: 30px;
+  font-family: MontLight;
+  widows: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10%;
+}
+
+.se-vision .se-vision-info .se-vision-button {
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: MontBold;
+  background: #ffb259;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.se-vision .se-vision-img {
+  width: 50%;
+}
+
+.se-vision .se-vision-img img {
+  width: 70%;
+}
+
+.se-aprende {
+  width: 100%;
+  height: 65vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  position: relative;
+  margin-top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.se-aprende .se-aprende-info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.se-aprende .se-aprende-info .se-aprende-tit {
+  widows: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10%;
+  font-family: MontExtraBold;
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: #522d6d;
+}
+
+.se-aprende .se-aprende-info .se-aprende-desc {
+  margin-top: 30px;
+  font-family: MontLight;
+  widows: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10%;
+}
+
+.se-aprende .se-aprende-info .se-aprende-button {
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: MontBold;
+  background: #ff7f30;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.se-aprende .se-aprende-img {
+  width: 50%;
+}
+
+.se-aprende .se-aprende-img img {
+  width: 70%;
+}
+
+.segundo-index {
+  width: 100%;
+  min-height: 200px;
+  background: #fff;
+  border-top-right-radius: 150px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -742,6 +911,10 @@ body {
   cursor: pointer;
 }
 
+body {
+  background: #f1f2f2;
+}
+
 .home-bienestar {
   height: 100vh;
   width: 100%;
@@ -825,15 +998,71 @@ body {
   transition: 0.3s;
 }
 
+.nos-motiva {
+  font-family: 'MontRegular';
+  color: #a975b2;
+  background: #fff;
+  padding-bottom: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+.nos-motiva p {
+  padding-top: 1rem;
+  font-family: 'MontUltraLight';
+  font-size: .9rem;
+  color: black;
+}
+
+.nos-motiva h2 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-family: 'MontUltraLight';
+  text-transform: uppercase;
+}
+
+.nos-motiva h1 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-family: 'MontRegular';
+  text-transform: uppercase;
+}
+
+.motiva-header {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.motiva-triptico {
+  padding-top: 3rem;
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hacer-comunidad {
+  padding-right: 2rem;
+}
+
+.impulsar-crecimiento {
+  padding-right: 2rem;
+}
+
 .contacto {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: .9rem;
   font-family: 'MontRegular';
   color: black;
-  border-top-right-radius: 500px;
+  border-top-right-radius: 150px;
   width: 100%;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 .message-contact {
@@ -868,7 +1097,11 @@ body {
 
 .datosExpo h3 {
   padding-top: 1rem;
-  padding-left: 3rem;
+}
+
+.datosExpo a {
+  font-size: 2rem;
+  color: #84dade;
 }
 
 .formcontact {
@@ -946,7 +1179,6 @@ body {
 }
 
 .footer {
-  margin-top: 3rem;
   height: 100%;
   width: 100%;
   background-color: #522d6d;
@@ -1007,9 +1239,21 @@ body {
 .nuestras-redes {
   padding-top: 1.5rem;
   font-size: 1rem;
-  width: 20%;
+  width: 25%;
   margin-right: auto;
   margin-left: 0;
+}
+
+.nuestras-redes h2 {
+  font-size: 1rem;
+}
+
+.redes-sociales {
+  padding-top: .2rem;
+}
+
+.redes-sociales a {
+  font-size: 2.2rem;
 }
 
 .footer-li-dir {
