@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background: #f1f2f2;
+}
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url(../fonts/Montserrat-Bold.otf)format("opentype");
@@ -33,7 +35,7 @@
         width: 100%;
         text-align: center;
         text-transform: uppercase;
-        font-family: 'Montserrat-Black', sans-serif;
+        font-family: MontBold;
         font-weight: bolder;
         margin-bottom: 50px;
         color: #522d6d;
@@ -153,7 +155,24 @@
      background: #f1f2f2;   
      display: flex;
      flex-flow: wrap;
+     justify-content: center;
      padding-top: 50px;
+     padding-bottom: 50px;
+
+
+      .boton-tarjetas-final{
+          width: 200px;
+          height: 30px;
+          margin-top: 30px;
+          background-color: #ff7f30;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          color: #fff;
+          font-family: MontBold;
+          border-radius:5px;
+      }
     }
 
     #reslutados-texto{
@@ -221,6 +240,7 @@
         border-radius: 20px;
         background-color: #fff;
         overflow: hidden;
+        margin: 5px;
 
         .card-categoria{
             position: relative;
@@ -242,6 +262,8 @@
         .card-img-container{
             width: 100%;
             padding-left: 20px;
+            position: relative;
+            margin-top: -32px;
             .card-img{
                 width: 100px;
                 height: 100px;
@@ -255,18 +277,196 @@
         .card-rama{
             width: 100%;
             padding-left: 20px;
+            font-size: 0.9em;
+            color:#84dade ;
+            font-family: MontBold;
         }
 
         .card-nombre{
             width: 100%;
             padding-left: 20px;
-            
-        // .card-especialidad{
+            font-size: 1.2em;
+            font-family: MontBold;
+            color: #522d6d;
+        }  
+        .card-especialidad{
+            width: 100%;
+            padding-left: 20px;
+            font-size: 0.9em;
+            color:#84dade ;
+            font-family: MontBold;
+        }
 
+        .card-descripcion{
+            width: 100%;
+            padding-left: 20px;
+            font-family: MontLight;
+        }
+
+        .card-ver-mas{
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 3px;
+            color:#fff;
+            font-family: MontRegular;
+            background-color: #ff7f30;
+            cursor: pointer;
+        }
+
+        .card-ubicacion{
+            position: relative;
+            margin-left: auto;
+            margin-right: 20px;
+            font-family: MontUltraLight;
+            
         }
     }
+
+
     
 
     
 }
 
+.afiliarse{
+    width: 100%;
+    height: 550px;
+    // min-height: 200px;
+    background-color: #fff;
+    border-top-left-radius: 150px;
+    padding-top: 20px;
+    
+
+   
+    
+    .afiliarse-background-container{
+        margin-left: auto;
+        margin-right: 0;
+        border-top-left-radius: 400px;
+        border-bottom-left-radius: 400px;
+        overflow: hidden;
+        width: 60%;
+        height: 90%;
+        background-image: url('../assets/directorio/photo-of-mountains-during-dawn-2088169.jpg');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .afiliarse-background{
+            width: 100%;
+            height: 500px;
+            
+            background-image: url('../assets/directorio/photo-of-mountains-during-dawn-2088169.jpg');
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+    }
+
+    .afiliarse-info{
+        top: -450px;
+        margin-left: 10%;
+        position: relative;
+        background-color: #fff;
+        width: 60%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 10px;
+        border-radius: 20px;
+
+        .afiliarse-titulo{
+            width: 85%;
+            height: max-content;
+            font-family: MontBold;
+            text-transform: uppercase;
+            padding-left: 60px;
+            margin-top: 20px;
+            color: #ff7f30;
+            font-size: 1.8em;
+        }
+
+        .afiliarse-desccripcion{
+            width: 85%;
+            height: max-content;
+            font-family: MontLight;
+            padding-left: 60px;
+            margin-top: 20px;
+            color: #333;
+            
+        }
+
+        .afiliarse-beneficios{
+            width: 85%;
+            height: max-content;
+            font-family: MontBold;
+            text-transform: uppercase;
+            padding-left: 60px;
+            margin-top: 20px;
+            color: #a975b2;
+            font-size: 1.8em;
+        }
+        .afiliarse-lista{
+            width: 85%;
+            height: 20px;
+            font-family: MontLight;
+            padding-left: 60px;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        li::marker{
+            color: #ff7f30;
+        }
+        
+
+        .botones-container{
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .afiliarse-descargar{
+            width: 150px;
+            padding: 1px 10px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            background-color: #ffb259;
+            color: #fff;
+            margin-left: 60px;
+            border-radius: 5px;
+            font-family: MontBold;
+            font-size: 0.8em;
+            cursor: pointer;
+        }
+
+        .afiliarse-boton{
+            width: 150px;
+            padding: 1px 10px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            background-color: #ff7f30;
+            color: #fff;
+            margin-left: 60px;
+            border-radius: 5px;
+            font-family: MontBold;
+            font-size: 0.8em;
+            cursor: pointer;
+        }
+ 
+    }
+}

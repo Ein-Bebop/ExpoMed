@@ -59,6 +59,10 @@
   padding: 0;
 }
 
+body {
+  background: #f1f2f2;
+}
+
 @font-face {
   font-family: 'Montserrat-Bold';
   src: url(../fonts/Montserrat-Bold.otf) format("opentype");
@@ -95,7 +99,7 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat-Black', sans-serif;
+  font-family: MontBold;
   font-weight: bolder;
   margin-bottom: 50px;
   color: #522d6d;
@@ -236,7 +240,32 @@
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#directorio-container #directorio-cards .boton-tarjetas-final {
+  width: 200px;
+  height: 30px;
+  margin-top: 30px;
+  background-color: #ff7f30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: MontBold;
+  border-radius: 5px;
 }
 
 #directorio-container #reslutados-texto {
@@ -319,6 +348,7 @@
   border-radius: 20px;
   background-color: #fff;
   overflow: hidden;
+  margin: 5px;
 }
 
 #directorio-container .card-medico .card-categoria {
@@ -348,6 +378,8 @@
 #directorio-container .card-medico .card-img-container {
   width: 100%;
   padding-left: 20px;
+  position: relative;
+  margin-top: -32px;
 }
 
 #directorio-container .card-medico .card-img-container .card-img {
@@ -362,11 +394,219 @@
 #directorio-container .card-medico .card-rama {
   width: 100%;
   padding-left: 20px;
+  font-size: 0.9em;
+  color: #84dade;
+  font-family: MontBold;
 }
 
 #directorio-container .card-medico .card-nombre {
   width: 100%;
   padding-left: 20px;
+  font-size: 1.2em;
+  font-family: MontBold;
+  color: #522d6d;
+}
+
+#directorio-container .card-medico .card-especialidad {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #84dade;
+  font-family: MontBold;
+}
+
+#directorio-container .card-medico .card-descripcion {
+  width: 100%;
+  padding-left: 20px;
+  font-family: MontLight;
+}
+
+#directorio-container .card-medico .card-ver-mas {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 3px;
+  color: #fff;
+  font-family: MontRegular;
+  background-color: #ff7f30;
+  cursor: pointer;
+}
+
+#directorio-container .card-medico .card-ubicacion {
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+  font-family: MontUltraLight;
+}
+
+.afiliarse {
+  width: 100%;
+  height: 550px;
+  background-color: #fff;
+  border-top-left-radius: 150px;
+  padding-top: 20px;
+}
+
+.afiliarse .afiliarse-background-container {
+  margin-left: auto;
+  margin-right: 0;
+  border-top-left-radius: 400px;
+  border-bottom-left-radius: 400px;
+  overflow: hidden;
+  width: 60%;
+  height: 90%;
+  background-image: url("../assets/directorio/photo-of-mountains-during-dawn-2088169.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.afiliarse .afiliarse-background-container .afiliarse-background {
+  width: 100%;
+  height: 500px;
+  background-image: url("../assets/directorio/photo-of-mountains-during-dawn-2088169.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.afiliarse .afiliarse-info {
+  top: -450px;
+  margin-left: 10%;
+  position: relative;
+  background-color: #fff;
+  width: 60%;
+  height: 400px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+.afiliarse .afiliarse-info .afiliarse-titulo {
+  width: 85%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-family: MontBold;
+  text-transform: uppercase;
+  padding-left: 60px;
+  margin-top: 20px;
+  color: #ff7f30;
+  font-size: 1.8em;
+}
+
+.afiliarse .afiliarse-info .afiliarse-desccripcion {
+  width: 85%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-family: MontLight;
+  padding-left: 60px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.afiliarse .afiliarse-info .afiliarse-beneficios {
+  width: 85%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-family: MontBold;
+  text-transform: uppercase;
+  padding-left: 60px;
+  margin-top: 20px;
+  color: #a975b2;
+  font-size: 1.8em;
+}
+
+.afiliarse .afiliarse-info .afiliarse-lista {
+  width: 85%;
+  height: 20px;
+  font-family: MontLight;
+  padding-left: 60px;
+  margin-top: 5px;
+  color: #333;
+}
+
+.afiliarse .afiliarse-info li::marker {
+  color: #ff7f30;
+}
+
+.afiliarse .afiliarse-info .botones-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.afiliarse .afiliarse-info .afiliarse-descargar {
+  width: 150px;
+  padding: 1px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  background-color: #ffb259;
+  color: #fff;
+  margin-left: 60px;
+  border-radius: 5px;
+  font-family: MontBold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.afiliarse .afiliarse-info .afiliarse-boton {
+  width: 150px;
+  padding: 1px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  background-color: #ff7f30;
+  color: #fff;
+  margin-left: 60px;
+  border-radius: 5px;
+  font-family: MontBold;
+  font-size: 0.8em;
+  cursor: pointer;
 }
 
 .home-bienestar {
