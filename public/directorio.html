@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Directorio</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
+
+    <section id="home-container">
+        <div id="home-titulo">Directorio Internacional</div>
+        <div id="barra-busqueda">
+            <select class="busqueda-filtro" name="filtro" >
+                <option value="area" selected>
+                  Área
+                </option>
+                <option value="nombre">Nombre</option>
+                <option value="Lugar">Starter </option>
+                <option value="Etc">Professional</option>
+            </select>
+            <div id="busqueda-caja"><input type="text" placeholder="Palabras claves, nombre, área, lugar, etc."></div>
+            <div id="busqueda-boton">Buscar <p class="icon-search">O</p></div>
+        </div>
+    </section>
+
+    <section id="directorio-container">
+        <div id="directorio-search-bar">
+            <div id="filtrar-texto">Filtrar</div>
+
+            <div class="sub-title">Por Calificación</div>
+            <select id="estrellas" class="busqueda-filtro" name="filtro" >
+                <option value="1" selected>★</option>   
+                <option value="2">★★ </option>
+                <option value="3">★★★</option>
+                <option value="4">★★★★</option>
+                <option value="5">★★★★★</option>
+            </select>
+
+            <div class="sub-title">Por Área</div>
+            <select class="busqueda-filtro" name="filtro" >
+                <option value="area" selected>Área</option>
+                <option value="nombre">Nombre</option>
+                <option value="Lugar">Starter </option>
+                <option value="Etc">Professional</option>
+            </select>
+
+            <div class="sub-title">Por Ubicación</div>
+            <select class="busqueda-filtro" name="filtro" >
+                <option value="area" selected>Toluca, Edo. Méx</option>
+                <option value="nombre">Toluca, Edo. Méx</option>
+                <option value="Lugar">Toluca, Edo. Méx</option>
+                <option value="Etc">Toluca, Edo. Méx</option>
+            </select>
+
+            <select id="alfa" class="busqueda-filtro" name="filtro" >
+                <option value="area" selected>Orden Alfbetico</option>
+                <option value="nombre">Orden Alfbetico</option>
+                <option value="Lugar">Orden Alfbetico</option>
+                <option value="Etc">Orden Alfbetico</option>
+            </select>
+        
+        </div>
+
+        <div id="directorio-cards">
+            <div id="reslutados-texto">Resultados de la búsqueda</div>
+            <div class="resultados-paginas">Página<p id="pagina-actual">1</p> de <p id="paginas-totales">5</p>
+                <label class="left-page"><</label>&nbsp;<label class="right-page">></label>
+            </div>
+
+            <div id="tarjetas">
+                <div class="card-medico">
+                    <div class="card-categoria">Cultura</div>
+                    <div class="card-img-container">
+                        <div class="card-img" style="background-image: url('../assets/directorio/pexels-monstera-5876695.jpg');"></div>
+                    </div>
+                    <div class="card-rama">Aromaterápia</div>
+                    <div class="card-nombre">Claudia Romo</div>
+                    <div class="card-especialidad">Experta en culturas pre-hispánicas</div>
+                    <div class="card-descripcion">Conónce los beneficios de la cannabis y cómo puede ser aplicada a las terapias completamente </div>
+                    <div class="card-ver-mas">Ver más</div>
+                    <div class="card-ubicacion">Toluca, Edo. Méx</div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
     
 </body>
 </html>

@@ -31,6 +31,321 @@
   display: flex;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../fonts/Montserrat-Bold.otf) format("opentype");
+  font-family: 'Montserrat-Black';
+  src: url(../fonts/Montserrat-Black.otf) format("opentype");
+  font-family: 'Montserrat Light';
+  src: url(../fonts/Montserrat-Light.otf) format("opentype");
+}
+
+#home-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../assets/Web_DirectorioM_Directorio_IMG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home-container #home-titulo {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  color: #522d6d;
+  font-size: 40pt;
+}
+
+#home-container #barra-busqueda {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home-container .busqueda-filtro {
+  height: 35px;
+  width: 150px;
+  border: none;
+  background-color: #f1f2f2;
+  padding-left: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: #a975b2;
+  font-style: italic;
+  font-family: 'Montserrat Light';
+}
+
+#home-container #busqueda-caja {
+  width: 400px;
+  margin-right: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+
+#home-container #busqueda-caja input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+#home-container #busqueda-boton {
+  width: 100px;
+  height: 35px;
+  border-radius: 50px;
+  color: #522d6d;
+  background-color: #ffb259;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Montserrat-Bold',sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#home-container #busqueda-boton p {
+  margin-left: 10px;
+}
+
+#directorio-container {
+  width: 100%;
+  height: auto;
+}
+
+#directorio-container #directorio-search-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #522d6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#directorio-container #directorio-search-bar #filtrar-texto {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fff;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bolder;
+}
+
+#directorio-container #directorio-search-bar .sub-title {
+  margin-left: 30px;
+  margin-right: 10px;
+  color: #fff;
+  font-family: 'Montserrat',sans-serif;
+  font-style: italic;
+}
+
+#directorio-container #directorio-search-bar #alfa {
+  margin-left: 30px;
+}
+
+#directorio-container #directorio-search-bar #estrellas {
+  color: #ffb259;
+}
+
+#directorio-container #directorio-search-bar select {
+  padding: 2px;
+  color: #333;
+}
+
+#directorio-container #directorio-cards {
+  width: 100%;
+  min-height: 200px;
+  background: #f1f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-top: 50px;
+}
+
+#directorio-container #reslutados-texto {
+  width: 50%;
+  height: 20px;
+  padding-left: 10%;
+  color: #444;
+  font-family: 'Montserrat-Black',sans-serif;
+  font-weight: bolder;
+}
+
+#directorio-container .resultados-paginas {
+  width: 40%;
+  height: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat-Black',sans-serif;
+  font-size: 0.8em;
+  color: #444;
+}
+
+#directorio-container .resultados-paginas input {
+  width: 20px;
+  height: 20px;
+}
+
+#directorio-container .resultados-paginas p {
+  width: 20px;
+}
+
+#directorio-container .resultados-paginas #paginas-totales {
+  margin-right: 10px;
+}
+
+#directorio-container .resultados-paginas .left-page {
+  color: #ffb259;
+  font-size: 2em;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#directorio-container .resultados-paginas .right-page {
+  color: #ffb259;
+  font-size: 2em;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#directorio-container #tarjetas {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#directorio-container .card-medico {
+  width: 400px;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#directorio-container .card-medico .card-categoria {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom-left-radius: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #ffb259;
+}
+
+#directorio-container .card-medico .card-img-container {
+  width: 100%;
+  padding-left: 20px;
+}
+
+#directorio-container .card-medico .card-img-container .card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#directorio-container .card-medico .card-rama {
+  width: 100%;
+  padding-left: 20px;
+}
+
+#directorio-container .card-medico .card-nombre {
+  width: 100%;
+  padding-left: 20px;
+}
+
 .home-bienestar {
   height: 700px;
   width: 100%;
