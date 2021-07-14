@@ -168,7 +168,7 @@ $naranjaFuerte: #ff7f30;
 
 .se-aprende{
     width: 100%;
-    height: 65vh;
+    height: 60vh;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 2555, 0.0));
     position: relative;
     margin-top: -100px;
@@ -194,7 +194,7 @@ $naranjaFuerte: #ff7f30;
         .se-aprende-desc{
             margin-top: 30px;
             font-family: MontLight;
-            widows: 90%;
+            width: 90%;
             height: max-content;
             padding-left: 10%;
         }
@@ -224,11 +224,88 @@ $naranjaFuerte: #ff7f30;
     }
 }
 
-
-
 .segundo-index{
     width: 100%;
     min-height: 200px;
     background: #fff;
     border-top-right-radius: 150px;
+}
+
+.capacitacion{
+    height: 700px;
+    width: 100%;
+    background: url(../assets/Web_Capacitacion_Home_IMG.png);
+    background-color: #fff;
+    background-size: auto 90%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-x: 10%; 
+    padding-top: 50px;
+    margin-bottom: 30px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+
+    
+    .capacitacion-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-content: flex-end;
+        align-items: flex-end;
+        
+        .capacitacion-info{
+            width: 60%;
+            height: 350px;
+            display: flex;
+            flex-flow: wrap;
+            align-content: flex-start;
+            align-items: center;
+            height: -moz-max-content;
+            position: relative;
+            background: #fff;
+            margin-left: auto;
+            border-top-left-radius: 80px;
+            padding-bottom: 40px;
+
+            .capacitacion-info-tit{
+                width: 80%;
+                margin-top: 40px;
+                padding-left: 10%;
+                font-family: MontExtraBold;
+                font-size: 40pt;
+                text-transform: uppercase;
+                color:$moradoOscuro;
+            }
+
+            .capacitacion-info-desc{
+                width: 50%;
+                padding-left: 10%;
+                margin-top: 30px;
+                text-align: justify;
+                font-family: MontLight;
+                height: max-content;
+               
+            }
+            
+            .capacitacion-info-button{
+                width: 250px;
+                height: 40px;
+                border-radius: 10px;
+                margin-left: 10%;
+                margin-top: 20px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                background-color: $naranjaFuerte;
+                font-family: MontBold;
+                font-size: 0.8em;
+                cursor: pointer;
+            }
+
+            
+        }
+    }
+
 }
