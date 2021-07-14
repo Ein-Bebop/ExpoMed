@@ -78,6 +78,8 @@ body{
     background: #fff;
     padding-bottom: 150px;
     border-bottom-left-radius: 150px;
+    display: flex;
+    flex-flow: wrap;
     p{
         padding-top: 1rem;
         font-family: 'MontUltraLight';
@@ -99,7 +101,7 @@ body{
 }
 
 .motiva-header{
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 3rem;
     text-align: center;
@@ -108,19 +110,33 @@ body{
 
 .motiva-triptico{
     padding-top: 3rem;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
-.hacer-comunidad{
-    padding-right: 2rem;
+.separacion-triptico{//agregado estilos de separador
+    height:100% ;
+    width: 1px;
+    background-color: #ddd;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.impulsar-crecimiento{
-    padding-right: 2rem;
-}
+// .hacer-comunidad{
+//     padding-right: 2rem;
+// }
 
+// .impulsar-crecimiento{
+//     padding-right: 2rem;
+// } Optimizado para usar solo una clase
+
+.card{
+    width: 300px;
+    
+}
 
 // Contacto
 
