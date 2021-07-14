@@ -1,4 +1,6 @@
+// HOME
 
+// Header
 
 .home-bienestar{
     height: 700px;
@@ -7,7 +9,6 @@
     background: rgb(169,117,178);
     background: linear-gradient(90deg, rgba(169,117,178,1) 0%, rgba(132,218,222,1) 45%, rgba(254,203,139,1) 100%);
 }
-
 
 #header {
     width: 100%;
@@ -68,6 +69,51 @@
     transition: 0.3s;
 }
 
+// Lo Que Nos Motiva
+.nos-motiva{
+    font-family: 'MontRegular';
+    color: $primaryColor;
+    p{
+        padding-top: 1rem;
+        font-family: 'MontUltraLight';
+        font-size: .9rem;
+        color: black;
+    }
+    h2{
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        font-family:'MontUltraLight';
+        text-transform: uppercase;
+    }
+    h1{
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        font-family: 'MontRegular';
+        text-transform: uppercase;
+    }
+}
+
+.motiva-header{
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.motiva-triptico{
+    padding-top: 3rem;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hacer-comunidad{
+    padding-right: 2rem;
+}
+
+.impulsar-crecimiento{
+    padding-right: 2rem;
+}
 
 
 // Contacto
