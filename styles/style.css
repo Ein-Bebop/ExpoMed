@@ -349,13 +349,6 @@
   width: 70%;
 }
 
-.segundo-index {
-  width: 100%;
-  min-height: 200px;
-  background: #fff;
-  border-top-right-radius: 150px;
-}
-
 .capacitacion {
   height: 700px;
   width: 100%;
@@ -386,7 +379,7 @@
 
 .capacitacion .capacitacion-container .capacitacion-info {
   width: 60%;
-  height: 350px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,13 +403,13 @@
   margin-top: 40px;
   padding-left: 10%;
   font-family: MontExtraBold;
-  font-size: 40pt;
+  font-size: 50pt;
   text-transform: uppercase;
   color: #522d6d;
 }
 
 .capacitacion .capacitacion-container .capacitacion-info .capacitacion-info-desc {
-  width: 50%;
+  width: 60%;
   padding-left: 10%;
   margin-top: 30px;
   text-align: justify;
@@ -431,7 +424,7 @@
   height: 40px;
   border-radius: 10px;
   margin-left: 10%;
-  margin-top: 20px;
+  margin-top: 45px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,6 +441,50 @@
   font-family: MontBold;
   font-size: 0.8em;
   cursor: pointer;
+}
+
+.resena {
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resena .resena-texto {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: MontLight;
+}
+
+.resena .resena-resenador {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: MontLight;
+  font-size: 0.8em;
+  color: #522d6d;
+}
+
+.resena .resena-especialidad {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: MontLight;
+  font-size: 0.8em;
+  color: #522d6d;
 }
 
 * {
@@ -863,7 +900,7 @@ body {
   border-bottom-left-radius: 400px;
   overflow: hidden;
   width: 60%;
-  height: 90%;
+  height: 100%;
   background-image: url("../assets/directorio/photo-of-mountains-during-dawn-2088169.jpg");
   background-position: left;
   background-repeat: no-repeat;
@@ -880,7 +917,7 @@ body {
 }
 
 .afiliarse .afiliarse-info {
-  top: -450px;
+  top: -510px;
   margin-left: 10%;
   position: relative;
   background-color: #fff;
@@ -895,7 +932,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  padding-bottom: 10px;
+  padding-bottom: 70px;
   border-radius: 20px;
 }
 
@@ -931,7 +968,8 @@ body {
   font-family: MontBold;
   text-transform: uppercase;
   padding-left: 60px;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   color: #a975b2;
   font-size: 1.8em;
 }
@@ -954,7 +992,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .afiliarse .afiliarse-info .afiliarse-descargar {
@@ -1157,6 +1195,102 @@ body {
 
 .card {
   width: 300px;
+}
+
+.segundo-index {
+  width: 100%;
+  min-height: 700px;
+  background: #fff;
+  border-top-right-radius: 150px;
+}
+
+.flor-loto {
+  width: 100%;
+  background-image: url("../assets/Web_Accesos_Home_IMG.png");
+  min-height: 900px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: -1%;
+}
+
+.loto-tarjetas {
+  width: 70%;
+  padding-top: 50px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.loto-card {
+  width: 70%;
+  height: 230px;
+  margin-right: 10%;
+  margin-left: auto;
+  border-radius: 15px;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#loto-img-1 {
+  background-image: url("../assets/fotos/shelf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#loto-img-2 {
+  background-image: url("../assets/fotos/meditando.jpg");
+  width: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 45%;
+}
+
+#loto-img-3 {
+  background-image: url("../assets/fotos/copa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.loto-card-text {
+  width: 450px;
+  height: 9rem;
+  background-color: white;
+  position: relative;
+  font-family: 'MontRegular';
+  margin-left: -7rem;
+  border-radius: 2px;
+  -webkit-box-shadow: #3d2a4175 0px 4px 12px;
+          box-shadow: #3d2a4175 0px 4px 12px;
+}
+
+.loto-card-text h1 {
+  text-transform: uppercase;
+  padding-left: 6%;
+  width: 94%;
+  padding-top: 1rem;
+  color: #a975b2;
+  font-family: 'MontBold';
+}
+
+.loto-card-text p {
+  padding-left: 6%;
+  width: 75%;
+  padding-top: .3rem;
+  font-family: 'MontUltraLight';
+  font-size: 1rem;
+}
+
+.loto-card-text h3 {
+  color: #ffb259;
+  width: 10%;
+  padding-left: 90%;
+  font-size: 2em;
 }
 
 .contacto {

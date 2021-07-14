@@ -224,12 +224,6 @@ $naranjaFuerte: #ff7f30;
     }
 }
 
-.segundo-index{
-    width: 100%;
-    min-height: 200px;
-    background: #fff;
-    border-top-right-radius: 150px;
-}
 
 .capacitacion{
     height: 700px;
@@ -255,7 +249,7 @@ $naranjaFuerte: #ff7f30;
         
         .capacitacion-info{
             width: 60%;
-            height: 350px;
+            height: 450px;
             display: flex;
             flex-flow: wrap;
             align-content: flex-start;
@@ -272,13 +266,13 @@ $naranjaFuerte: #ff7f30;
                 margin-top: 40px;
                 padding-left: 10%;
                 font-family: MontExtraBold;
-                font-size: 40pt;
+                font-size: 50pt;
                 text-transform: uppercase;
                 color:$moradoOscuro;
             }
 
             .capacitacion-info-desc{
-                width: 50%;
+                width: 60%;
                 padding-left: 10%;
                 margin-top: 30px;
                 text-align: justify;
@@ -292,7 +286,7 @@ $naranjaFuerte: #ff7f30;
                 height: 40px;
                 border-radius: 10px;
                 margin-left: 10%;
-                margin-top: 20px;
+                margin-top: 45px;
                 color: #fff;
                 display: flex;
                 align-items: center;
@@ -308,4 +302,42 @@ $naranjaFuerte: #ff7f30;
         }
     }
 
+}
+
+.resena{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+
+    .resena-texto{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: MontLight;
+    }
+    
+    .resena-resenador{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: MontLight;
+        font-size: 0.8em;
+        color:$moradoOscuro
+    }
+    
+    .resena-especialidad{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: MontLight;
+        font-size: 0.8em;
+        color:$moradoOscuro
+    }
 }
