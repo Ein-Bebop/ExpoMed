@@ -1,7 +1,3 @@
-$primaryColor : rgb(192, 109, 192);
-$font-bold : url('../fonts/Montserrat-Bold.otf');
-
-
 /*
     Funciones importantes:
         +variables $var: 
@@ -28,6 +24,9 @@ $font-bold : url('../fonts/Montserrat-Bold.otf');
     padding: 0;
 }
 
+
+@import "./fonts";
+@import "./variables";
 @import "./afiliacion";
 @import "./directorio";
 @import "./home";

@@ -24,11 +24,34 @@
   padding: 0;
 }
 
-.header {
-  background: #c06dc0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@font-face {
+  font-family: MontBold;
+  src: url("../fonts/Montserrat-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontRegular;
+  src: url("../fonts/Montserrat-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontLight;
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontUltraLight;
+  src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontExtraBold;
+  src: url("../fonts/Montserrat-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontHair;
+  src: url("../fonts/Montserrat-Hairline.otf") format("opentype");
 }
 
 .home-bienestar {
@@ -39,49 +62,20 @@
   background: linear-gradient(90deg, #a975b2 0%, #84dade 45%, #fecb8b 100%);
 }
 
-.header-home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo-white {
-  width: 30rem;
-}
-
-.nav-home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2rem;
-  margin-left: 60rem;
-}
-
-.nav-item {
-  padding: 1rem;
-  font-family: url("../fonts/Montserrat-Bold.otf");
-}
-
 #header {
   width: 100%;
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  /*    background-color: #22313a;*/
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   z-index: 1000;
 }
 
 #header-logo {
-  width: 460px;
-  padding-top: 60px;
-  margin-left: 110px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  width: 480px;
+  padding-top: 20px;
+  margin-left: 20px;
 }
 
 #header-logo img {
@@ -94,7 +88,7 @@
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  padding-top: 120px;
+  padding-top: 70px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -105,7 +99,7 @@
           align-items: center;
   margin-left: auto;
   margin-right: 5%;
-  font-size: 2em;
+  font-size: 1em;
   font-family: 'MontBold';
   color: #fff;
 }
@@ -140,5 +134,110 @@
   background-color: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .9rem;
+  font-family: 'MontRegular';
+  color: black;
+}
+
+.message-contact {
+  padding-left: 45px;
+  padding-top: 1rem;
+}
+
+.message-contact h1 {
+  font-family: 'MontBold';
+  letter-spacing: 4px;
+  font-size: 3rem;
+  color: #522d6d;
+}
+
+.message-contact h2 {
+  font-family: 'MontUltraLight';
+  font-size: 1rem;
+  color: black;
+  padding-top: 1rem;
+}
+
+.datosExpo {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-family: 'MontHair';
+  color: #4b4b4b;
+}
+
+.formcontact {
+  padding-left: 45px;
+  padding-top: 5.6rem;
+}
+
+.contact-form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #a975b2;
+  width: 100%;
+  padding-top: .5rem;
+  font-family: 'MontRegular';
+}
+
+.contact-form ::-webkit-input-placeholder {
+  color: #525252;
+  opacity: 1;
+}
+
+.contact-form :-ms-input-placeholder {
+  color: #525252;
+  opacity: 1;
+}
+
+.contact-form ::-ms-input-placeholder {
+  color: #525252;
+  opacity: 1;
+}
+
+.contact-form ::placeholder {
+  color: #525252;
+  opacity: 1;
+}
+
+.contact-form label {
+  color: #808080;
+}
+
+.contact-form .asunto-input {
+  width: 15rem;
+}
+
+.contact-form .telefono-input {
+  width: 15rem;
+}
+
+.contact-form #tel-label {
+  padding-left: 11.8rem;
+}
+
+.contact-form button {
+  width: 6rem;
+  height: 2.3rem;
+  border: none;
+  border-radius: 12px;
+  font-family: 'MontBold';
+  font-size: 1rem;
+  color: white;
+  background-color: #ffb259;
+}
+
+.footer {
+  margin-top: 3rem;
+  height: 100px;
+  width: 100%;
+  background-color: #522d6d;
 }
 /*# sourceMappingURL=style.css.map */
