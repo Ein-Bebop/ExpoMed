@@ -29,7 +29,31 @@
   src: url("../fonts/Montserrat-Bold.otf") format("opentype");
 }
 
-<<<<<<< HEAD
+@font-face {
+  font-family: MontRegular;
+  src: url("../fonts/Montserrat-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontLight;
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontUltraLight;
+  src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontExtraBold;
+  src: url("../fonts/Montserrat-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontHair;
+  src: url("../fonts/Montserrat-Hairline.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -351,39 +375,6 @@
   background: #a975b2;
   background: -webkit-gradient(linear, left top, right top, from(#a975b2), color-stop(45%, #84dade), to(#fecb8b));
   background: linear-gradient(90deg, #a975b2 0%, #84dade 45%, #fecb8b 100%);
-=======
-@font-face {
-  font-family: MontRegular;
-  src: url("../fonts/Montserrat-Regular.otf") format("opentype");
->>>>>>> c991879096c67286280460090376eab35de73cdd
-}
-
-@font-face {
-  font-family: MontLight;
-  src: url("../fonts/Montserrat-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: MontUltraLight;
-  src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
-}
-
-@font-face {
-  font-family: MontExtraBold;
-  src: url("../fonts/Montserrat-ExtraBold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: MontHair;
-  src: url("../fonts/Montserrat-Hairline.otf") format("opentype");
-}
-
-.home-bienestar {
-  height: 700px;
-  width: 100%;
-  background: #a975b2;
-  background: -webkit-gradient(linear, left top, right top, from(#a975b2), color-stop(45%, #84dade), to(#fecb8b));
-  background: linear-gradient(90deg, #a975b2 0%, #84dade 45%, #fecb8b 100%);
 }
 
 #header {
@@ -394,6 +385,7 @@
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   z-index: 1000;
+  position: absolute;
 }
 
 #header-logo {
