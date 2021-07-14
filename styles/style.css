@@ -54,6 +54,139 @@
   src: url("../fonts/Montserrat-Hairline.otf") format("opentype");
 }
 
+.home-tit-sm {
+  width: 100%;
+  text-align: center;
+  padding-top: 280px;
+  font-family: MontUltraLight;
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: #fff;
+}
+
+.home-tit-md {
+  width: 100%;
+  text-align: center;
+  font-family: MontExtraBold;
+  text-transform: uppercase;
+  font-size: 70pt;
+  color: #fff;
+}
+
+.home-desc {
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-family: MontLight;
+}
+
+.home-button {
+  color: #808080;
+  font-family: MontBold;
+  background: #fff;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  cursor: pointer;
+}
+
+.se-nosotros {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  position: relative;
+  margin-top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.se-nosotros .se-nosotros-info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.se-nosotros .se-nosotros-info .se-nosotros-tit {
+  widows: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10%;
+  font-family: MontExtraBold;
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: #522d6d;
+}
+
+.se-nosotros .se-nosotros-info .se-nosotros-desc {
+  margin-top: 30px;
+  font-family: MontUltraLight;
+  widows: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 10%;
+}
+
+.se-nosotros .se-nosotros-info .se-nosotros-button {
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: MontBold;
+  background: #ffb259;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.se-nosotros .se-nosotros-img {
+  width: 50%;
+}
+
+.se-nosotros .se-nosotros-img img {
+  width: 80%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -610,7 +743,7 @@ body {
 }
 
 .home-bienestar {
-  height: 700px;
+  height: 100vh;
   width: 100%;
   background: #a975b2;
   background: -webkit-gradient(linear, left top, right top, from(#a975b2), color-stop(45%, #84dade), to(#fecb8b));

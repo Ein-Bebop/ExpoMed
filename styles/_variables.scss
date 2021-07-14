@@ -1,5 +1,109 @@
 $primaryColor : #a975b2;
 $moradoOscuro: #522d6d;
 $gris: #808080;
+$gris2 :#58595b;
 $naranjaSuave: #ffb259;
 $naranjaFuerte: #ff7f30;
+
+.home-tit-sm{
+    width: 100%;
+    text-align: center;
+    padding-top: 280px;
+    font-family: MontUltraLight;
+    text-transform: uppercase;
+    font-size: 20pt;
+    color: #fff;
+}
+
+.home-tit-md{
+    width: 100%;
+    text-align: center;
+    font-family: MontExtraBold;
+    text-transform: uppercase;
+    font-size: 70pt;
+    color: #fff;
+}
+
+.home-desc{
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-family: MontLight;
+}
+
+.home-button{
+    color: $gris;
+    font-family: MontBold;
+    background: #fff;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.se-nosotros{
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 2555, 1));
+    position: relative;
+    margin-top: -100px;
+    display: flex;
+    flex-flow: wrap;
+
+    .se-nosotros-info{
+        width: 50%;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        align-content: center;
+
+        .se-nosotros-tit{
+            widows: 90%;
+            height: max-content;
+            padding-left: 10%;
+            font-family: MontExtraBold;
+            font-size: 30pt;
+            text-transform: uppercase;
+            color:$moradoOscuro;
+        }
+        .se-nosotros-desc{
+            margin-top: 30px;
+            font-family: MontUltraLight;
+            widows: 90%;
+            height: max-content;
+            padding-left: 10%;
+        }
+        .se-nosotros-button{
+            width: 200px;
+            height: 40px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: MontBold;
+            background: $naranjaSuave;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-left: 10%;
+            cursor: pointer;
+        }
+    }
+
+    .se-nosotros-img{
+        width: 50%;
+
+        img{
+            width: 80%;
+        }
+    }
+}
