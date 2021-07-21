@@ -1501,4 +1501,166 @@ body {
 .footer-li-dir {
   font-family: 'MontBold';
 }
+
+#atencion-tarjetas {
+  width: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.med-tradicional {
+  width: 100%;
+  font-family: 'MontBold';
+  text-align: center;
+}
+
+.med-tradicional .med-title {
+  font-family: 'MontExtraBold';
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #a975b2;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.med-tradicional .med-desc {
+  padding-bottom: 2rem;
+  font-size: .9rem;
+  font-family: 'MontLight';
+}
+
+.med-tradicional .med-button {
+  width: 15rem;
+  height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  color: white;
+  background-color: #ff7f30;
+}
+
+.med-tradicional .med-button:hover {
+  cursor: pointer;
+}
+
+.slider {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.card {
+  border: 1px white !important;
+  width: 15rem;
+}
+
+.card-image img {
+  border-radius: 15px;
+}
+
+#cartaslider {
+  margin-top: 0px !important;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.pantalla-oscura {
+  position: absolute;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.pantalla-oscura a {
+  text-decoration: none;
+  font-family: 'MontBold';
+  color: white;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+  border: 0px solid black;
+  outline: none;
+}
+
+.slick-slider {
+  margin-top: 3rem;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: grey;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: 0.8;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.slick-dots button {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #c9c9c9 !important;
+  text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #522d6d !important;
+}
 /*# sourceMappingURL=style.css.map */
