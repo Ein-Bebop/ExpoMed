@@ -487,6 +487,337 @@
   color: #522d6d;
 }
 
+.af-tit-text {
+  z-index: 10;
+  position: relative;
+  width: 65%;
+  margin-left: 100px;
+  padding-top: 300px;
+  font-family: MontBold;
+  color: #522d6d;
+  text-transform: uppercase;
+  font-size: 40pt;
+  word-break: break-word;
+  word-spacing: 20pt;
+}
+
+.af-desc-text {
+  width: 45%;
+  margin-left: 100px;
+  font-family: MontUltraLight;
+  color: #a975b2;
+  font-size: 1em;
+  word-spacing: 10pt;
+}
+
+.af-img {
+  width: 45%;
+  position: absolute;
+  top: 150px;
+  right: 50px;
+}
+
+[data-afiliacion="afiliacion"] {
+  color: #a975b2 !important;
+}
+
+[data-desc="afiliacion"] {
+  line-height: 25px !important;
+  margin-top: 10px !important;
+}
+
+.motiva-afi {
+  width: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  min-height: 200px;
+  background: #fff;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  padding-bottom: 50px;
+}
+
+.motiva-afi .motiva-afi-tit {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #a975b2;
+  font-family: MontBold;
+  font-size: 20pt;
+  padding-top: 50px;
+}
+
+.motiva-afi .sub-afi {
+  width: 100%;
+  height: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.motiva-afi .sub-afi .sub-card {
+  width: 60%;
+  height: 340px;
+  background: #fff;
+  -webkit-box-shadow: #3d2a4175 0px 4px 12px;
+          box-shadow: #3d2a4175 0px 4px 12px;
+  position: absolute;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.motiva-afi .sub-afi .sub-card .sub-afi-tit {
+  width: 80%;
+  text-transform: uppercase;
+  font-family: MontUltraLight;
+  font-size: 25pt;
+  color: #a975b2;
+}
+
+.motiva-afi .sub-afi .sub-card .sub-afi-tit p {
+  font-family: MontBold;
+}
+
+.motiva-afi .sub-afi .sub-card .sub-afi-desc {
+  width: 80%;
+  font-family: MontUltraLight;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.motiva-afi .sub-afi .sub-afi-img {
+  width: 60%;
+  height: 440px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.comunidad-tit {
+  margin-top: 50px;
+  width: 50%;
+  text-align: center;
+  font-family: MontBold;
+  text-transform: uppercase;
+  color: #a975b2;
+  word-wrap: break-word;
+  font-size: 25pt;
+}
+
+.comunidad-desc {
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  font-family: MontUltraLight;
+  line-height: 25px;
+}
+
+.separador-resena {
+  width: 100%;
+}
+
+.comunidad-imgs {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  background-color: #d2d3d5;
+  margin: 50px;
+}
+
+.afiliarse-2 {
+  width: auto;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+.afiliarse-2 .afiliarse2-texto {
+  width: 60%;
+}
+
+.afiliarse-2 .af2-tit1 {
+  width: 70%;
+  font-family: MontBold;
+  color: #ff7f30;
+  text-transform: uppercase;
+  font-size: 20pt;
+  margin-top: 50px;
+}
+
+.afiliarse-2 .af2-desc1 {
+  font-family: MontUltraLight;
+  margin-top: 20px;
+}
+
+.afiliarse-2 .af2-tit2 {
+  width: 100%;
+  font-family: MontBold;
+  color: #a975b2;
+  text-transform: uppercase;
+  font-size: 20pt;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.afiliarse-2 li {
+  font-family: MontUltraLight;
+  margin-top: 5px;
+}
+
+.afiliarse-2 li::marker {
+  color: #ff7f30;
+}
+
+.afiliarse-2 .afiliarse2-img {
+  width: 40%;
+}
+
+.afiliarse-2 .afiliarse2-img img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.afiliarse-2 .conocemas {
+  width: 50%;
+}
+
+.afiliarse-2 .completaproceso {
+  width: 50%;
+}
+
+.afiliarse-2 .cm-tit, .afiliarse-2 .cp-tit {
+  font-family: MontBold;
+  font-size: 20pt;
+  color: #a975b2;
+  text-transform: uppercase;
+}
+
+.afiliarse-2 .cm-desc, .afiliarse-2 .cp-desc {
+  font-family: MontUltraLight;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.afiliarse-2 .afiliarse-descargar {
+  width: 150px;
+  padding: 1px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  background-color: #ffb259;
+  color: #fff;
+  border-radius: 5px;
+  font-family: MontBold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.afiliarse-2 .afiliarse-boton {
+  width: 220px;
+  padding: 1px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  background-color: #ff7f30;
+  color: #fff;
+  border-radius: 5px;
+  font-family: MontBold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.conocermas {
+  position: relative;
+  height: 600px;
+  margin-top: -150px;
+  width: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: url("../assets/afiliación/Images_Divider_color.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conocermas .conocermas-tit {
+  text-align: center;
+  font-family: 'MontBold';
+  color: #522d6d;
+  width: 70%;
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+
+.conocermas .conocermas-desc {
+  width: 100%;
+  font-family: MontUltraLight;
+  color: #522d6d;
+  margin-top: 10px;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
