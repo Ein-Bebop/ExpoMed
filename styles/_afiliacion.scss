@@ -1,2 +1,304 @@
+.af-tit-text{
+    z-index: 10;
+    position: relative;
+    width: 65%;
+    margin-left: 100px;
+    padding-top: 300px;
+    font-family: MontBold;
+    color: #522d6d;
+    text-transform: uppercase;
+    font-size: 40pt;
+    word-break: break-word;
+    word-spacing: 20pt;
+}
+
+.af-desc-text{
+    width: 45%;
+    margin-left: 100px;
+    font-family: MontUltraLight;
+    color: $primaryColor;
+    font-size: 1em;
+    word-spacing: 10pt;
+}
+
+.af-img{
+    width: 45%;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+[data-afiliacion="afiliacion"] {
+    color: $primaryColor !important;
+}
+
+[data-desc="afiliacion"] {
+    line-height: 25px !important;
+    margin-top: 10px !important;
+}
+
+.motiva-afi{
+    width: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    min-height: 200px;
+    background: #fff;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    padding-bottom: 50px;
+    
+
+    .motiva-afi-tit{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $primaryColor;
+        font-family: MontBold;
+        font-size: 20pt;
+        padding-top: 50px;
+    }
+
+    .sub-afi{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        align-items: center;
+
+        .sub-card{
+            width: 60%;
+            height: 340px;
+            background: #fff;
+            box-shadow: #3d2a4175 0px 4px 12px;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            .sub-afi-tit{
+                width: 80%;
+                text-transform: uppercase;
+                font-family: MontUltraLight;
+                font-size: 25pt;
+                color: $primaryColor;
+
+                p{
+                    font-family: MontBold;
+                }
+            }
+
+            .sub-afi-desc{
+                width: 80%;
+                font-family: MontUltraLight;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+        }
+
+        .sub-afi-img{
+            width: 60%;
+            height: 440px;
+            position: relative;
+            margin-left: auto;
+            margin-right: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+        }
+
+    }
+
+
+
+
+
+
+}
+
+
+.comunidad-tit{
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
+    font-family: MontBold;
+    text-transform: uppercase;
+    color: $primaryColor;
+    word-wrap: break-word;
+    font-size: 25pt;
+}
+
+.comunidad-desc{
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: MontUltraLight;
+    line-height: 25px;
+}
+
+.separador-resena{
+    width: 100%;
+}
+
+.comunidad-imgs{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: #d2d3d5;
+    margin: 50px;
+}
+
+
+.afiliarse-2{
+    width: auto;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    background: #fff;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+
+    .afiliarse2-texto{
+        width: 60%;
+    } 
+    .af2-tit1{
+        width: 70%;
+        font-family: MontBold;
+        color: $naranjaFuerte;
+        text-transform: uppercase;
+        font-size: 20pt;
+        margin-top: 50px;
+    }
+    .af2-desc1{
+        font-family: MontUltraLight;
+        margin-top: 20px;
+    }
+
+    .af2-tit2{
+        width: 100%;
+        font-family: MontBold;
+        color: $primaryColor;
+        text-transform: uppercase;
+        font-size: 20pt;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    li{
+        font-family: MontUltraLight;
+        margin-top: 5px;
+    }
+
+    li::marker{
+        color: #ff7f30;
+    }
+    
+    .afiliarse2-img{
+        width: 40%;
+
+        img{
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+
+    .conocemas{
+        width: 50%;
+    }
+
+    .completaproceso{
+        width: 50%;
+    }
+
+    .cm-tit, .cp-tit{
+        font-family: MontBold;
+        font-size: 20pt;
+        color: $primaryColor;
+        text-transform: uppercase;
+    }
+
+    .cm-desc,.cp-desc{
+        font-family: MontUltraLight;
+        height: 80px;
+        margin-top: 20px;
+
+    }
+
+    .afiliarse-descargar{
+        width: 150px;
+        padding: 1px 10px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: #ffb259;
+        color: #fff;
+        border-radius: 5px;
+        font-family: MontBold;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    .afiliarse-boton{
+        width: 220px;
+        padding: 1px 10px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: #ff7f30;
+        color: #fff;
+        border-radius: 5px;
+        font-family: MontBold;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+    
+}
+
+.conocermas{
+    position: relative;
+    height: 600px;
+    margin-top: -150px;
+    width: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-image: url('../assets/afiliación/Images_Divider_color.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+    .conocermas-tit{
+        text-align: center;
+        font-family: 'MontBold';
+        color: $moradoOscuro;
+        width: 70%;
+        font-size: 20pt;
+        text-transform: uppercase;
+    }
+    
+    .conocermas-desc{
+        width: 100%;
+        font-family: MontUltraLight;
+        color: $moradoOscuro;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
 
 
