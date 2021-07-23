@@ -19,64 +19,37 @@
         -o-animation: word-slider 8s ease-in-out infinite;
         animation: word-slider 8s ease-in-out infinite;
         animation-delay: 0s;
-        animation-duration: 8.0s;
         animation-fill-mode: backwards;
+        backface-visibility: hidden;
     }
-    @-webkit-keyframes word-slider{
-        0%{
-            -webkit-transform: translate3D(0,0,0);
-        }
-        33%{
-            -webkit-transform: translate3D(0,-100%,0);
-        }
-        66%{
-            -webkit-transform: translate3D(0,-200%,0);
-        }
-        100%{
-            -webkit-transform: translate3D(0,-300%,0);
-        }
-    }
-    @-moz-keyframes word-slider{
-        0%{
-            -moz-transform: translate3D(0,0,0);
-        }
-        33%{
-            -moz-transform: translate3D(0,-100%,0);
-        }
-        66%{
-            -moz-transform: translate3D(0,-200%,0);
-        }
-        100%{
-            -moz-transform: translate3D(0,-300%,0);
-        }
-    }
-    @-o-keyframes word-slider{
-        0%{
-            -o-transform: translateY(0);
-        }
-        33%{
-            -o-transform: translateY(-100%);
-        }
-        66%{
-            -o-transform: translateY(-200%);
-        }
-        100%{
-            -o-transform: translateY(-300%);
-        }
-    }
+   
     @keyframes word-slider{
+
         0%{
             transform: translate3D(0,0,0);
         }
-        33%{
+        14.2%{
+            transform: translate3D(0,0,0);
+        }
+        28.4%{
             transform: translate3D(0,-100%,0);
         }
-        66%{
+        42.6%{
+            transform: translate3D(0,-100%,0);
+        }
+        56.8%{
             transform: translate3D(0,-200%,0);
+        }
+        71%{
+            transform: translate3D(0,-200%,0);
+        }
+        85.2%{
+            transform: translate3D(0,-300%,0);
         }
         100%{
             transform: translate3D(0,-300%,0);
         }
+
     }
 //
 
