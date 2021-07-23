@@ -2198,6 +2198,10 @@ body {
   padding-left: 0;
 }
 
+body {
+  background: #f1f2f2 !important;
+}
+
 .tall-tit-text {
   z-index: 10;
   position: relative;
@@ -2222,6 +2226,7 @@ body {
 
 .taller-video {
   width: auto;
+  height: 700px;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -2268,10 +2273,17 @@ body {
   padding-top: 1rem;
 }
 
+#cartasTalleres {
+  height: 500px;
+  background-color: white;
+  border-bottom-left-radius: 150px;
+  margin-top: -60px !important;
+}
+
 .card-taller {
   border: 1px #636363 !important;
   width: 24rem;
-  background-color: #f1f2f2 !important;
+  background-color: white !important;
 }
 
 .taller-desc {
@@ -2318,5 +2330,125 @@ body {
   font-family: 'MontUltraLight';
   padding-left: 1rem;
   padding-top: 1rem;
+}
+
+.profesionalizate {
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  border-top-right-radius: 150px;
+  text-align: center;
+}
+
+.prof-titulo {
+  font-family: 'MontExtraBold';
+  color: #522d6d;
+  font-size: 4.5rem;
+  padding-top: 2rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.prof-desc {
+  width: 65%;
+  margin: 0 auto;
+  font-family: MontLight;
+}
+
+.prof-input {
+  width: 40%;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 2rem;
+  border-radius: 50px;
+  padding-left: 1rem;
+  height: 2.2rem;
+  background-color: #f1f2f2;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  border: 1px solid #f1f2f2;
+}
+
+.prof-button {
+  width: 150px;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 1rem;
+  background-color: #ff7f30;
+  height: 2.1rem;
+  padding-top: .25rem;
+  color: white;
+  font-family: 'MontRegular';
+  border-radius: 8px;
+}
+
+.prox-eventos {
+  background-image: url("../assets/Images_TalleresCarrousell_Talleres_IMG.jpg");
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  margin-top: -200px;
+  background-size: cover;
+}
+
+.eventos-tit {
+  font-family: 'MontExtraBold';
+  color: white;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-left: 69px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.comunidad {
+  text-align: center;
+}
+
+.comunidad-tit {
+  font-family: 'MontExtraBold';
+  color: #a975b2;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  margin: auto;
+}
+
+.comunidad-gallery {
+  width: 100%;
+  height: 500px;
+}
+
+.siguenos {
+  background-image: url("../assets/Images_Divider_color.jpg");
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -150px;
+  position: relative;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.siguenos .siguenos-tit {
+  font-family: 'MontExtraBold';
+  color: #522d6d;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -10rem;
 }
 /*# sourceMappingURL=style.css.map */
