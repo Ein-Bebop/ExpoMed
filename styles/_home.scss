@@ -1,15 +1,70 @@
 // HOME
 
 // Header
+.word-slider{
+    height: 1em;
+    line-height: 1em;
+    margin: 0 .5em;
+    overflow: hidden;
+    list-style-type: none;
+    font-family: 'MontBold';
+    font-size: 7rem;
+    color: white;
+    mask-image: linear-gradient(transparent, white, white, white, transparent);
+}
+    .word-slider>li{
+        text-align: center;
+        -webkit-animation: word-slider 8s ease-in-out infinite;
+        -moz-animation: word-slider 8s ease-in-out infinite;
+        -o-animation: word-slider 8s ease-in-out infinite;
+        animation: word-slider 8s ease-in-out infinite;
+        animation-delay: 0s;
+        animation-fill-mode: backwards;
+        backface-visibility: hidden;
+    }
+   
+    @keyframes word-slider{
+
+        0%{
+            transform: translate3D(0,0,0);
+        }
+        14.2%{
+            transform: translate3D(0,0,0);
+        }
+        28.4%{
+            transform: translate3D(0,-100%,0);
+        }
+        42.6%{
+            transform: translate3D(0,-100%,0);
+        }
+        56.8%{
+            transform: translate3D(0,-200%,0);
+        }
+        71%{
+            transform: translate3D(0,-200%,0);
+        }
+        85.2%{
+            transform: translate3D(0,-300%,0);
+        }
+        100%{
+            transform: translate3D(0,-300%,0);
+        }
+
+    }
+//
+
 body{
     background: #f1f2f2;
 }
 .home-bienestar{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
-
-    background: rgb(169,117,178);
-    background: linear-gradient(90deg, rgba(169,117,178,1) 0%, rgba(132,218,222,1) 45%, rgba(254,203,139,1) 100%);
+    background-image: url('../assets/IMG_Home_Main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -80px;
+    // background: rgb(169,117,178);
+    // background: linear-gradient(90deg, rgba(169,117,178,1) 0%, rgba(132,218,222,1) 45%, rgba(254,203,139,1) 100%);
 }
 
 #header {
@@ -127,7 +182,6 @@ body{
 
 .card{
     width: 300px;
-    
 }
 
 

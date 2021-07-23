@@ -1374,16 +1374,114 @@ body {
   cursor: pointer;
 }
 
+.word-slider {
+  height: 1em;
+  line-height: 1em;
+  margin: 0 .5em;
+  overflow: hidden;
+  list-style-type: none;
+  font-family: 'MontBold';
+  font-size: 7rem;
+  color: white;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(white), color-stop(white), color-stop(white), to(transparent));
+  -webkit-mask-image: linear-gradient(transparent, white, white, white, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(white), color-stop(white), color-stop(white), to(transparent));
+          mask-image: linear-gradient(transparent, white, white, white, transparent);
+}
+
+.word-slider > li {
+  text-align: center;
+  -webkit-animation: word-slider 8s ease-in-out infinite;
+  animation: word-slider 8s ease-in-out infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+@-webkit-keyframes word-slider {
+  0% {
+    -webkit-transform: translate3D(0, 0, 0);
+            transform: translate3D(0, 0, 0);
+  }
+  14.2% {
+    -webkit-transform: translate3D(0, 0, 0);
+            transform: translate3D(0, 0, 0);
+  }
+  28.4% {
+    -webkit-transform: translate3D(0, -100%, 0);
+            transform: translate3D(0, -100%, 0);
+  }
+  42.6% {
+    -webkit-transform: translate3D(0, -100%, 0);
+            transform: translate3D(0, -100%, 0);
+  }
+  56.8% {
+    -webkit-transform: translate3D(0, -200%, 0);
+            transform: translate3D(0, -200%, 0);
+  }
+  71% {
+    -webkit-transform: translate3D(0, -200%, 0);
+            transform: translate3D(0, -200%, 0);
+  }
+  85.2% {
+    -webkit-transform: translate3D(0, -300%, 0);
+            transform: translate3D(0, -300%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(0, -300%, 0);
+            transform: translate3D(0, -300%, 0);
+  }
+}
+
+@keyframes word-slider {
+  0% {
+    -webkit-transform: translate3D(0, 0, 0);
+            transform: translate3D(0, 0, 0);
+  }
+  14.2% {
+    -webkit-transform: translate3D(0, 0, 0);
+            transform: translate3D(0, 0, 0);
+  }
+  28.4% {
+    -webkit-transform: translate3D(0, -100%, 0);
+            transform: translate3D(0, -100%, 0);
+  }
+  42.6% {
+    -webkit-transform: translate3D(0, -100%, 0);
+            transform: translate3D(0, -100%, 0);
+  }
+  56.8% {
+    -webkit-transform: translate3D(0, -200%, 0);
+            transform: translate3D(0, -200%, 0);
+  }
+  71% {
+    -webkit-transform: translate3D(0, -200%, 0);
+            transform: translate3D(0, -200%, 0);
+  }
+  85.2% {
+    -webkit-transform: translate3D(0, -300%, 0);
+            transform: translate3D(0, -300%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(0, -300%, 0);
+            transform: translate3D(0, -300%, 0);
+  }
+}
+
 body {
   background: #f1f2f2;
 }
 
 .home-bienestar {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
-  background: #a975b2;
-  background: -webkit-gradient(linear, left top, right top, from(#a975b2), color-stop(45%, #84dade), to(#fecb8b));
-  background: linear-gradient(90deg, #a975b2 0%, #84dade 45%, #fecb8b 100%);
+  background-image: url("../assets/IMG_Home_Main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -80px;
 }
 
 #header {
@@ -1972,6 +2070,10 @@ body {
   color: white;
 }
 
+.pantalla-oscura a:hover {
+  color: #ffb259;
+}
+
 .slick-slide {
   margin: 0px 20px;
   border: 0px solid black;
@@ -2114,7 +2216,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50rem;
+  height: 43rem;
   width: 100%;
   border-top-right-radius: 150px;
   border-bottom-left-radius: 150px;
@@ -2341,6 +2443,8 @@ body {
   width: 100%;
   border-top-right-radius: 150px;
   text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .prof-titulo {
@@ -2403,7 +2507,7 @@ body {
   padding-left: 69px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .comunidad {
