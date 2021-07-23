@@ -2197,4 +2197,126 @@ body {
 .footer ul {
   padding-left: 0;
 }
+
+.tall-tit-text {
+  z-index: 10;
+  position: relative;
+  width: 70%;
+  margin-left: 100px;
+  padding-top: 250px;
+  font-family: 'MontExtraBold';
+  color: #522d6d;
+  text-transform: uppercase;
+  font-size: 4rem;
+  word-break: break-word;
+  word-spacing: 20px;
+  letter-spacing: 4px;
+}
+
+.tall-img {
+  width: 50%;
+  position: absolute;
+  top: 150px;
+  right: 50px;
+}
+
+.taller-video {
+  width: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.taller-video .taller-thumbnail {
+  width: 100%;
+  background-image: url("../assets/guitarra.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.taller-video .video-desc {
+  width: 70%;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-shadow: #3d2a4175 0px 4px 12px;
+          box-shadow: #3d2a4175 0px 4px 12px;
+  height: 8rem;
+}
+
+.taller-video .video-desc .taller-nombre {
+  font-family: 'MontBold';
+  color: #522d6d;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.taller-video .video-desc .taller-imparte {
+  font-family: 'MontLight';
+  color: #84dade;
+  font-style: italic;
+  padding-left: 1rem;
+}
+
+.taller-video .video-desc .taller-tipo {
+  font-family: 'MontUltraLight';
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.card-taller {
+  border: 1px #636363 !important;
+  width: 24rem;
+  background-color: #f1f2f2 !important;
+}
+
+.taller-desc {
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: #3d2a4175 0px 4px 12px;
+          box-shadow: #3d2a4175 0px 4px 12px;
+  height: 13rem;
+  margin-bottom: 2rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.taller-desc .taller-nombre {
+  font-family: 'MontBold';
+  color: #522d6d;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  padding-top: .2rem;
+}
+
+.taller-desc .taller-imparte {
+  font-family: 'MontLight';
+  color: #84dade;
+  font-style: italic;
+  padding-left: 1rem;
+}
+
+.taller-desc .taller-tipo {
+  font-family: 'MontUltraLight';
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+
+.taller-image {
+  width: 100%;
+  height: 8rem;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.taller-brief {
+  font-family: 'MontUltraLight';
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
