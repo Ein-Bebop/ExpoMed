@@ -2562,9 +2562,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  text-align: center;
 }
 
 .siguenos .siguenos-tit {
@@ -2573,6 +2578,12 @@ body {
   font-size: 2.3rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: -10rem;
+  width: 100%;
+}
+
+.siguenos .redes-sociales a {
+  text-decoration: none !important;
+  color: #522d6d !important;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
