@@ -2539,6 +2539,7 @@ body {
 .comunidad {
   text-align: center;
   background: #fff;
+  margin-top: -32px;
 }
 
 .comunidad-tit {
