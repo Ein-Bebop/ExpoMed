@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/favicon.png">
     <title>Expo Encuentro | Home</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/fontello.css">
@@ -12,7 +13,9 @@
 
     <header id="header">
         <div id="header-logo"><img src="../assets/Logo_Blanco.svg"></div>
+        <label id="menu-open" class="icon-menu" onclick="openM();"></label>
         <div id="header-bar">
+            <label id="menu-close" class="icon-cancel" onclick="closeM()";></label>
             <div class="header-o" onclick="scIV1();"><a>Talleres</a><span id="border-b"></span></div>
             <div class="header-o" onclick="scIV2();"><a>Atención</a><span id="border-b"></span></div>
             <div class="header-o" onclick="scIV3();"><a>Directorio</a><span id="border-b"></span></div>
@@ -20,7 +23,7 @@
         </div>
     </header>   
 
-    <div class="home-bienestar">
+    <div class="home-bienestar" data-120="120vh">
         <div class="home-tit-sm">El lugar para proseperar en</div>
         <!-- <div class="home-tit-md">Bienestar</div> -->
         <ul class="word-slider">
@@ -274,5 +277,6 @@
         </div>
 
     </div>
+<script src="../js/header.js"></script>
 </body>
 </html>

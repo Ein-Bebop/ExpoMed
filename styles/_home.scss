@@ -56,8 +56,13 @@
 body{
     background: #f1f2f2;
 }
+
+[data-120="120vh"]{
+    height: 120vh !important;
+}
+
 .home-bienestar{
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background-image: url('../assets/IMG_Home_Main.png');
     background-size: cover;
@@ -72,7 +77,15 @@ body{
     display: flex;
     flex-flow: wrap;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
+
+    #menu-open{
+        display: none;
+    }
+
+    #menu-close{
+        display: none;
+    }
 }
 
 #header-logo{
@@ -86,6 +99,7 @@ body{
 }
 
 #header-bar{
+    transition: 0.3s;
     display: flex;
     flex-flow: wrap;
     padding-top:70px;
@@ -100,12 +114,12 @@ body{
 }
 
 .header-o{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     display: flex;
     flex-flow: wrap;
     cursor: pointer;
-    
+    transition: 0.3s;
     a {
         width: 100%;
     } 
@@ -480,3 +494,87 @@ body{
     font-family: 'MontBold';
 }
 
+
+
+//@Medias para responsive del Header
+
+
+@media(max-width:1000px){
+    #menu-open{
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        display: flex !important;
+        position: fixed;
+        transition: 0.3s;
+        right: 10%;
+        top: 80px;
+        color: #fff;
+    }
+
+    #menu-close{
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 1.8em;
+        display: flex !important;
+        transition: 1s;
+    }
+
+    #header-bar{
+        transform: translateX(100%);
+        position: fixed;
+        width: 65%;
+        height: 120vh;
+        background-color: $moradoOscuro;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 0;
+        right: 0;
+        margin-right: 0;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+        align-content:flex-start;
+    }
+
+    #header-logo{
+        overflow: hidden;
+        padding-top: 20px;
+        margin-left: -20px;
+
+        img{
+            // height: 120px;
+            width: 90%;
+        }
+    }
+
+    .header-o{
+       width: 100%;
+       text-align: center;
+       font-size: 1.5em;
+       margin-top: 30px;
+       margin-bottom: 30px;
+    }
+
+}
+
+@media(min-width:1100px){
+    .header-o{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width:320px) {
+    #menu-open{
+        top: 50px;
+    }
+}
