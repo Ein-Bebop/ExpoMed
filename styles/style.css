@@ -2047,6 +2047,84 @@ body {
   }
 }
 
+@media (min-width: 1920px) {
+  .footer h3 {
+    font-size: 2rem !important;
+  }
+  .footer h2 {
+    font-size: 1.5rem !important;
+  }
+  .nuestras-redes {
+    margin-left: auto;
+  }
+  .footer-logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer h3 {
+    font-size: 1rem !important;
+  }
+  .footer h2 {
+    font-size: .8rem !important;
+  }
+  .nuestras-redes {
+    margin-left: auto;
+  }
+  .footer-logo {
+    width: 40%;
+  }
+  .redes-sociales a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer a {
+    font-size: .5rem !important;
+  }
+  .footer h3 {
+    font-size: .7rem !important;
+  }
+  .footer h2 {
+    font-size: .6rem !important;
+  }
+  .nuestras-redes {
+    margin-left: 0;
+    width: 30%;
+  }
+}
+
+@media (min-width: 320px) {
+  h3 {
+    font-size: .3rem !important;
+  }
+  li {
+    padding-top: 0rem !important;
+  }
+  .mapa-sitio {
+    padding-left: 1rem;
+    padding-right: .4rem;
+    padding-top: .5rem;
+  }
+  .forma-parte-footer {
+    padding-top: .4rem;
+  }
+  .nuestras-redes {
+    padding-top: .4rem;
+  }
+  .footer-logo {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .redes-sociales a {
+    font-size: .7rem !important;
+  }
+}
+
 .at-tit-text {
   z-index: 10;
   position: relative;
