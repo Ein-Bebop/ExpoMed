@@ -78,6 +78,7 @@ body{
     flex-flow: wrap;
     z-index: 1000;
     position: fixed;
+    transition: 0.3s;
 
     #menu-open{
         display: none;
@@ -99,6 +100,7 @@ body{
 }
 
 #header-bar{
+    height: 70px;
     transition: 0.3s;
     display: flex;
     flex-flow: wrap;
@@ -527,7 +529,7 @@ body{
         align-items: center;
         font-size: 1.5em;
         display: flex !important;
-        position: fixed;
+        position: absolute;
         transition: 0.3s;
         right: 10%;
         top: 80px;
@@ -562,6 +564,7 @@ body{
         -ms-flex-flow: wrap;
         flex-flow: wrap;
         align-content:flex-start;
+        z-index: 2;
     }
 
     #header-logo{
@@ -581,6 +584,18 @@ body{
        font-size: 1.5em;
        margin-top: 30px;
        margin-bottom: 30px;
+    }
+
+    #header-dim{
+        height: 0vh;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+        transition: 0.3s;
     }
 
 }

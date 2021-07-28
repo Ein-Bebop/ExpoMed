@@ -1497,6 +1497,8 @@ body {
       flex-flow: wrap;
   z-index: 1000;
   position: fixed;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #header #menu-open {
@@ -1518,6 +1520,7 @@ body {
 }
 
 #header-bar {
+  height: 70px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   display: -webkit-box;
@@ -1992,7 +1995,7 @@ body {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    position: fixed;
+    position: absolute;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     right: 10%;
@@ -2036,6 +2039,7 @@ body {
     flex-flow: wrap;
     -ms-flex-line-pack: start;
         align-content: flex-start;
+    z-index: 2;
   }
   #header-logo {
     overflow: hidden;
@@ -2051,6 +2055,20 @@ body {
     font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  #header-dim {
+    height: 0vh;
+    width: 100%;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
