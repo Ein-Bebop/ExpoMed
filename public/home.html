@@ -192,11 +192,11 @@
     <div class="contacto">
         <div class="message-contact">
             <h1>Contacto</h1>
-
-            <h2>¡Estar aquí significa que ya eres parte de nosotros! Pero si quieres ir<br>
-                mucho más profundo y aprender o ayudar a que otra persona <br>
-                crezca, ponte en contacto con nosotros. Nuestro esquema depende <br>
-                de la comunidad y el crecimiento de todos. ¡Deja tus datos y nos <br>
+            <h2>
+                ¡Estar aquí significa que ya eres parte de nosotros! Pero si quieres ir
+                mucho más profundo y aprender o ayudar a que otra persona
+                crezca, ponte en contacto con nosotros. Nuestro esquema depende
+                de la comunidad y el crecimiento de todos. ¡Deja tus datos y nos
                 pondremos en contacto contigo!
             </h2>
             <div class="datosExpo">
@@ -217,21 +217,26 @@
                 <input type="text" class="correo-input" name="correo" placeholder="Correo">
 
                 <br><br>
-                <label>Asunto</label> <label id="tel-label">Teléfono</label>
-                
+
+                <div class="fila-asunto-tel">
+                    <div class="bloque-asunto">
+                        <label id="asunto-label">Asunto</label>
+                        <select type="text" class="asunto-input" name="correo" placeholder="Asunto">
+                            Asunto
+                            <option value="Consulta Médica">Consulta Médica</option>
+                            <option value="Consulta Médica">Talleres</option>
+                            <option value="Consulta Médica">Información General</option>
+                            <option value="Consulta Médica">Afiliación</option>
+                            <option value="Consulta Médica">Servicios</option>
+                        </select>
+                    </div>
+    
+                    <div class="bloque-tel">
+                        <label id="tel-label">Teléfono</label>
+                        <input type="text" class="telefono-input" name="correo" placeholder="Teléfono">
+                    </div>
+                </div>
                 <br>
-                <select type="text" class="asunto-input" name="correo" placeholder="Asunto">
-                    Asunto
-                    <option value="Consulta Médica">Consulta Médica</option>
-                    <option value="Consulta Médica">Talleres</option>
-                    <option value="Consulta Médica">Información General</option>
-                    <option value="Consulta Médica">Afiliación</option>
-                    <option value="Consulta Médica">Servicios</option>
-                </select>
-
-                <input type="text" class="telefono-input" name="correo" placeholder="Teléfono">
-
-                <br><br>
                 <label>Mensaje</label><br>
                 <input type="text" class="mensaje-input" name="correo" placeholder="Mensaje">
 

@@ -1817,6 +1817,8 @@ body {
   width: 100%;
   padding-top: .5rem;
   font-family: 'MontRegular';
+  color: #525252;
+  font-size: 1rem;
 }
 
 .contact-form ::-webkit-input-placeholder {
@@ -1848,15 +1850,33 @@ body {
 }
 
 .contact-form .asunto-input {
-  width: 50%;
+  width: 98%;
 }
 
 .contact-form .telefono-input {
-  width: 49%;
+  width: 100%;
 }
 
 .contact-form #tel-label {
-  padding-left: 12.7rem;
+  margin-right: 100%;
+}
+
+.contact-form #asunto-label {
+  margin-right: 100%;
+}
+
+.contact-form .fila-asunto-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form .bloque-asunto {
+  width: 50%;
+}
+
+.contact-form .bloque-tel {
+  width: 50%;
 }
 
 .contact-form button {
@@ -2047,7 +2067,7 @@ body {
   }
 }
 
-@media (min-width: 1920px) {
+@media (max-width: 1920px) {
   .footer h3 {
     font-size: 2rem !important;
   }
@@ -2096,11 +2116,11 @@ body {
   }
 }
 
-@media (min-width: 320px) {
-  h3 {
-    font-size: .3rem !important;
+@media (max-width: 320px) {
+  .footer h3 {
+    font-size: .5rem !important;
   }
-  li {
+  .footer li {
     padding-top: 0rem !important;
   }
   .mapa-sitio {
@@ -2110,6 +2130,7 @@ body {
   }
   .forma-parte-footer {
     padding-top: .4rem;
+    padding-bottom: .8rem;
   }
   .nuestras-redes {
     padding-top: .4rem;
@@ -2119,9 +2140,184 @@ body {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .redes-sociales a {
     font-size: .7rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .message-contact {
+    width: 50%;
+    margin-left: 100px;
+  }
+  .message-contact h1 {
+    font-size: 5rem;
+  }
+  .message-contact h2 {
+    width: 75%;
+    font-size: 1.5rem;
+  }
+  .datosExpo h3 {
+    font-size: 1.3rem;
+  }
+  .datosExpo a {
+    font-size: 2.5rem;
+  }
+  .formcontact {
+    margin-right: 100px;
+  }
+  .formcontact label {
+    font-size: 1.7rem;
+  }
+  .formcontact input, .formcontact select {
+    font-size: 1.4rem;
+  }
+  .formcontact ::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .formcontact :-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .formcontact ::-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .formcontact ::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .message-contact h1 {
+    font-size: 2.5rem;
+  }
+  .formcontact {
+    padding-top: 19%;
+  }
+}
+
+@media (max-width: 540px) {
+  .message-contact {
+    padding-top: 15%;
+    width: 50%;
+    margin-left: 5%;
+  }
+  .message-contact h1 {
+    font-size: 2rem;
+  }
+  .message-contact h2 {
+    font-size: .8rem;
+  }
+  .message-contact a {
+    font-size: 1.3rem;
+  }
+  .datosExpo h3 {
+    padding-top: .7rem;
+    font-size: .9rem;
+  }
+  .formcontact {
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .fila-asunto-tel {
+    display: inherit !important;
+  }
+  .fila-asunto-tel .bloque-asunto {
+    width: 100%;
+  }
+  .fila-asunto-tel .bloque-tel {
+    width: 100%;
+    margin-top: 1.4rem;
+  }
+  .contact-form label {
+    font-size: 1rem;
+  }
+  .contact-form ::-webkit-input-placeholder, .contact-form select {
+    font-size: .9rem;
+  }
+  .contact-form :-ms-input-placeholder, .contact-form select {
+    font-size: .9rem;
+  }
+  .contact-form ::-ms-input-placeholder, .contact-form select {
+    font-size: .9rem;
+  }
+  .contact-form ::placeholder, .contact-form select {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .message-contact h2 {
+    font-size: .6rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .message-contact h2 {
+    font-size: .7rem;
+  }
+  .datosExpo h3 {
+    font-size: .7rem;
+  }
+  .datosExpo a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .contacto {
+    display: inherit;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .message-contact {
+    width: 100%;
+  }
+  .message-contact h1 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+  }
+  .message-contact h2 {
+    width: 80%;
+    font-size: .8rem;
+  }
+  .formcontact {
+    width: 90%;
+    padding-top: 5%;
+  }
+  .formcontact label {
+    font-size: .8rem;
+  }
+  .formcontact input, .formcontact select {
+    padding-top: 0rem;
+    font-size: .7rem;
+  }
+  .formcontact ::-webkit-input-placeholder {
+    font-size: .7rem;
+  }
+  .formcontact :-ms-input-placeholder {
+    font-size: .7rem;
+  }
+  .formcontact ::-ms-input-placeholder {
+    font-size: .7rem;
+  }
+  .formcontact ::placeholder {
+    font-size: .7rem;
+  }
+  .formcontact button {
+    font-size: .8rem;
+    width: 4rem;
+    height: 1.8rem;
+  }
+  .datosExpo {
+    padding-top: .2rem;
+  }
+  .datosExpo h3 {
+    font-size: .9rem;
+  }
+  .datosExpo a {
+    font-size: 1.4rem;
   }
 }
 

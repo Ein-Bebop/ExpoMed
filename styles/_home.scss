@@ -370,6 +370,8 @@ body{
         width: 100%;
         padding-top: .5rem;
         font-family:'MontRegular';
+        color: rgb(82, 82, 82);
+        font-size: 1rem;
     }
 
     ::placeholder{
@@ -383,14 +385,31 @@ body{
     }
 
     .asunto-input{
-        width: 50%;
+        width: 98%;
     }
     .telefono-input{
-        width: 49%;
+        width: 100%;
     }
 
     #tel-label{
-        padding-left: 12.7rem;
+        margin-right: 100%;
+
+    }
+
+    #asunto-label{
+        margin-right: 100%;
+    }
+
+    .fila-asunto-tel{
+        display: flex;
+    }
+
+    .bloque-asunto{
+        width: 50%;
+    }
+
+    .bloque-tel{
+        width: 50%;
     }
 
     button{
@@ -580,14 +599,14 @@ body{
 }
 
 
-// Medidas para responsive el Footer
+// Medidas para responsive del Footer
 
 // Escritorio
 // 1280 x 720 - check
 // 1440 x 900 - check
 // 1600 x 900 - check
 // 1920 x 1080- check
-@media (min-width:1920px) {
+@media (max-width:1920px) {
     .footer{
         h3{
             font-size: 2rem !important;
@@ -659,15 +678,18 @@ body{
 }
 // Móvil
 // 320
-@media (min-width: 320px) {
+@media (max-width: 320px) {
 
-    h3{
-        font-size: .3rem !important;
+    .footer{
+        h3{
+            font-size: .5rem !important;
+        }
+    
+        li{
+            padding-top: 0rem !important;
+        }
     }
 
-    li{
-        padding-top: 0rem !important;
-    }
 
     .mapa-sitio{
         padding-left: 1rem;
@@ -676,6 +698,7 @@ body{
     }
     .forma-parte-footer{
         padding-top: .4rem;
+        padding-bottom: .8rem;
     }
 
     .nuestras-redes{
@@ -689,7 +712,7 @@ body{
 // 375
 // 410
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
     .redes-sociales{
         a{
             font-size: .7rem !important;
@@ -698,3 +721,213 @@ body{
 }
 
 
+// Medidas para responsive de Contacto
+
+// Escritorio
+// 1280 x 720
+// 1440 x 900
+// 1600 x 900
+// 1920 x 1080
+@media (min-width: 1920px) {
+
+    .message-contact{
+        width: 50%;
+        margin-left: 100px;
+
+        h1{
+            font-size: 5rem;
+        }
+        h2{
+            width: 75%;
+            font-size: 1.5rem;
+        }
+    }
+
+    .datosExpo{
+        h3{
+            font-size: 1.3rem;
+        }
+
+        a{
+            font-size: 2.5rem;
+        }
+    }
+
+    .formcontact{
+        margin-right: 100px;
+
+        label{
+           font-size: 1.7rem; 
+        }
+
+        input, select{
+            font-size: 1.4rem;
+        }
+        
+        ::placeholder{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+// Tableta
+// 768 x 1024
+@media (max-width: 768px) {
+
+    .message-contact{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+
+    .formcontact{
+        padding-top: 19%;
+    }
+}
+
+// Tableta chica
+// 540 x 720
+@media (max-width: 540px) {
+
+    .message-contact{
+        padding-top: 15%;
+        width: 50%;
+        margin-left: 5%;
+
+        h1{
+            font-size: 2rem;
+        }
+
+        h2{
+            font-size: .8rem;
+        }
+
+        a{
+            font-size: 1.3rem;
+        }
+    }
+
+    .datosExpo{
+        h3{
+            padding-top: .7rem;
+            font-size: .9rem;
+        }
+    }
+
+    .formcontact{
+
+        padding-top: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .fila-asunto-tel{
+        display: inherit !important;
+
+        .bloque-asunto{
+            width: 100%;
+        }
+
+        .bloque-tel{
+            width: 100%;
+            margin-top: 1.4rem;
+        }
+    }
+
+    .contact-form{
+        label{
+            font-size: 1rem;
+        }
+
+        ::placeholder, select{
+            font-size: .9rem;
+        }
+    }
+}
+
+// Móvil
+// 320
+@media (max-width: 320px) {
+    .message-contact{
+        h2{
+            font-size: .6rem;
+        }
+    }
+    
+}
+// 375
+@media (max-width: 375px) {
+
+    .message-contact{
+        h2{
+            font-size: .7rem;
+        }
+    }
+
+    .datosExpo{
+        h3{
+            font-size: .7rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+    }
+}
+// 410
+@media (max-width: 410px) {
+    .contacto{
+        display: inherit;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .message-contact{
+        width: 100%;
+
+        h1{
+            font-size: 2.3rem;
+            letter-spacing: 2px;
+
+        }
+
+        h2{
+            width: 80%;
+            font-size: .8rem;
+        }
+    }
+
+    .formcontact{
+        width: 90%;
+        padding-top: 5%;
+
+        label{
+            font-size: .8rem;
+        }
+
+        input, select{
+            padding-top: 0rem;
+            font-size: .7rem;
+        }
+
+        ::placeholder{
+            font-size: .7rem;
+        }
+
+        button{
+            font-size: .8rem;
+            width: 4rem;
+            height: 1.8rem;
+        }
+    }
+
+    .datosExpo{
+        padding-top: .2rem;
+        h3{
+            font-size: .9rem;
+        }
+        a{
+            font-size: 1.4rem;
+        }
+    }
+    
+}
