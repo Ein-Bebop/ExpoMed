@@ -818,6 +818,63 @@
   text-align: center;
 }
 
+@media (max-width: 1440px) {
+  .conocermas {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .conocermas-tit {
+    width: 90%;
+    font-size: 28pt;
+  }
+}
+
+@media (min-width: 768px) {
+  .conocermas {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .conocermas-tit {
+    width: 90%;
+  }
+}
+
+@media (max-width: 540px) {
+  .conocermas {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 525px;
+  }
+  .conocermas .conocermas-tit {
+    width: 100%;
+    font-size: 17pt;
+  }
+  .conocermas .conocermas-desc {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .conocermas-tit {
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 410px) {
+  .conocermas {
+    height: 470px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .conocermas .conocermas-tit {
+    font-size: 12pt;
+    width: 100%;
+  }
+  .conocermas .conocermas-desc {
+    font-size: .6rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2727,6 +2784,37 @@ body {
 
 .footer ul {
   padding-left: 0;
+}
+
+@media (min-width: 1280px) {
+  .slider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 410px) {
+  .slider {
+    width: 100%;
+  }
+  .card {
+    width: 8rem;
+    height: 6rem;
+  }
+  .slick-slide {
+    height: 6rem;
+  }
+  .slick-slide img {
+    height: 6rem;
+  }
+  .card-image {
+    height: 6rem;
+  }
+  .card-image .pantalla-oscura {
+    height: 6rem;
+  }
+  .card-image .pantalla-oscura a {
+    font-size: .8rem;
+  }
 }
 
 body {
