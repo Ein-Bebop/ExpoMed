@@ -394,12 +394,12 @@ body{
     }
 
     #tel-label{
-        margin-right: 100%;
+        // margin-right: 100%;
 
     }
 
     #asunto-label{
-        margin-right: 100%;
+        // margin-right: 100%;
     }
 
     .fila-asunto-tel{
@@ -439,6 +439,7 @@ body{
     display: flex;
     font-family: 'MontRegular';
     font-size: .8rem;
+    padding-bottom: 30px;
 
     a{
         text-decoration: none;
@@ -515,12 +516,18 @@ body{
     font-family: 'MontBold';
 }
 
+#o-activo{
+    color:$moradoOscuro
+}
+
 
 
 //@Medias para responsive del Header
-
-
 @media(max-width:1000px){
+    #o-activo{
+        color: #fff;
+    }
+
     #menu-open{
         height: 20px;
         width: 20px;
@@ -606,10 +613,24 @@ body{
         margin-right: 30px;
     }
 }
-
+//Botón de Menu
 @media (min-width:320px) {
     #menu-open{
         top: 50px;
+    }
+}
+
+@media (min-width:375px) {
+    #menu-open{
+        top: 60px;
+        right: 8%;
+    }
+}
+
+@media (min-width:540px) {
+    #menu-open{
+        top: 70px;
+        
     }
 }
 
@@ -806,8 +827,9 @@ body{
 
     .message-contact{
         padding-top: 15%;
-        width: 50%;
-        margin-left: 5%;
+        width: 45%;
+        padding-left: 5%;
+        // margin-left: 5%;
 
         h1{
             font-size: 2rem;
@@ -860,6 +882,14 @@ body{
     }
 }
 
+@media (max-width: 800px) {
+    
+    .capacitacion-info-tit{
+        font-size: 20pt !important;
+    }
+
+}
+
 // Móvil
 // 320
 @media (max-width: 320px) {
@@ -897,7 +927,7 @@ body{
     }
 
     .message-contact{
-        width: 100%;
+        width: 95%;
 
         h1{
             font-size: 2.3rem;

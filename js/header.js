@@ -23,10 +23,12 @@ function esconderHeader() {
        //comprueba si el scrollTop es mayor a 20 (me parece que son pixeles) entonces le pone color al header y lo mueve un poco
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("header").style.backgroundColor = "#522d6d";
+                document.getElementById("o-activo").style.color = "#fff";
                 document.getElementById("header").style.marginTop = "-20px"; 
         } else {//lo regresa a como estaba si detecta que se regresa al top
                 document.getElementById("header").style.backgroundColor = "";
-                document.getElementById("header").style.marginTop = "0px";            
+                document.getElementById("header").style.marginTop = "0px"; 
+                document.getElementById("o-activo").style.color = "";           
         }
         
    }catch(error){
