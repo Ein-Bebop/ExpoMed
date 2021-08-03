@@ -297,7 +297,7 @@
 }
 
 .se-aprende .se-aprende-info .se-aprende-tit {
-  widows: 90%;
+  width: 90%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -2159,7 +2159,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 1.5em;
+    font-size: 2em;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -2183,7 +2183,7 @@ body {
             align-items: center;
     margin-top: 60px;
     margin-bottom: 30px;
-    font-size: 1.8em;
+    font-size: 2em;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -2446,9 +2446,153 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) {
+  .capacitacion-info-tit {
+    font-size: 15pt !important;
+  }
+}
+
+@media (min-width: 375px) {
+  .capacitacion-info-tit {
+    font-size: 18pt !important;
+  }
+}
+
+@media (min-width: 600px) {
   .capacitacion-info-tit {
     font-size: 20pt !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .capacitacion-info-tit {
+    font-size: 25pt !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .capacitacion-info-tit {
+    font-size: 50pt !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .se-nosotros {
+    margin-top: 40px !important;
+  }
+  .se-nosotros-info {
+    width: 90% !important;
+  }
+  .se-nosotros-img {
+    position: relative;
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: -500px;
+  }
+  .se-nosotros-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .word-slider {
+    width: 90% !important;
+    margin: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 3.5rem !important;
+  }
+  .home-tit-sm {
+    padding-top: 180px !important;
+  }
+  [data-120="120vh"] {
+    height: 140vh !important;
+  }
+  .home-desc {
+    width: 90% !important;
+  }
+  .motiva-triptico .card {
+    width: 80% !important;
+    height: auto !important;
+  }
+  .motiva-header {
+    width: 90% !important;
+  }
+  .separacion-triptico {
+    width: 100% !important;
+    height: 1px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .se-vision {
+    height: 100vh !important;
+  }
+  .se-vision .se-vision-img {
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .se-vision .se-vision-img img {
+    width: 80% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .se-vision .se-vision-info {
+    width: 90% !important;
+    margin-top: -200px;
+  }
+  .loto-card {
+    width: 200px !important;
+    height: 230px !important;
+    margin-right: 10% !important;
+    margin-left: auto !important;
+  }
+  .loto-card .loto-card-text {
+    width: 300px !important;
+    height: auto !important;
+    margin-left: -4rem !important;
+  }
+  .loto-card .loto-card-text .icon-angle-right {
+    font-size: 1em;
+    margin-left: -20px;
+  }
+  .se-aprende {
+    margin-top: 30px !important;
+    height: 100vh !important;
+  }
+  .se-aprende .se-aprende-info {
+    width: 100% !important;
+  }
+  .se-aprende .se-aprende-desc {
+    width: 80% !important;
+  }
+  .se-aprende .se-aprende-img {
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .se-aprende .se-aprende-img img {
+    display: block;
+    margin: 40px auto;
+    width: 80% !important;
+  }
+  .capacitacion-info {
+    width: 85% !important;
+  }
+  .capacitacion-container {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .capacitacion-container .capacitacion-info-desc {
+    width: 80% !important;
+  }
+  .resena {
+    padding-bottom: 40px;
+  }
+  .resena .resena-texto {
+    width: 90% !important;
   }
 }
 

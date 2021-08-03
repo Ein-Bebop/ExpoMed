@@ -534,7 +534,7 @@ body{
         justify-content: center;
         align-content: center;
         align-items: center;
-        font-size: 1.5em;
+        font-size: 2em;
         display: flex !important;
         position: absolute;
         transition: 0.3s;
@@ -551,7 +551,7 @@ body{
         align-items: center;
         margin-top: 60px;
         margin-bottom: 30px;
-        font-size: 1.8em;
+        font-size: 2em;
         display: flex !important;
         transition: 1s;
     }
@@ -881,13 +881,198 @@ body{
         }
     }
 }
+//Medias Titulo Recibe Capacitación
+@media (min-width: 320px) {
+    
+    .capacitacion-info-tit{
+        font-size: 15pt !important;
+    }
 
-@media (max-width: 800px) {
+}
+
+@media (min-width: 375px) {
+    
+    .capacitacion-info-tit{
+        font-size: 18pt !important;
+    }
+
+}
+
+@media (min-width: 600px) {
     
     .capacitacion-info-tit{
         font-size: 20pt !important;
     }
 
+}
+
+@media (min-width: 800px) {
+    
+    .capacitacion-info-tit{
+        font-size: 25pt !important;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    
+    .capacitacion-info-tit{
+        font-size: 50pt !important;
+    }
+
+}
+
+
+//Media sección Nosotros
+@media (max-width: 600px){
+    .se-nosotros{
+        margin-top: 40px !important;
+
+    }
+
+    .se-nosotros-info{
+        width: 90% !important;
+    }
+
+    .se-nosotros-img{
+        position: relative;
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: -500px;
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .word-slider{
+        width: 90% !important;
+        margin: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-size: 3.5rem !important;
+    }
+
+    .home-tit-sm{
+        padding-top: 180px !important;
+    }
+
+    [data-120="120vh"] {
+        height: 140vh !important;
+    }
+
+    .home-desc{
+        width: 90% !important;
+    }
+
+    .motiva-triptico .card{
+        width: 80% !important;
+        height: auto !important;
+
+    }
+
+    .motiva-header{
+        width: 90% !important;
+    }
+
+    .separacion-triptico{
+        width: 100% !important;
+        height: 1px !important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    
+
+    .se-vision{
+        height: 100vh !important;
+
+        .se-vision-img{
+            width: 80% !important;
+            margin-left: auto;
+            margin-right: auto;
+    
+            img{
+                width: 80% !important;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    
+        .se-vision-info{
+            width: 90% !important;
+            margin-top: -200px;
+        }
+
+    }
+
+    .loto-card{
+        
+        width: 200px !important; 
+        height: 230px !important;
+        margin-right: 10% !important;
+        margin-left: auto !important;
+
+        .loto-card-text {
+            width: 300px !important;
+            height: auto !important;
+            margin-left: -4rem !important;
+    
+            .icon-angle-right{
+                font-size: 1em;
+                margin-left: -20px;
+            }
+        }
+    }
+
+    .se-aprende{
+        margin-top: 30px !important;
+        height: 100vh !important;
+
+        .se-aprende-info{
+            width: 100% !important;
+        }
+
+        .se-aprende-desc{
+            width: 80% !important;
+        }
+
+        .se-aprende-img{
+            width: 80% !important;
+            margin-left: auto;
+            margin-right: auto;
+
+            img{
+                display: block;
+                margin: 40px auto;
+                width: 80% !important;
+            }
+        }
+    }
+
+    .capacitacion-info{
+        width: 85% !important;
+    }
+
+    .capacitacion-container{
+        align-items: center !important;
+
+        .capacitacion-info-desc{
+            width: 80% !important;
+        }
+    }
+    
+    .resena{
+        padding-bottom: 40px;
+
+        .resena-texto{
+            width: 90% !important;
+        }
+    }
 }
 
 // Móvil
