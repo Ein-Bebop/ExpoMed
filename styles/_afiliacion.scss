@@ -383,3 +383,51 @@
     }
 }
 
+@media (max-width:1000px) {
+    .af-tit-text{
+        padding-top: 200px !important;
+    }
+}
+//Home Seccion IMG
+@media (max-width:800px) {
+
+    .home-bienestar{
+        height: max-content !important;
+    }
+    .af-img{
+        position: inherit;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:320px) {
+    .af-tit-text{
+        padding-top: 150px !important;
+        width: 80% !important;
+        margin-left: 50px !important;
+        font-size: 20pt !important;
+    }
+
+    .af-desc-text{
+        width: 80% !important;
+        margin-left: 50px !important;
+    }
+}
+
+@media (min-width:800px) {
+    .af-tit-text{
+        font-size: 20pt !important;
+        padding-top: 300px !important;
+        width: 65% !important;
+        margin-left: 100px !important;
+        font-size: 40pt !important;
+    }
+
+    .af-desc-text{
+        width: 45% !important;
+        margin-left: 100px !important;
+    }
+}

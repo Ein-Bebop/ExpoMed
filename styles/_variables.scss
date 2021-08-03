@@ -126,9 +126,9 @@ $azulClaro: #84dade;
         align-content: center;
 
         .se-vision-tit{
-            widows: 90%;
+            width: 90%;
             height: max-content;
-            padding-left: 10%;
+            // padding-left: 10%;
             font-family: MontExtraBold;
             font-size: 30pt;
             text-transform: uppercase;
@@ -137,9 +137,9 @@ $azulClaro: #84dade;
         .se-vision-desc{
             margin-top: 30px;
             font-family: MontLight;
-            widows: 90%;
+            width: 90%;
             height: max-content;
-            padding-left: 10%;
+            /* padding-left: 10%; */
         }
         .se-vision-button{
             width: 200px;
@@ -160,9 +160,13 @@ $azulClaro: #84dade;
 
     .se-vision-img{
         width: 50%;
+        
 
         img{
-            width: 70%;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

@@ -216,11 +216,10 @@
 }
 
 .se-vision .se-vision-info .se-vision-tit {
-  widows: 90%;
+  width: 90%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding-left: 10%;
   font-family: MontExtraBold;
   font-size: 30pt;
   text-transform: uppercase;
@@ -230,11 +229,11 @@
 .se-vision .se-vision-info .se-vision-desc {
   margin-top: 30px;
   font-family: MontLight;
-  widows: 90%;
+  width: 90%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding-left: 10%;
+  /* padding-left: 10%; */
 }
 
 .se-vision .se-vision-info .se-vision-button {
@@ -265,7 +264,10 @@
 }
 
 .se-vision .se-vision-img img {
-  width: 70%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .se-aprende {
@@ -872,6 +874,54 @@
   }
   .conocermas .conocermas-desc {
     font-size: .6rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .af-tit-text {
+    padding-top: 200px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-bienestar {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .af-img {
+    position: inherit;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 320px) {
+  .af-tit-text {
+    padding-top: 150px !important;
+    width: 80% !important;
+    margin-left: 50px !important;
+    font-size: 20pt !important;
+  }
+  .af-desc-text {
+    width: 80% !important;
+    margin-left: 50px !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .af-tit-text {
+    font-size: 20pt !important;
+    padding-top: 300px !important;
+    width: 65% !important;
+    margin-left: 100px !important;
+    font-size: 40pt !important;
+  }
+  .af-desc-text {
+    width: 45% !important;
+    margin-left: 100px !important;
   }
 }
 
@@ -2527,6 +2577,12 @@ body {
   .se-vision {
     height: 100vh !important;
   }
+  .se-vision .se-vision-tit {
+    padding-left: 10%;
+  }
+  .se-vision .se-vision-desc {
+    padding-left: 10%;
+  }
   .se-vision .se-vision-img {
     width: 80% !important;
     margin-left: auto;
@@ -2593,6 +2649,18 @@ body {
   }
   .resena .resena-texto {
     width: 90% !important;
+  }
+}
+
+@media (min-width: 601px) {
+  .separacion-triptico {
+    height: 50% !important;
+  }
+}
+
+@media (min-width: 842px) {
+  .separacion-triptico {
+    height: 100% !important;
   }
 }
 

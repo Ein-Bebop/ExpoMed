@@ -985,10 +985,15 @@ body{
         margin-bottom: 30px;
     }
 
-    
-
     .se-vision{
         height: 100vh !important;
+        .se-vision-tit{
+            padding-left: 10%;
+        }
+
+        .se-vision-desc{
+            padding-left: 10%;
+        }
 
         .se-vision-img{
             width: 80% !important;
@@ -1072,6 +1077,18 @@ body{
         .resena-texto{
             width: 90% !important;
         }
+    }
+}
+
+@media (min-width:601px){
+    .separacion-triptico{
+        height: 50% !important;
+    }
+}
+
+@media (min-width:842px){
+    .separacion-triptico{
+        height: 100% !important;
     }
 }
 
