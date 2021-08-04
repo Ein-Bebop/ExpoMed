@@ -2128,6 +2128,9 @@ body {
 .footer-logo {
   width: 35%;
   padding-top: 7rem;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .footer-logo img {
@@ -2140,6 +2143,9 @@ body {
   padding-top: 1.5rem;
   padding-left: 2rem;
   width: 15%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .mapa-sitio ul {
@@ -2155,6 +2161,9 @@ body {
   padding-top: .5rem;
   width: 15%;
   padding-top: 1.5rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .forma-parte-footer ul {
@@ -2172,6 +2181,9 @@ body {
   width: 25%;
   margin-right: auto;
   margin-left: 0;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 .nuestras-redes h2 {
@@ -2316,82 +2328,129 @@ body {
   }
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 300px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer h3 {
+    font-size: .7rem !important;
+  }
+  .footer li {
+    padding-top: 0rem;
+  }
+  .footer a {
+    font-size: .7rem !important;
+  }
+  .footer h2 {
+    font-size: .7rem !important;
+  }
+  .mapa-sitio {
+    padding-left: 1rem;
+    padding-right: .4rem;
+    padding-top: 1rem;
+    margin-left: 0rem;
+    width: 30%;
+  }
+  .forma-parte-footer {
+    padding-top: 1rem;
+    padding-bottom: .8rem;
+    width: 50%;
+  }
+  .nuestras-redes {
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: .4rem;
+    padding-top: .5rem;
+    margin-left: 0rem;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer-logo {
+    padding-top: 1rem;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .redes-sociales a {
+    font-size: 1rem;
+    padding-top: .5rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer h3 {
+    font-size: 1rem !important;
+  }
+  .footer li {
+    padding-top: 0rem;
+  }
+  .footer a {
+    font-size: 1rem !important;
+  }
+  .footer h2 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer h3 {
+    font-size: 1.3rem !important;
+  }
+  .footer li {
+    padding-top: 0rem;
+  }
+  .footer a {
+    font-size: 1.1rem !important;
+  }
+  .footer h2 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 940px) {
+  .mapa-sitio {
+    width: 20%;
+  }
+  .forma-parte-footer {
+    width: 45%;
+  }
+  .nuestras-redes {
+    width: 25%;
+    margin-right: 0;
+  }
+  .footer-logo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1920px) {
   .footer h3 {
     font-size: 2rem !important;
   }
   .footer h2 {
     font-size: 1.5rem !important;
   }
-  .nuestras-redes {
-    margin-left: auto;
-  }
-  .footer-logo {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer h3 {
-    font-size: 1rem !important;
-  }
-  .footer h2 {
-    font-size: .8rem !important;
-  }
-  .nuestras-redes {
-    margin-left: auto;
-  }
-  .footer-logo {
-    width: 40%;
-  }
-  .redes-sociales a {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 540px) {
-  .footer a {
-    font-size: .5rem !important;
-  }
-  .footer h3 {
-    font-size: .7rem !important;
-  }
-  .footer h2 {
-    font-size: .6rem !important;
-  }
-  .nuestras-redes {
-    margin-left: 0;
-    width: 30%;
-  }
-}
-
-@media (max-width: 320px) {
-  .footer h3 {
-    font-size: .5rem !important;
-  }
-  .footer li {
-    padding-top: 0rem !important;
-  }
   .mapa-sitio {
-    padding-left: 1rem;
-    padding-right: .4rem;
-    padding-top: .5rem;
-  }
-  .forma-parte-footer {
-    padding-top: .4rem;
-    padding-bottom: .8rem;
+    width: 15%;
   }
   .nuestras-redes {
-    padding-top: .4rem;
+    margin-left: auto;
   }
   .footer-logo {
-    padding-top: 4rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .redes-sociales a {
-    font-size: .7rem !important;
+    width: 40%;
   }
 }
 
@@ -2682,7 +2741,7 @@ body {
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 440px) {
   .contacto {
     display: inherit;
     padding-top: 10px;

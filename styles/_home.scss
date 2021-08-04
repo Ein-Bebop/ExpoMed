@@ -455,6 +455,7 @@ body{
 .footer-logo{
     width: 35%;
     padding-top: 7rem;
+    order: 3;
 
     img{
         width: 100%;
@@ -467,6 +468,7 @@ body{
     padding-top: 1.5rem;
     padding-left: 2rem;
     width: 15%;
+    order: 1;
 
     ul {
         font-family: 'MontUltraLight';
@@ -481,6 +483,7 @@ body{
     padding-top: .5rem;
     width: 15%;
     padding-top: 1.5rem;
+    order: 2;
 
     ul {
         font-family: 'MontUltraLight';
@@ -498,6 +501,7 @@ body{
     width: 25%;
     margin-right: auto;
     margin-left: 0;
+    order: 4;
 
     h2{
         font-size: 1rem;
@@ -636,13 +640,144 @@ body{
 
 
 // Medidas para responsive del Footer
+// Móvil
+// 320
+@media (min-width: 300px) {
+
+    .footer{
+        flex-wrap: wrap;
+
+        h3{
+            font-size: .7rem !important;
+        }
+    
+        li{
+            padding-top: 0rem;
+        }
+
+        a{
+            font-size: .7rem !important;
+        }
+
+        h2{
+            font-size: .7rem !important;
+        }
+    }
+
+
+    .mapa-sitio{
+        padding-left: 1rem;
+        padding-right: .4rem;
+        padding-top: 1rem;
+        margin-left: 0rem;
+        width: 30%;
+    }
+    .forma-parte-footer{
+        padding-top: 1rem;
+        padding-bottom: .8rem;
+        width: 50%;
+    }
+
+    .nuestras-redes{
+        width: 70%;
+        padding-left: 1rem;
+        padding-right: .4rem;
+        padding-top: .5rem;
+        margin-left: 0rem;
+        order: 3;
+    }
+
+    .footer-logo{
+        padding-top: 1rem;
+        order: 4;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .redes-sociales{
+        a{
+            font-size: 1rem;
+            padding-top: .5rem;
+        }
+    }
+}
+// 375
+// 410
+// Tableta chica
+// 540 x 720
+@media (min-width: 540px) {
+
+    .footer{
+        flex-wrap: wrap;
+
+        h3{
+            font-size: 1rem !important;
+        }
+    
+        li{
+            padding-top: 0rem;
+        }
+
+        a{
+            font-size: 1rem !important;
+        }
+
+        h2{
+            font-size: 1rem !important;
+        }
+    }
+}
+
+// Tableta
+// 768 x 1024
+@media (min-width: 768px) {
+    .footer{
+        flex-wrap: wrap;
+
+        h3{
+            font-size: 1.3rem !important;
+        }
+    
+        li{
+            padding-top: 0rem;
+        }
+
+        a{
+            font-size: 1.1rem !important;
+        }
+
+        h2{
+            font-size: 1rem !important;
+        }
+    }
+}
+
+@media (min-width:940px){
+    .mapa-sitio{
+        width: 20%;
+    }
+
+    .forma-parte-footer{
+        width: 45%;
+    }
+
+    .nuestras-redes{
+        width: 25%;
+        margin-right: 0;
+    }
+
+    .footer-logo{
+        width: 50%;
+    }
+}
 
 // Escritorio
 // 1280 x 720 - check
 // 1440 x 900 - check
 // 1600 x 900 - check
 // 1920 x 1080- check
-@media (max-width:1920px) {
+@media (min-width:1920px) {
     .footer{
         h3{
             font-size: 2rem !important;
@@ -653,112 +788,22 @@ body{
         }
     }
 
-    .nuestras-redes{
-        margin-left: auto;
-    }
-
-    .footer-logo{
-        width: 40%;
-    }
-}
-    
-// Tableta
-// 768 x 1024
-@media (max-width: 768px) {
-    .footer{
-        h3{
-            font-size: 1rem !important;
-        }
-
-        h2{
-            font-size: .8rem !important;
-        }
-    }
-
-    .nuestras-redes{
-        margin-left: auto;
-    }
-
-    .footer-logo{
-        width: 40%;
-    }
-
-    .redes-sociales{
-        a{
-            font-size: 1.2rem;
-        }
-    }
-}
-
-// Tableta chica
-// 540 x 720
-@media (max-width: 540px) {
-    .footer{
-        a{
-            font-size: .5rem !important;
-        }
-
-        h3{
-            font-size: .7rem !important;
-        }
-
-        h2{
-            font-size: .6rem !important;
-        }
-    }
-    
-    .nuestras-redes{
-        margin-left: 0;
-        width: 30%;
-    }
-}
-// Móvil
-// 320
-@media (max-width: 320px) {
-
-    .footer{
-        h3{
-            font-size: .5rem !important;
-        }
-    
-        li{
-            padding-top: 0rem !important;
-        }
-    }
-
-
     .mapa-sitio{
-        padding-left: 1rem;
-        padding-right: .4rem;
-        padding-top: .5rem;
-    }
-    .forma-parte-footer{
-        padding-top: .4rem;
-        padding-bottom: .8rem;
+        width: 15%;
     }
 
     .nuestras-redes{
-        padding-top: .4rem;
+        margin-left: auto;
     }
 
     .footer-logo{
-        padding-top: 4rem;
+        width: 40%;
     }
 }
-// 375
-// 410
-
-@media (max-width: 320px) {
-    .redes-sociales{
-        a{
-            font-size: .7rem !important;
-        }
-    }
-}
+    
 
 
 // Medidas para responsive de Contacto
-
 // Escritorio
 // 1280 x 720
 // 1440 x 900
@@ -1121,7 +1166,7 @@ body{
     }
 }
 // 410
-@media (max-width: 410px) {
+@media (max-width: 440px) {
     .contacto{
         display: inherit;
         padding-top: 10px;
