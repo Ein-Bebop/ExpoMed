@@ -2820,6 +2820,14 @@ body {
   word-spacing: 10pt;
 }
 
+.at-img {
+  position: inherit;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #atencion-tarjetas {
   width: auto;
   padding-left: 100px;
@@ -3187,6 +3195,81 @@ body {
   padding-left: 0;
 }
 
+@media (min-width: 300px) {
+  .at-tit-text {
+    font-size: 2rem !important;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 140px;
+  }
+  .at-desc-text {
+    width: 80%;
+    margin-left: 10%;
+    font-size: .9em;
+  }
+  .at-img {
+    width: 90%;
+  }
+  .home-atencion {
+    border-bottom-left-radius: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .at-img {
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+  }
+  .at-tit-text {
+    width: 85%;
+    font-size: 2.3rem !important;
+    padding-top: 185px;
+  }
+  .at-desc-text {
+    width: 40%;
+  }
+  .home-atencion {
+    border-bottom-left-radius: 150px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .at-tit-text {
+    font-size: 3rem !important;
+    padding-top: 200px;
+  }
+  .at-desc-text {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .at-tit-text {
+    font-size: 3.6rem !important;
+    padding-top: 200px;
+  }
+  .at-desc-text {
+    width: 45%;
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .at-tit-text {
+    font-size: 4.3rem !important;
+    padding-top: 250px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .at-tit-text {
+    font-size: 4.5rem !important;
+    padding-top: 300px;
+  }
+}
+
 @media (min-width: 1280px) {
   .slider {
     width: 100%;
@@ -3215,6 +3298,54 @@ body {
   }
   .card-image .pantalla-oscura a {
     font-size: .8rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .atencion-tarjetas1 {
+    width: 90%;
+    height: 545px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .atencion-tarjetas2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 100px !important;
+  }
+  .med-title {
+    width: 100% !important;
+    font-size: 1.1rem !important;
+  }
+  .med-desc {
+    font-size: .8rem !important;
+  }
+  .med-button {
+    width: 11rem !important;
+    height: 1.5rem !important;
+    font-size: .9rem !important;
+  }
+  .slider {
+    margin-top: 6rem;
+  }
+  #cartaslider1 {
+    margin-top: -190px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slid2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1rem !important;
+    margin-bottom: 2.5rem !important;
   }
 }
 
