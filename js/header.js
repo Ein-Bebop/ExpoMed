@@ -23,12 +23,26 @@ function esconderHeader() {
        //comprueba si el scrollTop es mayor a 20 (me parece que son pixeles) entonces le pone color al header y lo mueve un poco
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("header").style.backgroundColor = "#522d6d";
+                // document.getElementsByClassName("header-o").style = "color:#ffffff";
+                var cols = document.getElementsByClassName("header-o");
+                for(i=0; i<cols.length; i++) {
+                  cols[i].style.color = "#ffffff";
+                }
                 document.getElementById("o-activo").style.color = "#fff";
                 document.getElementById("header").style.marginTop = "-20px"; 
+                document.getElementById("color-img-ch").src = "../assets/Logo_Blanco.svg"; 
         } else {//lo regresa a como estaba si detecta que se regresa al top
                 document.getElementById("header").style.backgroundColor = "";
                 document.getElementById("header").style.marginTop = "0px"; 
-                document.getElementById("o-activo").style.color = "";           
+                document.getElementById("o-activo").style.color = "";  
+                document.getElementById("color-img-ch").src = "../assets/Logo_Color.svg";  
+                
+                var cols = document.getElementsByClassName("header-o");
+                for(i=0; i<cols.length; i++) {
+                  cols[i].style.color = "#ffb259";
+                }
+                
+                document.getElementById("o-activo").style.color = "#522d6d";
         }
         
    }catch(error){

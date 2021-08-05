@@ -67,6 +67,7 @@
         .sub-card{
             width: 60%;
             height: 340px;
+            padding: 10px;
             background: #fff;
             box-shadow: #3d2a4175 0px 4px 12px;
             position: absolute;
@@ -225,7 +226,8 @@
 
     .cm-desc,.cp-desc{
         font-family: MontUltraLight;
-        height: 80px;
+        min-height: 120px ;
+        margin-bottom: 10px;
         margin-top: 20px;
 
     }
@@ -336,6 +338,19 @@
     }
 }
 
+@media (max-width: 900px) {
+    .conocemas{
+        width: 90% !important;
+        margin-bottom: 20px;
+    }
+
+    .completaproceso{
+        width: 90% !important;
+    }
+
+   
+}
+
 // Tableta chica
 
 // 540 x 720
@@ -383,10 +398,29 @@
     }
 }
 
+[data-desc="afiliacion"]{
+    padding-right: 100px;
+}
+
 @media (max-width:1000px) {
     .af-tit-text{
         padding-top: 200px !important;
     }
+
+    [data-desc="afiliacion"]{
+        padding-right: 0% !important;
+    }
+
+    .sub-card{
+        height: max-content !important;
+    }
+
+    .sub-afi{
+        height: max-content !important;
+        margin: 50px 0px;
+    }
+
+    
 }
 //Home Seccion IMG
 @media (max-width:800px) {
@@ -400,6 +434,96 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    [afi-2="afiliacion"]{
+        padding-bottom: 50px !important;
+        height: 120vh !important;
+        height: 120vh !important;
+    }
+
+    .motiva-afi-tit{
+        margin-bottom: 60px;
+    }
+
+    [afi-2="img"]{
+        width: 80% !important;
+    }
+    
+    [afi-2="info"]{
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .afiliarse2-img{
+        width: 80% !important;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    
+
+    .cp-desc{
+       
+        margin: 10px 0px !important;
+    }
+
+   
+    
+}
+
+
+@media (max-width:600px) {
+
+    [afi-2="info"]{
+        margin-left: 10%;
+        margin-top: unset !important;
+    }
+
+    .sub-afi-tit{
+        font-size: 20pt !important;
+    }
+
+    .sub-card{
+        width: 100% !important;
+        position: inherit !important;
+    }
+
+    .motiva-afi{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 150px;
+    }
+
+    .afiliarse-2{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .afiliarse2-texto{
+        width: 90% !important;
+    }
+
+    .af2-tit1{
+        width: 100% !important;
+    }
+
+    .sub-afi-img{
+        position:  absolute !important;
+    }
+
+    .comunidad-tit{
+        width: 90%;
+    }
+
+    .comunidad-desc{
+        width: 90%;
+    }
+
+    .conocermas-desc{
+        margin-bottom: 20px !important;
     }
 }
 
@@ -415,6 +539,10 @@
         width: 80% !important;
         margin-left: 50px !important;
     }
+
+    [afi-2="afiliacion"]{
+        margin-top: 40px !important;
+    }
 }
 
 @media (min-width:800px) {
@@ -429,5 +557,28 @@
     .af-desc-text{
         width: 45% !important;
         margin-left: 100px !important;
+    }
+
+    [afi-2="afiliacion"]{
+        margin-top: 20px !important;
+        padding-bottom: 50px;
+    }
+
+    .cm-desc,.cp-desc{
+        font-family: MontUltraLight;
+        min-height: max-content !important;
+
+    }
+
+    
+    
+}
+
+
+@media (min-width:1000px) {
+
+
+    [afi-2="afiliacion"]{
+        margin-top: -100px !important;
     }
 }
