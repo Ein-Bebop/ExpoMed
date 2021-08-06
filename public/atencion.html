@@ -32,6 +32,7 @@
          <img class="at-img" src="../assets/Web_AtencionM_Atencion_IMG.png">
      </div>
 
+     
     <section class="atencion-tarjetas1">
         <div class="med-tradicional">
             <div class="med-title">Medicina Tradicional y <br> Terapias Complementarias</div>
@@ -40,6 +41,7 @@
         </div>
 
     </section>
+
     <section class="atencion-tarjetas2">
         <!-- Tarjetas -->
         <section id="cartaslider1" style="margin-top: -190px;">
@@ -127,9 +129,6 @@
 
     </section>
 
-        
-    </section>
-
     <section class="atencion-info">
         <div class="atencion-infoContainer">
             <div class="atencion-tit">atención a la <br>población laboral</div>
@@ -138,6 +137,8 @@
         </div>
 
     </section>
+
+
 
     <section class="grupos-vulnerables">
         <div class="grupos-img">
@@ -156,14 +157,14 @@
         
     </section>
     
-    <div class="contacto" style="position: relative;z-index: 2;margin-top: -150px;">
+    <div class="contacto">
         <div class="message-contact">
             <h1>Contacto</h1>
-
-            <h2>¡Estar aquí significa que ya eres parte de nosotros! Pero si quieres ir<br>
-                mucho más profundo y aprender o ayudar a que otra persona <br>
-                crezca, ponte en contacto con nosotros. Nuestro esquema depende <br>
-                de la comunidad y el crecimiento de todos. ¡Deja tus datos y nos <br>
+            <h2>
+                ¡Estar aquí significa que ya eres parte de nosotros! Pero si quieres ir
+                mucho más profundo y aprender o ayudar a que otra persona
+                crezca, ponte en contacto con nosotros. Nuestro esquema depende
+                de la comunidad y el crecimiento de todos. ¡Deja tus datos y nos
                 pondremos en contacto contigo!
             </h2>
             <div class="datosExpo">
@@ -184,21 +185,26 @@
                 <input type="text" class="correo-input" name="correo" placeholder="Correo">
 
                 <br><br>
-                <label>Asunto</label> <label id="tel-label" style="padding-left: 11rem !important;">Teléfono</label>
-                
+
+                <div class="fila-asunto-tel">
+                    <div class="bloque-asunto">
+                        <label id="asunto-label">Asunto</label>
+                        <select type="text" class="asunto-input" name="correo" placeholder="Asunto">
+                            Asunto
+                            <option value="Consulta Médica">Consulta Médica</option>
+                            <option value="Consulta Médica">Talleres</option>
+                            <option value="Consulta Médica">Información General</option>
+                            <option value="Consulta Médica">Afiliación</option>
+                            <option value="Consulta Médica">Servicios</option>
+                        </select>
+                    </div>
+    
+                    <div class="bloque-tel">
+                        <label id="tel-label">Teléfono</label>
+                        <input type="text" class="telefono-input" name="correo" placeholder="Teléfono">
+                    </div>
+                </div>
                 <br>
-                <select type="text" class="asunto-input" name="correo" placeholder="Asunto">
-                    Asunto
-                    <option value="Consulta Médica">Consulta Médica</option>
-                    <option value="Consulta Médica">Talleres</option>
-                    <option value="Consulta Médica">Información General</option>
-                    <option value="Consulta Médica">Afiliación</option>
-                    <option value="Consulta Médica">Servicios</option>
-                </select>
-
-                <input type="text" class="telefono-input" name="correo" placeholder="Teléfono">
-
-                <br><br>
                 <label>Mensaje</label><br>
                 <input type="text" class="mensaje-input" name="correo" placeholder="Mensaje">
 

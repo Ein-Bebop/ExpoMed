@@ -3335,6 +3335,24 @@ body {
   }
 }
 
+@media (min-width: 540px) {
+  .at-img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 590px) {
+  .at-img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 675px) {
+  .at-img {
+    width: 60%;
+  }
+}
+
 @media (min-width: 800px) {
   .at-img {
     width: 50%;
@@ -3390,37 +3408,6 @@ body {
   }
 }
 
-@media (min-width: 1280px) {
-  .slider {
-    width: 100%;
-  }
-}
-
-@media (max-width: 410px) {
-  .slider {
-    width: 100%;
-  }
-  .card {
-    width: 8rem;
-    height: 6rem;
-  }
-  .slick-slide {
-    height: 6rem;
-  }
-  .slick-slide img {
-    height: 6rem;
-  }
-  .card-image {
-    height: 6rem;
-  }
-  .card-image .pantalla-oscura {
-    height: 6rem;
-  }
-  .card-image .pantalla-oscura a {
-    font-size: .8rem;
-  }
-}
-
 @media (min-width: 320px) {
   .atencion-tarjetas1 {
     width: 90%;
@@ -3461,11 +3448,196 @@ body {
     margin-right: auto;
   }
   .slid2 {
-    width: 80%;
+    width: 80% !important;
     margin-left: auto;
     margin-right: auto;
     margin-top: -1rem !important;
     margin-bottom: 2.5rem !important;
+  }
+  .slick-prev::before, .slick-next::before {
+    color: #ff7f30 !important;
+  }
+  .card {
+    width: 13rem;
+    height: 10rem;
+  }
+  .slick-slide {
+    height: 10rem;
+  }
+  .slick-slide img {
+    height: 10rem;
+  }
+  .card-image {
+    height: 10rem;
+  }
+  .card-image .pantalla-oscura {
+    height: 10rem;
+  }
+  .card-image .pantalla-oscura a {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 410px) {
+  .slider {
+    width: 100%;
+  }
+  .card {
+    width: 8rem;
+    height: 6rem;
+  }
+  .slick-slide {
+    height: 6rem;
+  }
+  .slick-slide img {
+    height: 6rem;
+  }
+  .card-image {
+    height: 6rem;
+  }
+  .card-image .pantalla-oscura {
+    height: 6rem;
+  }
+  .card-image .pantalla-oscura a {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .card {
+    width: 9rem;
+    height: 7rem;
+  }
+  .slick-slide {
+    height: 7rem;
+  }
+  .slick-slide img {
+    height: 7rem;
+  }
+  .card-image {
+    height: 7rem;
+  }
+  .card-image .pantalla-oscura {
+    height: 7rem;
+  }
+  .card-image .pantalla-oscura a {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .slick-prev {
+    left: -60px !important;
+  }
+  .slick-next {
+    right: -35px !important;
+  }
+  .slick-prev::before, .slick-next::before {
+    color: #ff7f30 !important;
+    font-size: 40px !important;
+    width: 0px;
+  }
+  .card {
+    width: 13rem;
+    height: 10rem !important;
+  }
+  .card-image {
+    height: 10rem !important;
+  }
+  .card-image img {
+    height: 10rem !important;
+  }
+  .card-image .pantalla-oscura {
+    height: 10rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slider {
+    width: 100%;
+  }
+  .med-tradicional .med-title {
+    font-size: 1.7rem !important;
+  }
+  .med-tradicional .med-desc {
+    font-size: 1.2rem !important;
+  }
+  .med-tradicional .med-button {
+    width: 16rem !important;
+    height: 2rem !important;
+    font-size: 1.2rem !important;
+  }
+  .card {
+    width: 17rem;
+    height: 13rem;
+  }
+  .slick-slide {
+    height: 13rem !important;
+  }
+  .slick-slide img {
+    height: 13rem !important;
+  }
+  .card-image {
+    height: 13rem !important;
+  }
+  .card-image .pantalla-oscura {
+    height: 13rem !important;
+  }
+  .card-image .pantalla-oscura a {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 22rem;
+    height: 15rem !important;
+  }
+  .card-image {
+    height: 22rem !important;
+  }
+  .card-image img {
+    height: 15rem !important;
+  }
+  .card-image .pantalla-oscura {
+    height: 15rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .slider {
+    width: 100%;
+  }
+  .med-tradicional .med-title {
+    font-size: 1.9rem !important;
+  }
+  .med-tradicional .med-desc {
+    font-size: 1.3rem !important;
+  }
+  .med-tradicional .med-button {
+    width: 16rem !important;
+    height: 2rem !important;
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .atencion-tarjetas1 {
+    height: 640px;
+  }
+  .slider {
+    width: 100%;
+  }
+  .med-tradicional .med-title {
+    font-size: 2.5rem !important;
+  }
+  .med-tradicional .med-desc {
+    font-size: 1.6rem !important;
+  }
+  .med-tradicional .med-button {
+    width: 20rem !important;
+    height: 3rem !important;
+    font-size: 1.6rem !important;
   }
 }
 
