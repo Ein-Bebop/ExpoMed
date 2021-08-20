@@ -11,18 +11,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel/owl.theme.default.min.css">
     
 </head>
 <body>
     <header id="header">
-        <div id="header-logo"><img src="../assets/Logo_Color.svg"></div>
+        <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch"></div>
+        <label id="menu-open" class="icon-menu" onclick="openM();" style="color: #ffb259;"></label>
         <div id="header-bar">
-            <div class="header-o" onclick="scIV1();" style="color: #522d6d;"><a>Talleres</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV2();" style="color: #ffb259;"><a>Atención</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV3();" style="color: #ffb259;"><a>Directorio</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV4();" style="color: #ffb259;"><a>Afiliación</a><span id="border-b"></span></div>
+            <label id="menu-close" class="icon-cancel" onclick="closeM();" ></label>
+            <div class="header-o" onclick="scIV4();"   id="o-activo"><a>Talleres</a><span id="border-b"></span></div>
+            <div class="header-o" onclick="scIV1();" style="color: #ffb259;"><a>Atención</a><span id="border-b"></span></div>
+            <div class="header-o" onclick="scIV2();" style="color: #ffb259;"><a>Directorio</a><span id="border-b"></span></div>
+            <div class="header-o" onclick="scIV3();" style="color: #ffb259;">Afiliación<a></a><span id="border-b"></span></div>
         </div>
-    </header>
+        <div id="header-dim" onclick="closeM();"></div>
+    </header>  
 
     <div class="home-bienestar" style="background:#fff;">
         <div class="tall-tit-text">Crecer en<br> compañía<br> es mejor</div>
@@ -41,7 +46,7 @@
 
     <!-- Tarjetas Talleres -->
     <section id="cartasTalleres">
-        <div class="slider">
+        <!-- <div class="slider">
             <div class="card-taller">
                 <div class="taller-image">
                     <img src="../assets/atencion-tarjetas/a_img1.jpg">
@@ -77,7 +82,43 @@
                 </div>
             </div>
 
-        </div>  
+        </div>   -->
+        <div class="owl-carousel owl-theme">
+            <div class="card-taller">
+                <div class="taller-image">
+                    <img src="../assets/atencion-tarjetas/a_img1.jpg">
+                </div>
+                <div class="taller-desc">
+                    <div class="taller-tipo">Ponencia</div>
+                    <div class="taller-imparte">QFB Ángel Jared Campos</div>
+                    <div class="taller-nombre">Cannabis y sus beneficios terapéuticos</div>
+                    <div class="taller-brief">Conoce los beneficios de la cannabis y cómo puede ser aplicada a las terapias complementarias.</div>
+                </div>
+            </div>
+            <div class="card-taller">
+                <div class="taller-image">
+                    <img src="../assets/atencion-tarjetas/a_img2.jpg">
+                </div>
+                <div class="taller-desc">
+                    <div class="taller-tipo">Taller</div>
+                    <div class="taller-imparte">Claudia Romo</div>
+                    <div class="taller-nombre">Secado de hierbas aromáticas</div>
+                    <div class="taller-brief">Aprende a secar tus hierbas aromáticas de manera que no pierdan sus beneficios naturales.</div>
+                </div>
+            </div>
+            <div class="card-taller">
+                <div class="taller-image">
+                    <img src="../assets/atencion-tarjetas/a_img3.jpg">
+                </div>
+                <div class="taller-desc">
+                    <div class="taller-tipo">Taller</div>
+                    <div class="taller-imparte">QFB Irlanda Geraldine Muciño Murillo</div>
+                    <div class="taller-nombre">Jabonería para principiantes</div>
+                    <div class="taller-brief">Todo lo que necesitas para aprender a hacer jabones, desde los materiales hasta que lo terminas.</div>
+                </div>
+            </div>
+        
+        </div>
     </section>  
 
     <section class="resena">
@@ -138,8 +179,6 @@
             </section>  
         </section>
     </section>
-
-    
 
     <section class="comunidad">
         <div class="comunidad-tit">
@@ -280,7 +319,7 @@
 
     </div>
     
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="../slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
         $(document).on('ready', function() {
@@ -300,6 +339,30 @@
 
             });
         });
+    </script> -->
+    <script src="../js/header.js"></script>
+    <script src="../OwlCarousel/jquery.min.js"></script>
+    <script src="../OwlCarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1160:{
+                items:3
+            },
+            1920:{
+                items:4
+            }
+        }
+    })
     </script>
 </body>
 </html>

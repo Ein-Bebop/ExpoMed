@@ -88,7 +88,6 @@ body{
     background-color: white !important;
 }
 
-
 .taller-desc{
     width: 100%;
     background-color: white;
@@ -279,3 +278,537 @@ body{
         margin: 10px;
     }
 }
+
+
+// Responsive "home-bienestar"
+// Móvil
+// 320
+@media(min-width: 320px){
+    .home-bienestar{
+        height: 100vh !important;
+    }
+
+    .tall-tit-text{
+        font-size: 2rem !important;
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 140px;
+        margin-bottom: 1rem;
+    }
+
+    .tall-img{
+        width: 90% !important;
+        position: inherit;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+}
+// 375
+// 410
+// Tableta chica
+// 540 x 720
+@media(min-width: 540px){
+    .tall-img{
+        margin-top: .5rem;
+        width: 80% !important;
+    }
+}
+
+@media(min-width: 590px){
+    .tall-img{
+        width: 70% !important;
+    }
+}
+
+@media(min-width: 675px){
+    .tall-img{
+        width: 60% !important;
+    }
+}
+
+@media(min-width: 800px){
+    .tall-img{
+        margin-top: 0rem;
+        width: 50% !important;
+        position: absolute;
+        top: 190px;
+        right: 0px;
+    }
+
+    .tall-tit-text{
+        width: 85% !important;
+        font-size: 2.3rem !important;
+        padding-top: 240px;
+    }
+
+}
+// Tableta
+// 768 x 1024
+// Escritorio
+// 1280 x 720
+@media(min-width: 1280px){
+    .tall-tit-text{
+        font-size: 3.6rem !important;
+        padding-top: 200px ;
+    }
+}
+// 1440 x 900
+@media(min-width: 1440px){
+    .tall-tit-text{
+        font-size: 4.3rem !important;
+        padding-top: 300px ;
+    }
+}
+// 1600 x 900
+@media(min-width: 1600px){
+    .tall-tit-text{
+        font-size: 4.5rem !important;
+    }
+}
+// 1920 x 1080
+
+// Responsive "taller-video"
+// Móvil
+// 320
+@media(min-width: 320px){
+    .taller-video{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        .taller-thumbnail{
+            height: 350px !important;
+        }
+
+        .video-desc{
+            width: 100%;
+            height: 6rem !important;
+        }
+
+        .taller-tipo{
+            font-size: .9rem !important;
+        }
+
+        .taller-nombre{
+            font-size: .9rem !important;
+            padding-top: 0rem !important;
+        }
+    }
+}
+// 375
+// 410
+// Tableta chica
+// 540 x 720
+@media(min-width: 540px){
+
+    .taller-video{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+
+    .video-desc{
+        width: 70% !important;
+    }
+}
+// Tableta
+// 768 x 1024
+// Escritorio
+// 1280 x 720
+@media(min-width: 1280px){
+
+    .taller-video{
+        .taller-thumbnail{
+            height: 550px !important;
+        }
+
+        .video-desc{
+            height: 8rem !important;
+        }
+
+        .taller-tipo{
+            font-size: 1rem !important;
+        }
+
+        .taller-nombre{
+            padding-top: .5rem !important;
+            font-size: 1.2rem !important;
+        }
+    }
+}
+// 1440 x 900
+// 1600 x 900
+@media(min-width: 1600px){
+    .taller-video{
+        height: 750px !important;
+
+        .video-desc{
+            height: 9rem !important;
+        }
+        
+        .taller-tipo{
+            font-size: 1.3rem !important;
+        }
+        
+        .taller-imparte{
+            font-size: 1.3rem !important;
+        }
+
+        .taller-nombre{
+            font-size: 1.6rem !important;
+        }
+    }
+}
+// 1920 x 1080
+
+// Responisve "profesionalizate"
+// Móvil
+// 320
+@media(min-width: 320px){
+    .profesionalizate{
+        border-top-right-radius: 100px;
+    }
+
+    .prof-titulo{
+        font-size: 1.5rem !important;
+        letter-spacing: 1px !important;
+        padding-top: 3rem !important;
+    }
+
+    .prof-desc{
+        width: 80% !important;
+        text-align: justify;
+        font-size: .9rem !important;
+        padding-top: 2rem;
+    }
+
+    .prof-input{
+        width: 80%;
+    }
+
+    .prof-button{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+}
+// 375
+// 410
+// Tableta chica
+// 540 x 720
+// Tableta
+// 768 x 1024
+@media(min-width: 768px){
+    .prof-input {
+        width: 30rem !important;
+    }
+}
+// Escritorio
+// 1280 x 720
+@media(min-width: 1280px){
+
+    .profesionalizate{
+        border-top-right-radius: 150px !important;
+    }
+
+    .prof-desc{
+        font-size: 1rem !important;
+        width: 60% !important;
+        text-align: center;
+    }
+
+    .prof-titulo{
+        font-size: 2rem !important;
+    }
+}
+// 1440 x 900
+// 1600 x 900
+@media(min-width: 1600px){
+    .prof-titulo{
+        font-size: 2.8rem !important;
+    }
+
+    .prof-desc{
+        font-size: 1.2rem !important;
+        padding-top: 1rem !important;
+    }
+
+    .prof-input{
+        width: 37rem !important;
+        font-size: 1.2rem !important;
+    }
+
+    .prof-button{
+        font-size: 1.2rem !important;
+    }
+}
+// 1920 x 1080
+
+
+// Responsive "prox-eventos"
+// Móvil
+// 320
+@media(min-width: 320px){
+    .prox-eventos{
+        margin-top: 50px;
+        border-top-right-radius: 100px !important;
+        border-bottom-left-radius: 100px !important;
+    }
+
+    .eventos-tit{
+        padding-left: 0;
+        font-size: 1.7rem;
+        padding-top: 3rem;
+    }
+
+    .profesionalizate{
+        .taller-nombre{
+            font-size: .8rem !important;
+        }
+        .taller-image{
+            width: 80%;
+        }
+        .taller-desc{
+            width: 80%;
+        }
+
+        .card-taller{
+            width: 20rem !important;
+        }
+    }
+}
+// 375
+// 410
+// Tableta chica
+// 540 x 720
+// Tableta
+// 768 x 1024
+@media(min-width: 768px){
+    .eventos-tit{
+        font-size: 2rem !important;
+    }
+}
+// Escritorio
+// 1280 x 720
+@media(min-width: 1280px){
+    .prox-eventos{
+        border-top-right-radius: 150px !important;
+        border-bottom-left-radius: 150px !important;
+    }
+}
+// 1440 x 900
+// 1600 x 900
+@media(min-width: 1600px){
+    .eventos-tit{
+        font-size: 3rem !important;
+    }
+}
+// 1920 x 1080
+
+// Responsive "afiliarse"
+// Móvil
+// 320
+@media(min-width: 320px){
+    .afiliarse{
+        border-bottom-left-radius: 100px !important;
+    }
+}
+// 375
+// 410
+// Tableta chica
+// 540 x 720
+// Tableta
+// 768 x 1024
+// Escritorio
+// 1280 x 720
+@media(min-width: 320px){
+    .afiliarse{
+        border-bottom-left-radius: 150px !important;
+    }
+}
+// 1440 x 900
+// 1600 x 900
+// 1920 x 1080
+
+// Responsive "siguenos"
+// Móvil
+// 320
+@media(min-width: 320px){
+    .siguenos-tit{
+        font-size: 1.6rem !important;
+    }
+
+    .redes-sociales{
+        a{
+            font-size: 2rem !important;
+        }
+    }
+}
+// 375
+@media(min-width: 375px){
+    .siguenos-tit{
+        width: 80% !important;
+    }
+}
+// 410
+// Tableta chica
+// 540 x 720
+@media(min-width: 540px){
+
+    .siguenos{
+        height: 500px;
+    }
+
+    .siguenos-tit{
+        font-size: 2rem !important;
+    }
+}
+// Tableta
+// 768 x 1024
+// Escritorio
+// 1280 x 720
+@media(min-width: 1280px){
+
+    .siguenos{
+        height: 700px;
+    }
+
+    .siguenos-tit{
+        font-size: 2.5rem !important;
+    }
+
+    .redes-sociales{
+        a{
+            font-size: 2.7rem !important;
+        }
+    }
+}
+// 1440 x 900
+@media(min-width: 1440px){
+
+    .siguenos-tit{
+        font-size: 3rem !important;
+    }
+
+    .redes-sociales{
+        width: 80% !important;
+    }
+
+    .redes-sociales{
+        a{
+            font-size: 3rem !important;
+        }
+    }
+}
+// 1600 x 900
+// 1920 x 1080
+
+// Responsive "card-taller"
+// Móvil
+// 320
+@media(min-width: 320px){
+    .card-taller{
+        width: 18rem !important;
+        margin: 0 auto;
+    }
+    .taller-desc{
+        .taller-nombre{
+            font-size: 1rem !important;
+        }
+
+        .taller-brief{
+            font-size: .8rem !important;
+        }
+    }       
+}
+// 375
+// 410
+@media(min-width: 410px){
+    .card-taller{
+        width: 21rem !important;
+    }
+    .taller-desc{
+        .taller-nombre{
+            font-size: 1.1rem !important;
+        }
+
+        .taller-brief{
+            font-size: .9rem !important;
+        }
+    }
+        
+}
+// Tableta chica
+// 540 x 720
+@media(min-width: 540px){
+    .card-taller{
+        width: 26rem !important;
+    }
+    
+    .taller-image{
+        height: 10rem !important;
+    }
+
+    .taller-desc{
+
+        height: 12rem !important;
+
+        .taller-nombre{
+            font-size: 1.2rem !important;
+        }
+
+        .taller-brief{
+            font-size: 1rem !important;
+        }
+    }   
+}
+// Tableta
+// 768 x 1024
+@media(min-width: 768px){
+    .card-taller{
+        width: 22rem !important;
+    }
+    
+    .taller-image{
+        height: 9rem !important;
+    }
+
+    .taller-desc{
+        height: 13rem !important;
+        .taller-nombre{
+            font-size: 1.1rem !important;
+        }
+
+        .taller-brief{
+            font-size: .9rem !important;
+        }
+    }   
+}
+// Escritorio
+
+// 1280 x 720
+@media(min-width: 1440px){
+    .card-taller{
+        width: 27rem !important;
+    }
+    
+    .taller-image{
+        height: 11rem !important;
+    }
+
+    .taller-desc{
+        .taller-nombre{
+            font-size: 1.3rem !important;
+        }
+
+        .taller-brief{
+            font-size: 1rem !important;
+        }
+    }   
+}
+// 1440 x 900
+
+// 1600 x 900
+
+// 1920 x 1080

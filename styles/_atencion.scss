@@ -420,6 +420,8 @@
 
     .at-desc-text{
         width: 40%;
+        z-index: 1;
+        position: relative;
     }
 
     .home-atencion{
@@ -455,9 +457,14 @@
         font-size: 4.3rem !important;
         padding-top: 250px;
     }
+
+    .at-desc-text {
+        width: 45%;
+        font-size: 2rem !important;
+    }
 }
 // 1600 x 900
-@media(min-width:1440px){
+@media(min-width:1600px){
     .at-tit-text{
         font-size: 4.5rem !important;
         padding-top: 300px;
