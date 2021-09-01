@@ -136,7 +136,7 @@
         <input class="prof-input" placeholder="Ingresa tu correo para recibir de nuestros talleres, cursos, etc.">
         <div class="prof-button">Suscribirse</div>
 
-        <section class="prox-eventos">
+        <!-- <section class="prox-eventos">
             <div class="eventos-tit">Próximos Eventos</div>
             <section id="cartasTalleres" style="background: none; height: 430px;">
                 <div class="slider">
@@ -177,7 +177,51 @@
         
                 </div>  
             </section>  
-        </section>
+        </section> -->
+
+    <section class="prox-eventos">
+        <div class="eventos-tit">Próximos Eventos</div>
+            <section id="cartasTalleres" style="background: none; height: 430px;">
+                <div class="owl-carousel owl-theme">
+                    <div class="card-taller">
+                        <div class="taller-image">
+                            <img src="../assets/atencion-tarjetas/a_img1.jpg">
+                        </div>
+                        <div class="taller-desc">
+                            <div class="taller-tipo">Ponencia</div>
+                            <div class="taller-imparte">QFB Ángel Jared Campos</div>
+                            <div class="taller-nombre">Cannabis y sus beneficios terapéuticos</div>
+                            <div class="taller-brief">Conoce los beneficios de la cannabis y cómo puede ser aplicada a las terapias complementarias.</div>
+                        </div>
+                    </div>
+                    <div class="card-taller">
+                        <div class="taller-image">
+                            <img src="../assets/atencion-tarjetas/a_img2.jpg">
+                        </div>
+                        <div class="taller-desc">
+                            <div class="taller-tipo">Taller</div>
+                            <div class="taller-imparte">Claudia Romo</div>
+                            <div class="taller-nombre">Secado de hierbas aromáticas</div>
+                            <div class="taller-brief">Aprende a secar tus hierbas aromáticas de manera que no pierdan sus beneficios naturales.</div>
+                        </div>
+                    </div>
+                    <div class="card-taller">
+                        <div class="taller-image">
+                            <img src="../assets/atencion-tarjetas/a_img3.jpg">
+                        </div>
+                        <div class="taller-desc">
+                            <div class="taller-tipo">Taller</div>
+                            <div class="taller-imparte">QFB Irlanda Geraldine Muciño Murillo</div>
+                            <div class="taller-nombre">Jabonería para principiantes</div>
+                            <div class="taller-brief">Todo lo que necesitas para aprender a hacer jabones, desde los materiales hasta que lo terminas.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
     </section>
 
     <section class="comunidad">
@@ -346,14 +390,16 @@
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
         loop:true,
-        margin:10,
+        margin:0,
         nav:true,
         responsive:{
             0:{
-                items:1
+                items:1,
+                margin: 0
             },
             768:{
-                items:2
+                items:2,
+                margin:-10
             },
             1160:{
                 items:3

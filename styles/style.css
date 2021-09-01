@@ -4321,6 +4321,7 @@ body {
   .taller-video {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    height: 480px !important;
   }
   .taller-video .taller-thumbnail {
     height: 350px !important;
@@ -4349,6 +4350,9 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .taller-video {
+    height: 720px !important;
+  }
   .taller-video .taller-thumbnail {
     height: 550px !important;
   }
@@ -4460,17 +4464,8 @@ body {
     font-size: 1.7rem;
     padding-top: 3rem;
   }
-  .profesionalizate .taller-nombre {
-    font-size: .8rem !important;
-  }
-  .profesionalizate .taller-image {
-    width: 80%;
-  }
-  .profesionalizate .taller-desc {
-    width: 80%;
-  }
   .profesionalizate .card-taller {
-    width: 20rem !important;
+    background-color: transparent !important;
   }
 }
 
@@ -4554,6 +4549,14 @@ body {
 }
 
 @media (min-width: 320px) {
+  #cartasTalleres {
+    margin-top: 0px !important;
+    border-bottom-left-radius: 100px;
+    height: 430px !important;
+  }
+  .owl-nav {
+    margin-top: 0px !important;
+  }
   .card-taller {
     width: 18rem !important;
     margin: 0 auto;
