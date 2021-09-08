@@ -1,22 +1,22 @@
 @import "./variables";
 @import "./directorio";
 @import "./tabla";
-
-*{
+@import "./login";
+* {
     margin: 0;
     padding: 0;
 }
 
-#main-se{
+#main-se {
     width: 100%;
     display: flex;
 
-    img{
+    img {
         pointer-events: none;
         user-select: none;
     }
 
-    #panel-izq{
+    #panel-izq {
         height: 95vh;
         width: 15%;
         background-color: $moradoOscuro;
@@ -26,125 +26,100 @@
         align-items: center;
         align-content: flex-start;
         justify-content: center;
-        box-shadow: 11px 1px 5px -6px rgba(0,0,0,0.2);
-        -webkit-box-shadow: 11px 1px 5px -6px rgba(0,0,0,0.2);
-        -moz-box-shadow: 11px 1px 5px -6px rgba(0,0,0,0.2);
+        box-shadow: 11px 1px 5px -6px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 11px 1px 5px -6px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 11px 1px 5px -6px rgba(0, 0, 0, 0.2);
         z-index: 2;
-
-        div:not(:first-child):hover{
-            background-color: rgba(255,255,255,0.3);
-            
+        div:not(:first-child):hover {
+            background-color: rgba(255, 255, 255, 0.3);
         }
-
-        #panel-logo{
+        #panel-logo {
             width: 100%;
             height: max-content;
-
-            img{
+            img {
                 width: 100%;
                 transform: scale(1.3);
             }
         }
-
-        .panel-izq-division{
+        .panel-izq-division {
             width: 90%;
             height: 1px;
             cursor: default !important;
             background-color: $gris3 !important;
             margin: 10px 0;
         }
-
-        div{
-            width:100%;
+        div {
+            width: 100%;
             color: #fff;
             user-select: none;
         }
-
-        .panel-user{
+        .panel-user {
             display: flex;
             align-items: center;
-            margin-top: 20px; 
+            margin-top: 20px;
             cursor: default !important;
             background: none !important;
             padding-left: 5%;
-            padding-top:5px; 
-            padding-bottom:5px; 
-           
-
-            p{
-                font-family: 'MontRegular',sans-serif;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            p {
+                font-family: 'MontRegular', sans-serif;
                 margin-left: 5%;
                 font-size: 1.2em;
-                
             }
-            img{
+            img {
                 width: 40px;
                 height: 40px;
                 border-radius: 4px;
             }
         }
-
-        .panel-user-config{
+        .panel-user-config {
             padding-left: 15px;
-            padding-top:10px; 
-            padding-bottom:10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             margin-top: 20px;
             margin-bottom: 20px;
-            cursor: pointer; 
-            
-            p{
-                font-family: 'MontUltraLight',sans-serif;
-                font-size: 1.1em; 
+            cursor: pointer;
+            p {
+                font-family: 'MontUltraLight', sans-serif;
+                font-size: 1.1em;
             }
         }
-
-        .nav{
-            
+        .nav {
             background: none !important;
-
-            div{
+            div {
                 width: 95%;
                 padding-left: 5%;
-                padding-top:15px; 
-                padding-bottom:15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
                 cursor: pointer;
             }
-
-            p{
-                font-family: 'MontUltraLight',sans-serif;
-                font-size: 1.4em; 
+            p {
+                font-family: 'MontUltraLight', sans-serif;
+                font-size: 1.4em;
             }
         }
-
-        .exit{
-
+        .exit {
             background: none !important;
-
-            div{
+            div {
                 padding-left: 15px;
-                padding-top:10px; 
-                padding-bottom:10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 cursor: pointer;
             }
-
-            .option{
+            .option {
                 position: absolute;
                 bottom: 50px;
                 width: 15%;
             }
-
-            p{
-                font-family: 'MontUltraLight',sans-serif;
-                font-size: 1.4em; 
-                
+            p {
+                font-family: 'MontUltraLight', sans-serif;
+                font-size: 1.4em;
             }
-            
         }
-
-    
     }
-    
-    #panel-der{
+
+    #panel-der {
         height: 100vh;
         width: 85%;
         background-color: #fafafa;
@@ -153,25 +128,23 @@
         flex-flow: wrap;
         align-content: flex-start;
 
-        .barra{
+        .barra {
             width: 80%;
             margin: 0 auto;
             padding-top: 100px;
             display: flex;
             align-items: center;
-
-            input{
+            input {
                 width: 300px;
                 height: 35px;
                 padding-left: 20px;
-                font-family: 'MontUltraLight',sans-serif;
+                font-family: 'MontUltraLight', sans-serif;
                 outline: none;
                 font-size: 1.1em;
-                border:1px solid $gris3;
+                border: 1px solid $gris3;
                 border-radius: 50px;
             }
-
-            .button{
+            .button {
                 margin-left: 100px;
                 width: 180px;
                 border-radius: 10px;
@@ -180,14 +153,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color:#fff;
+                color: #fff;
                 background-color: $naranjaFuerte;
-                font-family: 'MontBold',sans-serif;
+                font-family: 'MontBold', sans-serif;
                 cursor: pointer;
             }
         }
 
-        #content{
+        #content {
             width: 80%;
             height: 85vh;
             margin: 30px auto;
@@ -198,10 +171,10 @@
             align-content: flex-start;
         }
 
-        .menu-add{
+        .menu-add {
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.2);
+            background-color: rgba(0, 0, 0, 0.2);
             position: fixed;
             top: 0;
             display: none;
@@ -210,50 +183,49 @@
             align-content: center;
             z-index: 2;
 
-            .menu-add-titulo{
-                font-family: 'MontBold',sans-serif;
+            .menu-add-titulo {
+                font-family: 'MontBold', sans-serif;
                 font-size: 1.5em;
                 padding-bottom: 0px;
                 text-align: center;
                 padding-left: 0;
             }
 
-            form{
-                width: 50%;
-                height: 80%;
+            form {
+                width: 100%;
+                height: 100%;
                 border-radius: 20px;
-                border:1px solid #ddd;
+                border: 1px solid #ddd;
                 overflow: hidden;
                 background-color: #fff;
-                padding-bottom:30px;
+                padding-bottom: 30px;
                 display: flex;
                 flex-flow: wrap;
                 justify-content: center;
                 align-items: center;
-                
                 overflow-y: scroll;
 
-                div{
+                div {
                     width: 60%;
                     text-align: left;
                     margin: 30px 0px;
                     margin-bottom: 5px;
                     padding-left: 20px;
-                    font-family: 'MontUltraLight',sans-serif;
+                    font-family: 'MontUltraLight', sans-serif;
                     font-size: 1em;
                 }
 
-                input{
+                input {
                     width: 60%;
                     height: 30px;
-                    border:1px solid $gris3;
+                    border: 1px solid $gris3;
                     outline: none;
                     padding-left: 20px;
-                    font-family: 'MontLight',sans-serif;
+                    font-family: 'MontLight', sans-serif;
                     border-radius: 20px;
                 }
 
-                .form-buttons{
+                .form-buttons {
                     width: 100%;
                     display: flex;
                     flex-flow: wrap-reverse;
@@ -261,7 +233,7 @@
                     margin-top: 5px;
                     transition: 0.3s;
 
-                    div{
+                    div {
                         width: 200px;
                         cursor: pointer;
                         text-align: center;
@@ -269,7 +241,7 @@
                         margin-right: 30px;
                     }
 
-                    .button-a{
+                    .button-a {
                         padding-left: 0;
                         background-color: $verdeFuerte;
                         color: #fff;
@@ -277,23 +249,21 @@
                         border-radius: 20px;
                     }
 
-                    .button-b{
+                    .button-b {
                         padding-left: 0;
                         background-color: $rojo;
-                        color:#fff;
+                        color: #fff;
                         padding: 10px 0;
                         border-radius: 20px;
                     }
                 }
             }
 
-            form::-webkit-scrollbar{
+            form::-webkit-scrollbar {
                 width: 5px;
                 background-color: #999;
             }
         }
     }
-
-
 }
 

@@ -1,3 +1,55 @@
+<?php 
+        
+     if(isset($_COOKIE['1be067584467e484c5bfc571bb26ef73'])){ 
+                
+                $sesionactiva = $_COOKIE['1be067584467e484c5bfc571bb26ef73'];
+                $user = $_COOKIE['f8032d5cae3de20fcec887f395ec9a6a'];           
+                $sesionactiva = substr($sesionactiva, 6, -6);
+        
+                //Define cipher 
+                $cipher = "aes-256-cbc";
+                $encryption_key = "fcYc!9mQnEQ>\nXk?8j6a$\,fK-u";
+                $iv = "8TnzbZ(M(9CUn,hX"; 
+
+                //Decrypt data 
+                $decrypted_data = openssl_decrypt($user, $cipher, $encryption_key, 0, $iv); 
+
+                $usuario = $decrypted_data;
+         
+                include("operaciones/db.php");
+                $conn = mysqli_connect($servername, $username, $password, $database);
+
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                    echo "<h3>No se ha podido conectar PHP - MySQL, verifique sus datos.</h3><hr><br>";
+                    header("location: operacionesphp/salir.php");
+                }
+                else{
+                    
+                    $sql = "SELECT * FROM admin WHERE usuario = '".$usuario."' AND pass = '".strrev($sesionactiva)."'";
+                    $result = $conn->query($sql);
+                    
+                    
+                    if($result->num_rows >= 1) {
+                        $row = $result->fetch_assoc();
+                        $nombreusuario = $row['usuario'];
+                        $nombre = $row['nombre'];
+                    
+                    }else{
+                        header("location: operacionesphp/salir.php");
+                    }
+                       
+                }
+            
+                $conn->close();
+
+            
+        }else{
+                header("location: index.php");
+        }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +67,7 @@
         <div id="panel-izq">
             <div id="panel-logo"><img src="../assets/Logo_Blanco.svg"></div>
             <div class="panel-izq-division"></div>
-            <div class="panel-user"><img src="img/default-user.png"><p>Diego Garay Valdés Contreras</p></div>
+            <div class="panel-user"><img src="img/default-user.png"><p><?php echo $nombre; ?></p></div>
             <div class="panel-user-config"><p class="icon-cog"> Configuración</p></div>
             <div class="panel-izq-division"></div>
             <div class="nav">
@@ -25,7 +77,7 @@
             </div>
             <div class="exit">
                 <div style="cursor:default"></div>
-                <div class=option><p class="icon-angle-left">Salir</p></div>
+                <div class="option" onclick="window.location.href='operaciones/salir.php'"><p class="icon-angle-left">Salir</p></div>
             </div>
         
         </div>

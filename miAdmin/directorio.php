@@ -1,3 +1,55 @@
+<?php 
+        
+     if(isset($_COOKIE['1be067584467e484c5bfc571bb26ef73'])){ 
+                
+                $sesionactiva = $_COOKIE['1be067584467e484c5bfc571bb26ef73'];
+                $user = $_COOKIE['f8032d5cae3de20fcec887f395ec9a6a'];           
+                $sesionactiva = substr($sesionactiva, 6, -6);
+        
+                //Define cipher 
+                $cipher = "aes-256-cbc";
+                $encryption_key = "fcYc!9mQnEQ>\nXk?8j6a$\,fK-u";
+                $iv = "8TnzbZ(M(9CUn,hX"; 
+
+                //Decrypt data 
+                $decrypted_data = openssl_decrypt($user, $cipher, $encryption_key, 0, $iv); 
+
+                $usuario = $decrypted_data;
+         
+                include("operaciones/db.php");
+                $conn = mysqli_connect($servername, $username, $password, $database);
+
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                    echo "<h3>No se ha podido conectar PHP - MySQL, verifique sus datos.</h3><hr><br>";
+                    header("location: operacionesphp/salir.php");
+                }
+                else{
+                    
+                    $sql = "SELECT * FROM admin WHERE usuario = '".$usuario."' AND pass = '".strrev($sesionactiva)."'";
+                    $result = $conn->query($sql);
+                    
+                    
+                    if($result->num_rows >= 1) {
+                        $row = $result->fetch_assoc();
+                        $nombreusuario = $row['usuario'];
+                        $nombre = $row['nombre'];
+                    
+                    }else{
+                        header("location: operacionesphp/salir.php");
+                    }
+                       
+                }
+            
+                $conn->close();
+
+            
+        }else{
+                header("location: index.php");
+        }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +63,12 @@
     <link rel="stylesheet" href="../styles/fontello.css">
 </head>
 <body>
+
     <section id="main-se">
         <div id="panel-izq">
             <div id="panel-logo"><img src="../assets/Logo_Blanco.svg"></div>
             <div class="panel-izq-division"></div>
-            <div class="panel-user"><img src="img/default-user.png"><p>Diego Garay Valdés Contreras</p></div>
+            <div class="panel-user"><img src="img/default-user.png"><p><?php echo $nombre; ?></p></div>
             <div class="panel-user-config"><p class="icon-cog"> Configuración</p></div>
             <div class="panel-izq-division"></div>
             <div class="nav">
@@ -27,7 +80,7 @@
             </div>
             <div class="exit">
                 <div style="cursor:default"></div>
-                <div class=option><p class="icon-angle-left">Salir</p></div>
+                <div class="option" onclick="window.location.href='operaciones/salir.php'"><p class="icon-angle-left">Salir</p></div>
             </div>
         
         </div>
@@ -38,8 +91,8 @@
                         <div class="menu-add-titulo">Agregar Médico</div>
                         <div class="menu-option">Area</div>
                         <input type="text" name="area" placeholder="Ingresa el área de trabajo del médico" required>
-                        <!-- <div class="menu-option">Categoria</div>
-                        <input type="text" name="categoria" placeholder="Ingresa la categoria" required> -->
+                        <div class="menu-option">Categoria</div>
+                        <input type="text" name="categoria" placeholder="Ingresa la categoria" required>
                         <div class="menu-option">Nombre</div>
                         <input type="text" name="nombre" placeholder="Ingresa el nombre del médico" required>
                         <div class="menu-option">Especialidad</div>
@@ -122,7 +175,10 @@
 
         </div>
     </section>
+    
+    <div id="notificacion" style="z-index:3"></div>
 
     <script src="js/main.js"></script>
+    <script src="js/notificacion.js"></script>
 </body>
 </html>

@@ -223,6 +223,250 @@ tbody tr:nth-child(odd) {
   }
 }
 
+#body-login {
+  background: #ddd !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#body-login #login {
+  width: 80%;
+  height: 90%;
+  background: #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#body-login #login #login-logo {
+  width: 100%;
+}
+
+#body-login #login #login-logo img {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#body-login #login form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#body-login #login form div {
+  text-align: center;
+}
+
+#body-login #login form p {
+  text-align: left;
+  padding-left: 10px;
+  font-family: 'MontUltraLight',sans-serif;
+  font-size: 1.4em;
+}
+
+#body-login #login form .div-login {
+  width: 100%;
+  height: 30px;
+}
+
+#body-login #login form input {
+  margin: 10px 0;
+  border-radius: 50px;
+  width: 300px;
+  height: 35px;
+  font-family: 'MontRegular',sans-serif;
+  font-size: 1.2em;
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+#body-login #login form input::-webkit-input-placeholder {
+  color: #ddd;
+  font-family: 'MontUltraLight',sans-serif;
+}
+
+#body-login #login form input:-ms-input-placeholder {
+  color: #ddd;
+  font-family: 'MontUltraLight',sans-serif;
+}
+
+#body-login #login form input::-ms-input-placeholder {
+  color: #ddd;
+  font-family: 'MontUltraLight',sans-serif;
+}
+
+#body-login #login form input::placeholder {
+  color: #ddd;
+  font-family: 'MontUltraLight',sans-serif;
+}
+
+#body-login #login form #b-registro {
+  width: 200px;
+  height: 40px;
+  color: #999;
+  background-color: #f1f2f2;
+  font-family: 'MontBold',sans-serif;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#body-login #login form #b-login {
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  background-color: #ff7f30;
+  font-family: 'MontBold',sans-serif;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 10px 20px;
+}
+
+#body-login #login form #b-login:hover {
+  background-color: #ffb259;
+}
+
+#body-login #login form #b-registro:hover {
+  background-color: #fafafa;
+}
+
+#body-login #login form #botones-login {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: wrap-reverse;
+          flex-flow: wrap-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#body-login #login #login-titulo {
+  font-family: 'MontBold',sans-serif;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #ff7f30;
+}
+
+#body-login #login #olvide-div {
+  margin-top: 20px;
+  font-family: 'MontLight',sans-serif;
+  color: #84dade;
+}
+
+#body-login #login #olvide-div p {
+  cursor: pointer;
+}
+
+#body-login #login #olvide-div p:hover {
+  color: #00bbb4;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#comment-down {
+  position: absolute;
+  left: 10;
+  bottom: 10;
+  color: #cacaca;
+  font-family: 'MontBold',sans-serif;
+}
+
+@media (max-width: 700px) {
+  #login-logo img {
+    width: auto !important;
+  }
+}
+
+#notificacion {
+  width: 290px;
+  height: 85px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: 5px;
+  /*    top: 150;*/
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: 'Montserrat';
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -317,7 +561,7 @@ tbody tr:nth-child(odd) {
 }
 
 #main-se #panel-izq .panel-user p {
-  font-family: 'MontRegular',sans-serif;
+  font-family: 'MontRegular', sans-serif;
   margin-left: 5%;
   font-size: 1.2em;
 }
@@ -338,7 +582,7 @@ tbody tr:nth-child(odd) {
 }
 
 #main-se #panel-izq .panel-user-config p {
-  font-family: 'MontUltraLight',sans-serif;
+  font-family: 'MontUltraLight', sans-serif;
   font-size: 1.1em;
 }
 
@@ -355,7 +599,7 @@ tbody tr:nth-child(odd) {
 }
 
 #main-se #panel-izq .nav p {
-  font-family: 'MontUltraLight',sans-serif;
+  font-family: 'MontUltraLight', sans-serif;
   font-size: 1.4em;
 }
 
@@ -377,7 +621,7 @@ tbody tr:nth-child(odd) {
 }
 
 #main-se #panel-izq .exit p {
-  font-family: 'MontUltraLight',sans-serif;
+  font-family: 'MontUltraLight', sans-serif;
   font-size: 1.4em;
 }
 
@@ -411,7 +655,7 @@ tbody tr:nth-child(odd) {
   width: 300px;
   height: 35px;
   padding-left: 20px;
-  font-family: 'MontUltraLight',sans-serif;
+  font-family: 'MontUltraLight', sans-serif;
   outline: none;
   font-size: 1.1em;
   border: 1px solid #f1f2f2;
@@ -435,7 +679,7 @@ tbody tr:nth-child(odd) {
           justify-content: center;
   color: #fff;
   background-color: #ff7f30;
-  font-family: 'MontBold',sans-serif;
+  font-family: 'MontBold', sans-serif;
   cursor: pointer;
 }
 
@@ -477,7 +721,7 @@ tbody tr:nth-child(odd) {
 }
 
 #main-se #panel-der .menu-add .menu-add-titulo {
-  font-family: 'MontBold',sans-serif;
+  font-family: 'MontBold', sans-serif;
   font-size: 1.5em;
   padding-bottom: 0px;
   text-align: center;
@@ -485,8 +729,8 @@ tbody tr:nth-child(odd) {
 }
 
 #main-se #panel-der .menu-add form {
-  width: 50%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   border: 1px solid #ddd;
   overflow: hidden;
@@ -512,7 +756,7 @@ tbody tr:nth-child(odd) {
   margin: 30px 0px;
   margin-bottom: 5px;
   padding-left: 20px;
-  font-family: 'MontUltraLight',sans-serif;
+  font-family: 'MontUltraLight', sans-serif;
   font-size: 1em;
 }
 
@@ -522,7 +766,7 @@ tbody tr:nth-child(odd) {
   border: 1px solid #f1f2f2;
   outline: none;
   padding-left: 20px;
-  font-family: 'MontLight',sans-serif;
+  font-family: 'MontLight', sans-serif;
   border-radius: 20px;
 }
 

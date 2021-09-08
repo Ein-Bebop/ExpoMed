@@ -38,6 +38,12 @@
         //Cerramos conexión
 
         echo "Registro correcto";
+
+        $noti = "Registrado con éxito.";
+                                
+        $notiCK = "notificacion";
+        $notiCK_value = $noti;
+        setcookie($notiCK, $notiCK_value, 0, "/"); // 86400 = 1 day
         
         header("location: ../directorio.php");
     }
