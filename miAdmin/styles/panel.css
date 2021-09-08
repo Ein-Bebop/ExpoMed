@@ -1,0 +1,380 @@
+@font-face {
+  font-family: MontBold;
+  src: url("../../fonts/Montserrat-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontRegular;
+  src: url("../../fonts/Montserrat-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontLight;
+  src: url("../../fonts/Montserrat-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontUltraLight;
+  src: url("../../fonts/Montserrat-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontExtraBold;
+  src: url("../../fonts/Montserrat-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MontHair;
+  src: url("../../fonts/Montserrat-Hairline.otf") format("opentype");
+}
+
+.card-medico {
+  width: 300px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card-medico .card-categoria {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom-left-radius: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #ffb259;
+}
+
+.card-medico .card-img-container {
+  width: 100%;
+  padding-left: 20px;
+  position: relative;
+  margin-top: -32px;
+}
+
+.card-medico .card-img-container .card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-medico .card-rama {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #84dade;
+  font-family: MontBold;
+}
+
+.card-medico .card-nombre {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 1.2em;
+  font-family: MontBold;
+  color: #522d6d;
+}
+
+.card-medico .card-especialidad {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #ff7f30;
+  font-family: MontBold;
+}
+
+.card-medico .card-descripcion {
+  width: 100%;
+  padding-left: 20px;
+  font-family: MontLight;
+}
+
+.card-medico .card-ver-mas {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 3px;
+  color: #fff;
+  font-family: MontRegular;
+  background-color: #00bbb4;
+  cursor: pointer;
+}
+
+.card-medico .card-ubicacion {
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+  font-family: MontUltraLight;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-se {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-se img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#main-se #panel-izq {
+  height: 95vh;
+  width: 15%;
+  background-color: #522d6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-top: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  box-shadow: 11px 1px 5px -6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 11px 1px 5px -6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 11px 1px 5px -6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+#main-se #panel-izq div:not(:first-child):hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#main-se #panel-izq #panel-logo {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#main-se #panel-izq #panel-logo img {
+  width: 100%;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#main-se #panel-izq .panel-izq-division {
+  width: 90%;
+  height: 1px;
+  cursor: default !important;
+  background-color: #f1f2f2 !important;
+  margin: 10px 0;
+}
+
+#main-se #panel-izq div {
+  width: 100%;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#main-se #panel-izq .panel-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  cursor: default !important;
+  background: none !important;
+  padding-left: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#main-se #panel-izq .panel-user p {
+  font-family: 'MontRegular',sans-serif;
+  margin-left: 5%;
+  font-size: 1.2em;
+}
+
+#main-se #panel-izq .panel-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+#main-se #panel-izq .panel-user-config {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#main-se #panel-izq .panel-user-config p {
+  font-family: 'MontUltraLight',sans-serif;
+  font-size: 1.1em;
+}
+
+#main-se #panel-izq .nav {
+  background: none !important;
+}
+
+#main-se #panel-izq .nav div {
+  width: 95%;
+  padding-left: 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+#main-se #panel-izq .nav p {
+  font-family: 'MontUltraLight',sans-serif;
+  font-size: 1.4em;
+}
+
+#main-se #panel-izq .exit {
+  background: none !important;
+}
+
+#main-se #panel-izq .exit div {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+#main-se #panel-izq .exit .option {
+  position: absolute;
+  bottom: 50px;
+  width: 15%;
+}
+
+#main-se #panel-izq .exit p {
+  font-family: 'MontUltraLight',sans-serif;
+  font-size: 1.4em;
+}
+
+#main-se #panel-der {
+  height: 100vh;
+  width: 85%;
+  background-color: #fafafa;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#main-se #panel-der .barra {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-se #panel-der .barra input {
+  width: 300px;
+  height: 35px;
+  padding-left: 20px;
+  font-family: 'MontUltraLight',sans-serif;
+  outline: none;
+  font-size: 1.1em;
+  border: 1px solid #f1f2f2;
+  border-radius: 50px;
+}
+
+#main-se #panel-der .barra .button {
+  margin-left: 100px;
+  width: 180px;
+  border-radius: 10px;
+  padding-right: 5px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #ff7f30;
+  font-family: 'MontBold',sans-serif;
+  cursor: pointer;
+}
+
+#main-se #panel-der #content {
+  width: 80%;
+  height: 85vh;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+/*# sourceMappingURL=panel.css.map */
