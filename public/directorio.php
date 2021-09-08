@@ -108,13 +108,13 @@
                 }
                 else{
                     //Conexión exitosa
-                    $sql = "SELECT * FROM directorio";
+                    $sql = "SELECT * FROM directorio ORDER BY `idMed` DESC";
                     $result = $conn->query($sql);
                     
                     if ($result->num_rows >= 1) {
                         
                         echo '<div class="owl-carousel owl-theme dir-slider">';
-                        $id=1;//ID de filas
+                        $id=0;//ID de filas
 
                         while($row = $result->fetch_assoc()) {
                             
