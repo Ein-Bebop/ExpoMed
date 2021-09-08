@@ -50,14 +50,14 @@
 
 
             <div class="container-dir"> 
-                <div class="sub-title">Por Calificación</div>
+                <!-- <div class="sub-title">Por Calificación</div>
                 <select id="estrellas" class="busqueda-filtro" name="filtro" >
                     <option value="5" selected>★★★★★</option>   
                     <option value="4">★★★★☆ </option>
                     <option value="3">★★★☆☆</option>
                     <option value="2">★★☆☆☆</option>
                     <option value="1">★☆☆☆☆</option>
-                </select>
+                </select> -->
              </div>
 
 
@@ -93,9 +93,9 @@
 
         <div id="directorio-cards">
             <div id="reslutados-texto">Resultados de la búsqueda</div>
-            <div class="resultados-paginas">Página<p id="pagina-actual">1</p> de <p id="paginas-totales">5</p>
+            <!-- <div class="resultados-paginas">Página<p id="pagina-actual">1</p> de <p id="paginas-totales">5</p>
                 <label class="left-page"><</label>&nbsp;<label class="right-page">></label>
-            </div>
+            </div> -->
 
 
             <?php
@@ -148,7 +148,7 @@
                 }
             ?>
 
-            <div class="boton-tarjetas-final">Página Siguiente ></div>
+            <!-- <div class="boton-tarjetas-final">Página Siguiente ></div> -->
 
         </div>
     </section>

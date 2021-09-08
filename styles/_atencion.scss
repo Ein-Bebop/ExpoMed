@@ -296,10 +296,9 @@
         width: 45rem;
         height: 31rem;
         border-radius: 15px;
-        background-image: url('../assets/pexels-pixabay-220455.jpg');
+        background-image: url('../assets/fotos/AdobeStock_259803295.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
-        transform: scaleX(-1);
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -313,7 +312,6 @@
         background: #fff;
         box-shadow: #3d2a4175 0px 4px 12px;
         border-radius: 2px;
-        transform: scaleX(-1);
         .grupos-tit{
             font-family: 'MontBold';
             color: $primaryColor;
@@ -535,7 +533,7 @@
     }
 
     .card{
-        width: 13rem;
+        width: 15rem;
         height: 10rem;
     }
 
@@ -921,8 +919,9 @@
             margin-left: 0;
             margin-right: auto;
             margin-top: -101px;
-            border-top-left-radius: 100px;
-            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 100px;
+            background-position-x: -10.8rem;
         }
 
         .grupos-info{
@@ -971,6 +970,10 @@
         font-size: .9rem;
     }
     .grupos-vulnerables{
+        .grupos-img{
+            background-position-x: 0rem;
+        }
+
         .grupos-desc{
             width: 70% !important;
             font-size: .9rem !important;
@@ -1031,6 +1034,7 @@
             left: -22rem !important;
             top: 1rem !important;
             border-radius: 2px !important;
+            transform: scaleX(-1);
 
             .divider-btn{
                 margin-left: 10% !important;

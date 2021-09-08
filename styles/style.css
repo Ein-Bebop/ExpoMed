@@ -197,8 +197,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: wrap-reverse;
+          flex-flow: wrap-reverse;
 }
 
 .se-vision .se-vision-info {
@@ -830,6 +832,7 @@
   .conocermas-tit {
     width: 90%;
     font-size: 28pt;
+    padding-top: 20px;
   }
 }
 
@@ -3250,11 +3253,9 @@ body {
   width: 45rem;
   height: 31rem;
   border-radius: 15px;
-  background-image: url("../assets/pexels-pixabay-220455.jpg");
+  background-image: url("../assets/fotos/AdobeStock_259803295.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -3269,8 +3270,6 @@ body {
   -webkit-box-shadow: #3d2a4175 0px 4px 12px;
           box-shadow: #3d2a4175 0px 4px 12px;
   border-radius: 2px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 
 .grupos-vulnerables .grupos-info .grupos-tit {
@@ -3472,7 +3471,7 @@ body {
     color: #ff7f30 !important;
   }
   .card {
-    width: 13rem;
+    width: 15rem;
     height: 10rem;
   }
   .slick-slide {
@@ -3761,8 +3760,9 @@ body {
     margin-left: 0;
     margin-right: auto;
     margin-top: -101px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 100px;
+    background-position-x: -10.8rem;
   }
   .grupos-vulnerables .grupos-info {
     width: 100%;
@@ -3801,6 +3801,9 @@ body {
     width: 11rem;
     height: 1.9rem;
     font-size: .9rem;
+  }
+  .grupos-vulnerables .grupos-img {
+    background-position-x: 0rem;
   }
   .grupos-vulnerables .grupos-desc {
     width: 70% !important;
@@ -3854,6 +3857,8 @@ body {
     left: -22rem !important;
     top: 1rem !important;
     border-radius: 2px !important;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
   }
   .grupos-vulnerables .grupos-info .divider-btn {
     margin-left: 10% !important;
