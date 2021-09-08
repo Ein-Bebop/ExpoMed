@@ -102,6 +102,107 @@ body{
 
 }
 
+.card-medico{
+    width: 400px;
+    height: 380px;
+    display: flex;
+    flex-flow: wrap;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 5px;
+
+    .card-categoria{
+        position: relative;
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 2px;
+        justify-content: center;
+        align-content: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom-left-radius: 20px;
+        width: 100px;
+        height: 30px;
+        background-color: #ffb259;
+    }
+
+    .card-img-container{
+        width: 100%;
+        padding-left: 20px;
+        position: relative;
+        margin-top: -32px;
+        .card-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .card-rama{
+        width: 100%;
+        padding-left: 20px;
+        font-size: 0.9em;
+        color:#84dade ;
+        font-family: MontBold;
+    }
+
+    .card-nombre{
+        width: 100%;
+        padding-left: 20px;
+        font-size: 1.2em;
+        font-family: MontBold;
+        color: #522d6d;
+    }  
+    .card-especialidad{
+        width: 100%;
+        padding-left: 20px;
+        font-size: 0.9em;
+        color:#84dade ;
+        font-family: MontBold;
+    }
+
+    .card-descripcion{
+        width: 100%;
+        padding-left: 20px;
+        font-family: MontLight;
+    }
+
+    .card-ver-mas{
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        border-radius: 5px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 3px;
+        color:#fff;
+        font-family: MontRegular;
+        background-color: #ff7f30;
+        cursor: pointer;
+    }
+
+    .card-ubicacion{
+        position: relative;
+        margin-left: auto;
+        margin-right: 20px;
+        font-family: MontUltraLight;
+        
+    }
+}
+
+.dir-slider{
+    width: 90% !important;
+}
+
 #directorio-container{
     width: 100%;
     height: auto;
@@ -203,6 +304,7 @@ body{
 
         p{
             width: 20px;
+            margin-bottom: 0 !important;
         }
 
         #paginas-totales{
@@ -232,107 +334,6 @@ body{
         align-content: center;
         align-items: center;
     }
-
-    .card-medico{
-        width: 400px;
-        height: 380px;
-        display: flex;
-        flex-flow: wrap;
-        border-radius: 20px;
-        background-color: #fff;
-        overflow: hidden;
-        margin: 5px;
-
-        .card-categoria{
-            position: relative;
-            margin-left: auto;
-            margin-right: 0;
-            display: flex;
-            align-items: flex-end;
-            padding-bottom: 2px;
-            justify-content: center;
-            align-content: center;
-            color: #fff;
-            font-family: 'Montserrat', sans-serif;
-            border-bottom-left-radius: 20px;
-            width: 100px;
-            height: 30px;
-            background-color: #ffb259;
-        }
-
-        .card-img-container{
-            width: 100%;
-            padding-left: 20px;
-            position: relative;
-            margin-top: -32px;
-            .card-img{
-                width: 100px;
-                height: 100px;
-                border-radius: 50px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-
-        .card-rama{
-            width: 100%;
-            padding-left: 20px;
-            font-size: 0.9em;
-            color:#84dade ;
-            font-family: MontBold;
-        }
-
-        .card-nombre{
-            width: 100%;
-            padding-left: 20px;
-            font-size: 1.2em;
-            font-family: MontBold;
-            color: #522d6d;
-        }  
-        .card-especialidad{
-            width: 100%;
-            padding-left: 20px;
-            font-size: 0.9em;
-            color:#84dade ;
-            font-family: MontBold;
-        }
-
-        .card-descripcion{
-            width: 100%;
-            padding-left: 20px;
-            font-family: MontLight;
-        }
-
-        .card-ver-mas{
-            width: 100px;
-            height: 20px;
-            text-align: center;
-            border-radius: 5px;
-            margin-left: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            padding: 3px;
-            color:#fff;
-            font-family: MontRegular;
-            background-color: #ff7f30;
-            cursor: pointer;
-        }
-
-        .card-ubicacion{
-            position: relative;
-            margin-left: auto;
-            margin-right: 20px;
-            font-family: MontUltraLight;
-            
-        }
-    }
-
-
-    
-
     
 }
 

@@ -1162,6 +1162,125 @@ body {
   margin-left: 10px;
 }
 
+.card-medico {
+  width: 400px;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.card-medico .card-categoria {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom-left-radius: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #ffb259;
+}
+
+.card-medico .card-img-container {
+  width: 100%;
+  padding-left: 20px;
+  position: relative;
+  margin-top: -32px;
+}
+
+.card-medico .card-img-container .card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-medico .card-rama {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #84dade;
+  font-family: MontBold;
+}
+
+.card-medico .card-nombre {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 1.2em;
+  font-family: MontBold;
+  color: #522d6d;
+}
+
+.card-medico .card-especialidad {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #84dade;
+  font-family: MontBold;
+}
+
+.card-medico .card-descripcion {
+  width: 100%;
+  padding-left: 20px;
+  font-family: MontLight;
+}
+
+.card-medico .card-ver-mas {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 3px;
+  color: #fff;
+  font-family: MontRegular;
+  background-color: #ff7f30;
+  cursor: pointer;
+}
+
+.card-medico .card-ubicacion {
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+  font-family: MontUltraLight;
+}
+
+.dir-slider {
+  width: 90% !important;
+}
+
 #directorio-container {
   width: 100%;
   height: auto;
@@ -1292,6 +1411,7 @@ body {
 
 #directorio-container .resultados-paginas p {
   width: 20px;
+  margin-bottom: 0 !important;
 }
 
 #directorio-container .resultados-paginas #paginas-totales {
@@ -1328,121 +1448,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#directorio-container .card-medico {
-  width: 400px;
-  height: 380px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  border-radius: 20px;
-  background-color: #fff;
-  overflow: hidden;
-  margin: 5px;
-}
-
-#directorio-container .card-medico .card-categoria {
-  position: relative;
-  margin-left: auto;
-  margin-right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  border-bottom-left-radius: 20px;
-  width: 100px;
-  height: 30px;
-  background-color: #ffb259;
-}
-
-#directorio-container .card-medico .card-img-container {
-  width: 100%;
-  padding-left: 20px;
-  position: relative;
-  margin-top: -32px;
-}
-
-#directorio-container .card-medico .card-img-container .card-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#directorio-container .card-medico .card-rama {
-  width: 100%;
-  padding-left: 20px;
-  font-size: 0.9em;
-  color: #84dade;
-  font-family: MontBold;
-}
-
-#directorio-container .card-medico .card-nombre {
-  width: 100%;
-  padding-left: 20px;
-  font-size: 1.2em;
-  font-family: MontBold;
-  color: #522d6d;
-}
-
-#directorio-container .card-medico .card-especialidad {
-  width: 100%;
-  padding-left: 20px;
-  font-size: 0.9em;
-  color: #84dade;
-  font-family: MontBold;
-}
-
-#directorio-container .card-medico .card-descripcion {
-  width: 100%;
-  padding-left: 20px;
-  font-family: MontLight;
-}
-
-#directorio-container .card-medico .card-ver-mas {
-  width: 100px;
-  height: 20px;
-  text-align: center;
-  border-radius: 5px;
-  margin-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 3px;
-  color: #fff;
-  font-family: MontRegular;
-  background-color: #ff7f30;
-  cursor: pointer;
-}
-
-#directorio-container .card-medico .card-ubicacion {
-  position: relative;
-  margin-left: auto;
-  margin-right: 20px;
-  font-family: MontUltraLight;
 }
 
 .afiliarse {
@@ -4181,25 +4186,12 @@ body {
   margin: auto;
 }
 
-.comunidad-gallery {
+.comunidad-img {
   width: 100%;
-  height: 500px;
-  overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.comunidad-gallery .comunidad-img {
-  width: 200vh;
-  height: 50vh;
+  height: 30rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.comunidad-gallery .slick-next:before, .comunidad-gallery .slick-prev:before {
-  color: #ff7f30;
-  font-size: 30px;
 }
 
 .siguenos {
@@ -4494,7 +4486,7 @@ body {
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 1280px) {
   .afiliarse {
     border-bottom-left-radius: 150px !important;
   }

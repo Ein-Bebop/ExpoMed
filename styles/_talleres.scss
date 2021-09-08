@@ -223,27 +223,15 @@ body{
     margin: auto;
 }
 
-.comunidad-gallery{
+.comunidad-img{
     width: 100%;
-    height: 500px;
-    overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
-
-    .comunidad-img{
-        width: 200vh;
-        height: 50vh;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .slick-next:before, .slick-prev:before{
-        color: $naranjaFuerte;
-        font-size: 30px;
-    }
-
+    height: 30rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+
 
 .siguenos{
     background-image: url('../assets/Images_Divider_color.jpg');
@@ -615,7 +603,7 @@ body{
 // 768 x 1024
 // Escritorio
 // 1280 x 720
-@media(min-width: 320px){
+@media(min-width: 1280px){
     .afiliarse{
         border-bottom-left-radius: 150px !important;
     }
