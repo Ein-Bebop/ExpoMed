@@ -1,0 +1,41 @@
+$primaryColor : #a975b2;
+$moradoOscuro: #522d6d;
+$gris: #808080;
+$gris2 :#58595b;
+$gris3 :#f1f2f2;
+$naranjaSuave: #ffb259;
+$naranjaFuerte: #ff7f30;
+$azulClaro: #84dade;
+$azulFuerte: #00bbb4;
+$verdeFuerte:#96c121;
+$rojo:#f7534f;
+
+@font-face {
+    font-family: MontBold;
+    src: url("../../fonts/Montserrat-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: MontRegular;
+    src: url("../../fonts/Montserrat-Regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: MontLight;
+    src: url("../../fonts/Montserrat-Light.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: MontUltraLight;
+    src: url("../../fonts/Montserrat-UltraLight.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: MontExtraBold;
+    src: url("../../fonts/Montserrat-ExtraBold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: MontHair;
+    src: url("../../fonts/Montserrat-Hairline.otf") format("opentype");
+  }
