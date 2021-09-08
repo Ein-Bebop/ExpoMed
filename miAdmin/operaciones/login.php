@@ -1,7 +1,7 @@
 <?php 
 
 
-                date_default_timezone_set("America/Mexico_City");
+                date_default_timezone_set("America/Mexico_City");//
                 $date = date("Y-m-d");
         
                 $email = $_POST['user'];

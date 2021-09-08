@@ -22,7 +22,7 @@
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
                     echo "<h3>No se ha podido conectar PHP - MySQL, verifique sus datos.</h3><hr><br>";
-                    header("location: operacionesphp/salir.php");
+                    header("location: operaciones/salir.php");
                 }
                 else{
                     
@@ -36,7 +36,7 @@
                         $nombre = $row['nombre'];
                     
                     }else{
-                        header("location: operacionesphp/salir.php");
+                        header("location: operaciones/salir.php");
                     }
                        
                 }
@@ -45,7 +45,7 @@
 
             
         }else{
-                header("location: index.php");
+                header("location: operaciones/salir.php");
         }
 
 ?>
