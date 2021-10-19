@@ -3,6 +3,10 @@ function openM(){
     document.getElementById("header-bar").style.transform = "translateX(0%)";
     document.getElementById("header-dim").style.height = "120vh";
     document.getElementById("menu-close").style.transform = "rotate(-360deg)";
+    var cols = document.getElementsByTagName("a");
+                for(i=0; i<cols.length; i++) {
+                  cols[i].style.color = "#fff";
+                }
 }
 
 //Esta funcioón cierra el menú, quita el transform de 0% a su posición original al igual que el icono cancel y la pantalla oscura del menú
@@ -24,9 +28,9 @@ function esconderHeader() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("header").style.backgroundColor = "#522d6d";
                 // document.getElementsByClassName("header-o").style = "color:#ffffff";
-                var cols = document.getElementsByClassName("header-o");
+                var cols = document.getElementsByTagName("a");
                 for(i=0; i<cols.length; i++) {
-                  cols[i].style.color = "#ffffff";
+                  cols[i].style.color = "#fff";
                 }
                 document.getElementById("o-activo").style.color = "#fff";
                 document.getElementById("header").style.marginTop = "-20px"; 
@@ -37,7 +41,7 @@ function esconderHeader() {
                 document.getElementById("o-activo").style.color = "";  
                 document.getElementById("color-img-ch").src = "../assets/Logo_Color.svg";  
                 
-                var cols = document.getElementsByClassName("header-o");
+                var cols = document.getElementsByTagName("a");
                 for(i=0; i<cols.length; i++) {
                   cols[i].style.color = "#ffb259";
                 }

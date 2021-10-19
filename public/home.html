@@ -13,14 +13,15 @@
 <body>
 
     <header id="header">
-        <div id="header-logo"><img src="../assets/Logo_Blanco.svg"></div>
+        <div id="header-logo" ><img src="../assets/Logo_Blanco.svg"></div>
         <label id="menu-open" class="icon-menu" onclick="openM();"></label>
         <div id="header-bar">
             <label id="menu-close" class="icon-cancel" onclick="closeM();"></label>
-            <div class="header-o" onclick="scIV1();"><a>Talleres</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV2();"><a>Atención</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV3();"><a>Directorio</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV4();"><a>Afiliación</a><span id="border-b"></span></div>
+            <style>.header-o a{color: #fff;}</style>
+            <div class="header-o" ><a href="talleres.html">Talleres</a><span id="border-b"></span></div>
+            <div class="header-o" ><a href="atencion.html">Atención</a><span id="border-b"></span></div>
+            <div class="header-o" ><a href="directorio.php">Directorio</a><span id="border-b"></span></div>
+            <div class="header-o" ><a href="afiliacion.html">Afiliación</a><span id="border-b"></span></div>
         </div>
         <div id="header-dim" onclick="closeM();"></div>
     </header>
@@ -109,14 +110,14 @@
     <section class="segundo-index">
         <div class="flor-loto">
             <div class="loto-tarjetas">
-                <div class="loto-card" id="loto-img-1">
+                <div class="loto-card" id="loto-img-1" onclick="window.location.href='directorio.php'">
                     <div class="loto-card-text">
                         <h1>Directorio</h1>
                         <p>Expertos en Medicina Tradicional y Terapias Complementarias en un solo lugar.</p>
                         <h3><p class="icon-angle-right"></p></h3>
                     </div>
                 </div>
-                <div class="loto-card" id="loto-img-2">
+                <div class="loto-card" id="loto-img-2" onclick="window.location.href='talleres.html'">
                     <div class="loto-card-text">
                         <h1>Talleres</h1>
                         <p>Aprende y desarrolla tus habilidades de la mano de los mejores.</p>
@@ -124,7 +125,7 @@
                     </div>
                 </div>
 
-                <div class="loto-card" id="loto-img-3">
+                <div class="loto-card" id="loto-img-3" onclick="window.location.href='atencion.html'">
                     <div class="loto-card-text">
                         <h1>Atención</h1>
                         <p>Tratamientos, terapias y programas para garantizar la salud.</p>
@@ -153,8 +154,8 @@
             <div class="afiliarse-lista"><li>Credencial de Afiliación.</li></div>
             <div class="afiliarse-lista"><li>y muchos más...</li></div>
             <div class="botones-container">
-                <div class="afiliarse-descargar">Descargar Bases</div>
-                <div class="afiliarse-boton">Quiero Afiliarme</div>
+                <div class="afiliarse-descargar"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></div>
+                <div class="afiliarse-boton"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Quiero Afiliarme</a></div>
             </div>
             
         </div>

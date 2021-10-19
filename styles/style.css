@@ -263,10 +263,16 @@
 
 .se-vision .se-vision-img {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .se-vision .se-vision-img img {
-  width: 80%;
+  width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -351,6 +357,15 @@
 
 .se-aprende .se-aprende-img img {
   width: 70%;
+}
+
+@media (max-width: 800px) {
+  .se-aprende .se-aprende-img {
+    width: 80% !important;
+  }
+  .se-aprende .se-aprende-img img {
+    width: 100% !important;
+  }
 }
 
 .capacitacion {
@@ -491,10 +506,17 @@
   color: #522d6d;
 }
 
+@media (max-width: 600px) {
+  .capacitacion-info {
+    padding-bottom: 0px !important;
+    margin-top: 190px;
+  }
+}
+
 .af-tit-text {
   z-index: 10;
   position: relative;
-  width: 65%;
+  width: 50%;
   margin-left: 100px;
   padding-top: 300px;
   font-family: MontBold;
@@ -502,16 +524,15 @@
   text-transform: uppercase;
   font-size: 40pt;
   word-break: break-word;
-  word-spacing: 20pt;
 }
 
 .af-desc-text {
   width: 45%;
   margin-left: 100px;
+  margin-top: 40px;
   font-family: MontUltraLight;
   color: #a975b2;
   font-size: 1em;
-  word-spacing: 10pt;
 }
 
 .af-img {
@@ -922,9 +943,10 @@
     height: -moz-max-content !important;
     height: max-content !important;
   }
-  .af-img {
+  .af-img, .at-img, .tall-img {
     position: inherit;
-    width: 80%;
+    width: 100% !important;
+    margin-top: 40px !important;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -976,7 +998,6 @@
   .motiva-afi {
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 150px;
   }
   .afiliarse-2 {
     padding-left: 30px;
@@ -1022,7 +1043,7 @@
   .af-tit-text {
     font-size: 20pt !important;
     padding-top: 300px !important;
-    width: 65% !important;
+    width: 50% !important;
     margin-left: 100px !important;
     font-size: 40pt !important;
   }
@@ -1045,6 +1066,13 @@
 @media (min-width: 1000px) {
   [afi-2="afiliacion"] {
     margin-top: -100px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .af-tit-text {
+    font-size: 4.5rem !important;
+    padding-top: 300px;
   }
 }
 
@@ -1486,7 +1514,6 @@ body {
 
 .afiliarse .afiliarse-info {
   top: -510px;
-  margin-left: 10%;
   position: relative;
   background-color: #fff;
   width: 60%;
@@ -1501,6 +1528,12 @@ body {
           flex-flow: column;
   padding-bottom: 30px;
   border-radius: 20px;
+}
+
+@media (min-width: 1024px) {
+  .afiliarse .afiliarse-info {
+    margin-left: 10% !important;
+  }
 }
 
 .afiliarse .afiliarse-info .afiliarse-titulo {
@@ -1859,6 +1892,7 @@ body {
   width: 480px;
   padding-top: 20px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 #header-logo img {
@@ -1908,6 +1942,7 @@ body {
 
 .header-o a {
   width: 100%;
+  text-decoration: none;
 }
 
 #header-bar a:hover ~ #border-b {
@@ -2064,6 +2099,7 @@ body {
   border-radius: 2px;
   -webkit-box-shadow: #3d2a4175 0px 4px 12px;
           box-shadow: #3d2a4175 0px 4px 12px;
+  cursor: pointer;
 }
 
 .loto-card-text h1 {
@@ -2716,6 +2752,12 @@ body {
   }
 }
 
+@media (min-width: 550px) and (max-width: 700px) {
+  .se-vision {
+    margin-top: 150px !important;
+  }
+}
+
 @media (max-width: 600px) {
   .se-nosotros {
     margin-top: 40px !important;
@@ -2774,19 +2816,19 @@ body {
     padding-left: 10%;
   }
   .se-vision .se-vision-img {
-    width: 80% !important;
+    width: 100% !important;
     margin-left: auto;
     margin-right: auto;
   }
   .se-vision .se-vision-img img {
-    width: 80% !important;
+    width: 100% !important;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .se-vision .se-vision-info {
     width: 90% !important;
-    margin-top: -200px;
+    margin-top: 150px;
   }
   .loto-card {
     width: 200px !important;
@@ -2814,7 +2856,7 @@ body {
     width: 80% !important;
   }
   .se-aprende .se-aprende-img {
-    width: 80% !important;
+    width: 100% !important;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2928,6 +2970,25 @@ body {
   }
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .nos-motiva {
+    padding-bottom: 350px;
+  }
+  .se-vision {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .nos-motiva {
+    padding-bottom: 250px;
+  }
+  .se-vision {
+    height: 30vh;
+    margin-top: 80px;
+  }
+}
+
 .at-tit-text {
   z-index: 10;
   position: relative;
@@ -2938,8 +2999,6 @@ body {
   color: #522d6d;
   text-transform: uppercase;
   font-size: 3.5rem;
-  word-break: break-word;
-  word-spacing: 20pt;
 }
 
 .at-desc-text {
@@ -2948,7 +3007,6 @@ body {
   font-family: MontUltraLight;
   color: #a975b2;
   font-size: 1em;
-  word-spacing: 10pt;
 }
 
 .at-img {
@@ -3983,8 +4041,6 @@ body {
   text-transform: uppercase;
   font-size: 4rem;
   word-break: break-word;
-  word-spacing: 20px;
-  letter-spacing: 4px;
 }
 
 .tall-img {

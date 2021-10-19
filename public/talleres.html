@@ -18,14 +18,15 @@
 </head>
 <body>
     <header id="header">
-        <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch"></div>
+        <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch" onclick="window.location.href='home.html'"></div>
         <label id="menu-open" class="icon-menu" onclick="openM();" style="color: #ffb259;"></label>
         <div id="header-bar">
             <label id="menu-close" class="icon-cancel" onclick="closeM();" ></label>
-            <div class="header-o" onclick="scIV4();"   id="o-activo"><a>Talleres</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV1();" style="color: #ffb259;"><a>Atención</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV2();" style="color: #ffb259;"><a>Directorio</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV3();" style="color: #ffb259;">Afiliación<a></a><span id="border-b"></span></div>
+            <style>.header-o a{color: #ffb259;}#border-b{background-color: #ffb259 !important;width: 0%;}</style>
+            <div class="header-o"  id="o-activo"><a>Talleres</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a href="atencion.html">Atención</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a href="directorio.php">Directorio</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a href="afiliacion.html">Afiliación</a><span id="border-b"></span></div>
         </div>
         <div id="header-dim" onclick="closeM();"></div>
     </header>  
@@ -121,7 +122,7 @@
         
         </div>
     </section>  
-
+    <style>.resena{margin-top: 30px;}</style>
     <section class="resena">
         <div class="resena-texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
         <div class="resena-resenador">Alejandra de la Parra</div>
@@ -214,8 +215,8 @@
             <div class="afiliarse-lista"><li>Credencial de Afiliación.</li></div>
             <div class="afiliarse-lista"><li>y muchos más...</li></div>
             <div class="botones-container" style="margin-top: 1rem;">
-                <div class="afiliarse-descargar">Descargar Bases</div>
-                <div class="afiliarse-boton">Quiero Afiliarme</div>
+                <div class="afiliarse-descargar"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></div>
+                <div class="afiliarse-boton"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Quiero Afiliarme</a></div>
             </div>
             
         </div>

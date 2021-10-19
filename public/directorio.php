@@ -16,14 +16,15 @@
 <body>
 
     <header id="header">
-        <div id="header-logo"><img src="../assets/Logo_Blanco.svg"></div>
+        <div id="header-logo"><img src="../assets/Logo_Blanco.svg" onclick="window.location.href='home.html'"></div>
         <label id="menu-open" class="icon-menu" onclick="openM();"></label>
         <div id="header-bar">
             <label id="menu-close" class="icon-cancel" onclick="closeM();"></label>
-            <div class="header-o" onclick="scIV1();" ><a>Talleres</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV2();" ><a>Atención</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV3();" id="o-activo" ><a>Directorio</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV4();" ><a>Afiliación</a><span id="border-b"></span></div>
+            <style>.header-o a{color: #fff;}</style>
+            <div class="header-o" ><a href="talleres.html">Talleres</a><span id="border-b"></span></div>
+            <div class="header-o" ><a href="atencion.html">Atención</a><span id="border-b"></span></div>
+            <div class="header-o" ><a id="o-activo">Directorio</a><span id="border-b"></span></div>
+            <div class="header-o" ><a href="afiliacion.html">Afiliación</a><span id="border-b"></span></div>
         </div>
         <div id="header-dim" onclick="closeM();"></div>
     </header>
@@ -170,8 +171,8 @@
             <div class="afiliarse-lista"><li>Credencial de Afiliación.</li></div>
             <div class="afiliarse-lista"><li>y muchos más...</li></div>
             <div class="botones-container">
-                <div class="afiliarse-descargar" bot-d="1">Descargar Bases</div>
-                <div class="afiliarse-boton" bot-d="2">Quiero Afiliarme</div>
+                <div class="afiliarse-descargar" bot-d="1"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></div>
+                <div class="afiliarse-boton" bot-d="2"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Quiero Afiliarme</a></div>
             </div>
             
         </div>

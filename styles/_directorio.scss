@@ -374,7 +374,7 @@ body{
 
     .afiliarse-info{
         top: -510px;
-        margin-left: 10%;
+        // margin-left: 10%;
         position: relative;
         background-color: #fff;
         width: 60%;
@@ -385,6 +385,10 @@ body{
         flex-flow: column;
         padding-bottom: 30px;
         border-radius: 20px;
+
+        @media (min-width:1024px) {
+            margin-left: 10% !important;
+        }
 
         .afiliarse-titulo{
             width: 85%;
@@ -589,9 +593,9 @@ body{
 
 @media (min-width:500px){
 
-    .container-dir{
+    // .container-dir{
         
-    }
+    // }
 
     
 }

@@ -20,14 +20,15 @@
 <body> 
 
     <header id="header">
-        <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch"></div>
+        <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch" onclick="window.location.href='home.html'"></div>
         <label id="menu-open" class="icon-menu" onclick="openM();" style="color: #ffb259;"></label>
         <div id="header-bar">
             <label id="menu-close" class="icon-cancel" onclick="closeM();" ></label>
-            <div class="header-o" onclick="scIV1();" style="color: #ffb259;"><a>Talleres</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV4();"   id="o-activo"><a>Atención</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV2();" style="color: #ffb259;"><a>Directorio</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV3();" style="color: #ffb259;">Afiliación<a></a><span id="border-b"></span></div>
+            <style>.header-o a{color: #ffb259;}#border-b{background-color: #ffb259 !important;width: 0%;}</style>
+            <div class="header-o"  ><a href="talleres.html">Talleres</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a id="o-activo">Atención</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a href="directorio.php">Directorio</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a href="afiliacion.html">Afiliación</a><span id="border-b"></span></div>
         </div>
         <div id="header-dim" onclick="closeM();"></div>
     </header>   

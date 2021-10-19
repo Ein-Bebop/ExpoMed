@@ -13,14 +13,15 @@
 <body>
 
     <header id="header">
-        <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch"></div>
+        <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch" onclick="window.location.href='home.html'"></div>
         <label id="menu-open" class="icon-menu" onclick="openM();" style="color: #ffb259;"></label>
         <div id="header-bar">
             <label id="menu-close" class="icon-cancel" onclick="closeM();" ></label>
-            <div class="header-o" onclick="scIV1();" style="color: #ffb259;"><a>Talleres</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV2();" style="color: #ffb259;"><a>Atención</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV3();" style="color: #ffb259;"><a>Directorio</a><span id="border-b"></span></div>
-            <div class="header-o" onclick="scIV4();"   id="o-activo"><a>Afiliación</a><span id="border-b"></span></div>
+            <style>.header-o a{color: #ffb259;}#border-b{background-color: #ffb259 !important;width: 0%;}</style>
+            <div class="header-o"  ><a href="talleres.html">Talleres</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a href="atencion.html">Atención</a><span id="border-b"></span></div>
+            <div class="header-o"  ><a href="directorio.php">Directorio</a><span id="border-b"></span></div>
+            <div class="header-o" ><a id="o-activo" style="color: #522d6d;">Afiliación</a><span id="border-b"></span></div>
         </div>
         <div id="header-dim" onclick="closeM();"></div>
     </header>   
@@ -32,7 +33,19 @@
     </div>
 
     <section class="se-vision" style="padding-top: 50px;" afi-2="afiliacion">
+        <style>
+            @media (max-width:800px) {
+                [afi-2="img"] img{
+                    width: 100% !important;
+                }
+            }
+            [afi-2="img"]{
+                display: flex !important;
+                align-items: center !important;
+            }
+            
 
+        </style>
         <div class="se-vision-img" afi-2="img">
             <img src="../assets/Web_Asociacion_Afiliacion_IMG.png"> 
         </div>
@@ -105,12 +118,12 @@
         <div class="conocemas">
             <div class="cm-tit">Conóce Más</div>
             <div class="cm-desc">Conoce las bases y documentación que necesitas para completar el proceso, al igual que las cuotas que debes cubrir para afiliarte. ¡Nos emociona que puedas formar parte de la comunidad!</div>
-            <div class="afiliarse-descargar" boton-a="1">Descargar Bases</div>
+            <div class="afiliarse-descargar" boton-a="1"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></div>
         </div>
         <div class="completaproceso">
             <div class="cp-tit">Completa el Proceso</div>
             <div class="cp-desc">¿Ya estás listo para completar el proceso? Llena este formulario y envialo a: afiliacion@mttc.org, junto con tu ficha de pago, y el comité revisará tu solicitud.</div>
-            <div class="afiliarse-boton">Descargar Formato de Afiliación</div>
+            <div class="afiliarse-boton"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Formato de Afiliación</a></div>
         </div>
     </section>
 

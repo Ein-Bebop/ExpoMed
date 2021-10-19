@@ -93,6 +93,7 @@ body{
     width: 480px;
     padding-top: 20px;
     margin-left: 20px;
+    cursor: pointer;
 
     img{
         width: 100%;
@@ -125,6 +126,8 @@ body{
     justify-content: center;
     a {
         width: 100%;
+        text-decoration: none;
+        
     } 
 }
 
@@ -268,7 +271,7 @@ body{
     margin-left: -7rem;
     border-radius: 2px;
     box-shadow: #3d2a4175 0px 4px 12px;
-
+    cursor: pointer;
 
     h1{
         text-transform: uppercase;
@@ -394,14 +397,14 @@ body{
         width: 100%;
     }
 
-    #tel-label{
-        // margin-right: 100%;
+    // #tel-label{
+    //     // margin-right: 100%;
 
-    }
+    // }
 
-    #asunto-label{
-        // margin-right: 100%;
-    }
+    // #asunto-label{
+    //     // margin-right: 100%;
+    // }
 
     .fila-asunto-tel{
         display: flex;
@@ -970,6 +973,14 @@ body{
 
 
 //Media sección Nosotros
+@media (min-width:550px) and (max-width: 700px){
+    .se-vision{
+        margin-top: 150px !important;
+    }
+
+}
+
+
 @media (max-width: 600px){
     .se-nosotros{
         margin-top: 40px !important;
@@ -1042,12 +1053,12 @@ body{
         }
 
         .se-vision-img{
-            width: 80% !important;
+            width: 100% !important;
             margin-left: auto;
             margin-right: auto;
     
             img{
-                width: 80% !important;
+                width: 100% !important;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -1056,7 +1067,7 @@ body{
     
         .se-vision-info{
             width: 90% !important;
-            margin-top: -200px;
+            margin-top: 150px;
         }
 
     }
@@ -1093,7 +1104,7 @@ body{
         }
 
         .se-aprende-img{
-            width: 80% !important;
+            width: 100% !important;
             margin-left: auto;
             margin-right: auto;
 
@@ -1223,4 +1234,26 @@ body{
         }
     }
     
+}
+
+
+@media (min-width:600px) and (max-width:900px) {
+    .nos-motiva{
+        padding-bottom: 350px;
+    }
+
+    .se-vision{
+        height: 60vh;
+    }
+}
+
+@media (min-width:900px) and (max-width:1024px) {
+    .nos-motiva{
+        padding-bottom: 250px;
+    }
+
+    .se-vision{
+        height: 30vh;
+        margin-top: 80px;
+    }
 }

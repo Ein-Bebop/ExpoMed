@@ -1,7 +1,7 @@
 .af-tit-text{
     z-index: 10;
     position: relative;
-    width: 65%;
+    width: 50%;
     margin-left: 100px;
     padding-top: 300px;
     font-family: MontBold;
@@ -9,16 +9,17 @@
     text-transform: uppercase;
     font-size: 40pt;
     word-break: break-word;
-    word-spacing: 20pt;
+    
 }
 
 .af-desc-text{
     width: 45%;
     margin-left: 100px;
+    margin-top: 40px;
     font-family: MontUltraLight;
     color: $primaryColor;
     font-size: 1em;
-    word-spacing: 10pt;
+    
 }
 
 .af-img{
@@ -429,9 +430,10 @@
     .home-bienestar{
         height: max-content !important;
     }
-    .af-img{
+    .af-img,.at-img,.tall-img{
         position: inherit;
-        width: 80%;
+        width: 100% !important;
+        margin-top: 40px !important;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -495,7 +497,7 @@
     .motiva-afi{
         padding-left: 30px;
         padding-right: 30px;
-        margin-top: 150px;
+        // margin-top: 150px;
     }
 
     .afiliarse-2{
@@ -550,7 +552,7 @@
     .af-tit-text{
         font-size: 20pt !important;
         padding-top: 300px !important;
-        width: 65% !important;
+        width: 50% !important;
         margin-left: 100px !important;
         font-size: 40pt !important;
     }
@@ -581,5 +583,13 @@
 
     [afi-2="afiliacion"]{
         margin-top: -100px !important;
+    }
+}
+
+@media (min-width: 1600px){
+
+    .af-tit-text {
+        font-size: 4.5rem !important;
+        padding-top: 300px;
     }
 }

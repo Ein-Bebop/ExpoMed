@@ -3,6 +3,6 @@
     $servername = "localhost";
     $database = "expomed";
     $username = "root";
-    $password = '';
+    $password = 'phpPASS2020';
 
 ?>

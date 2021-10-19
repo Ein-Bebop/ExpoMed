@@ -160,10 +160,11 @@ $azulClaro: #84dade;
 
     .se-vision-img{
         width: 50%;
-        
+        display: flex;
+        align-items: center;
 
         img{
-            width: 80%;
+            width: 60%;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -227,6 +228,16 @@ $azulClaro: #84dade;
             width: 70%;
         }
     }
+
+    @media (max-width:800px) {
+        .se-aprende-img{
+            width: 80% !important; 
+    
+            img{
+                width: 100% !important;
+            }
+        }
+    }
 }
 
 
@@ -265,6 +276,8 @@ $azulClaro: #84dade;
             margin-left: auto;
             border-top-left-radius: 80px;
             padding-bottom: 40px;
+
+            
 
             .capacitacion-info-tit{
                 width: 80%;
@@ -347,3 +360,9 @@ $azulClaro: #84dade;
     }
 }
 
+@media (max-width:600px) {
+    .capacitacion-info{
+        padding-bottom: 0px !important;
+        margin-top: 190px;
+    }
+}
