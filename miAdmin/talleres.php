@@ -73,8 +73,8 @@
             <div class="nav">
                 <div></div>
                 <div class="option" onclick="window.location.href='index.php'"><p class="icon-folder-empty"> Directorio</p></div>
-                <div class="option" style="background:#ff7f30;font-weight:bolder;"><p class="icon-sliders"> Admin</p></div>
-                <div class="option" onclick="window.location.href='talleres.php'"><p class="icon-folder-empty"> Talleres</p></div>
+                <div class="option"  onclick="window.location.href='users.php'"><p class="icon-sliders"> Admin</p></div>
+                <div class="option" style="background:#ff7f30;font-weight:bolder;"><p class="icon-folder-empty"> Talleres</p></div>
 
             </div>
             <div class="exit">
@@ -85,13 +85,34 @@
         </div>
         
         <div id="panel-der">
-
-            <div class="barra">
-                <!-- <input type="text" name="busqueda" id="buscar" placeholder="Buscar Médico, Categoría, Especialidad..."> -->
-                <!-- <div class="button"><p class="icon-plus-circled"> Agregar Médico</p></div> -->
+            <div class="menu-add">
+                <form id="form-add" action="operaciones/insertDirectorio.php" method="post" enctype="multipart/form-data">
+                    <div class="menu-add-titulo">Agregar Taller</div>
+                    <div class="menu-option">Area</div>
+                    <input type="text" name="area" placeholder="Ingresa el área de trabajo del médico" required>
+                    <div class="menu-option">Categoria</div>
+                    <input type="text" name="categoria" placeholder="Ingresa la categoria" required>
+                    <div class="menu-option">Nombre</div>
+                    <input type="text" name="nombre" placeholder="Ingresa el nombre del médico" required>
+                    <div class="menu-option">Especialidad</div>
+                    <input type="text" name="especialidad" placeholder="Ingresa la especialidad del médico" required>
+                    <div class="menu-option">Descripción</div>
+                    <input type="text" name="descripcion" placeholder="Ingresa la descripción de su trabajo" required>
+                    <div class="menu-option">Ubicación</div>
+                    <input type="text" name="ubicacion" placeholder="Ingresa la ubicación del médico" required>
+                    <div class="menu-option">Biografía</div>
+                    <input type="text" name="bio" placeholder="Ingresa un enlace de biografía del médico (Opcional)" required>
+                    <div class="menu-option">Foto del Médico</div>
+                    <input style="padding-top:10px" type="file" accept="image/*" name="foto">
+                    <div class="form-buttons">
+                        <div class="button-b" onclick="cancelAdd();">Cancelar</div>
+                        <div class="button-a" onclick="sendDirectorio();">Añadir</div>
+                    </div>
+                </form>
             </div>
 
-            <div id="content">
+            <div id="content" style="margin-top: 10rem;">
+
                 <?php //Inicia Script PHP
 
                     include("operaciones/db.php");//Incluye los datos de acceso a la BD
@@ -103,40 +124,29 @@
                     }
                     else{//Conexión exitosa
 
-                        $sql = "SELECT * FROM admin";//Sentencia de consulta
+                        $sql = "SELECT * FROM talleres";//Sentencia de consulta
                         $result = $conn->query($sql);
                         
                         if ($result->num_rows >= 1) {
                             //Salida de datos si existen datos en la tabla
-                            
-                            echo "<table>";
-                            echo "<thead>";
-                            echo "<tr>";
-                            echo "<th scope='col'> Usuario </th>";
-                            echo "<th scope='col'> Nombre </th>";
-                            echo "<th scope='col'> Correo </th>";
-                            echo "<th scope='col'> Fecha Registro </th>";
-                            echo "</tr>";
-                            echo "</thead>";
-                            echo "<tbody>";
 
                             while($row = $result->fetch_assoc()) {
 
                                 $id=1;//ID de filas
-                                echo "<tr>";
-                                echo "<td data-label='USUARIO' id=t-".$id.">".$row['usuario']."</td>";
-                                echo "<td data-label='NOMBRE' id=t-".$id.">".$row['nombre']."</td>";
-                                echo "<td data-label='CORREO' id=d-".$id.">".$row['email']."</td>";
-                                echo "<td data-label='FECHA REGISTRO' id=p-".$id.">".$row['fecha']."</td>";
-                                echo "</tr>"; 
+
+                                echo '<div class="card-medico">';
+                                echo '<div class="card-categoria">'.$row['tipo'].'</div>';
+                                echo "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../assets/talleres/".$row['img']."');'></div></div>";
+                                // echo '<div class="card-rama">'.$row['tipo'].'</div>';
+                                echo '<div class="card-nombre">'.$row['nombre'].'</div>';
+                                echo '<div class="card-especialidad">'.$row['imparte'].'</div>';
+                                echo '<div class="card-especialidad" style="color: #bd0000;"><a href="'.$row['link'].'" style="text-decoration:none; color: #bd0000;" target="_blank"">'.$row['link'].'</a></div>';
+                                echo '<div class="card-ver-mas">Editar</div>'; 
+                                echo '</div>';
                                 
                                 $id++;
                             }
 
-                            echo "</tbody>";
-                            echo "</table>";
-                            
-                        
                         }
                         
                         else {//Salida de datos si NO existen datos en la tabla
@@ -153,7 +163,8 @@
                     
                 //Finaliza Script PHP
                 ?>
-            </div>
+
+                </div>
 
         </div>
     </section>

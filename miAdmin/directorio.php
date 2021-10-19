@@ -75,6 +75,7 @@
                 <div></div>
                 <div class="option" style="background:#ff7f30;font-weight:bolder;"><p class="icon-folder-empty"> Directorio</p></div>
                 <div class="option" onclick="window.location.href='users.php'"><p class="icon-sliders"> Admin</p></div>
+                <div class="option" onclick="window.location.href='talleres.php'"><p class="icon-folder-empty"> Talleres</p></div>
 
 
             </div>
@@ -89,10 +90,9 @@
                 <div class="menu-add">
                     <form id="form-add" action="operaciones/insertDirectorio.php" method="post" enctype="multipart/form-data">
                         <div class="menu-add-titulo">Agregar Médico</div>
+                        <input type="text" name="idInvisible" style="display:none;">
                         <div class="menu-option">Area</div>
                         <input type="text" name="area" placeholder="Ingresa el área de trabajo del médico" required>
-                        <div class="menu-option">Categoria</div>
-                        <input type="text" name="categoria" placeholder="Ingresa la categoria" required>
                         <div class="menu-option">Nombre</div>
                         <input type="text" name="nombre" placeholder="Ingresa el nombre del médico" required>
                         <div class="menu-option">Especialidad</div>
@@ -107,7 +107,7 @@
                         <input style="padding-top:10px" type="file" accept="image/*" name="foto">
                         <div class="form-buttons">
                             <div class="button-b" onclick="cancelAdd();">Cancelar</div>
-                            <div class="button-a" onclick="sendDirectorio();">Añadir</div>
+                            <div class="button-a" onclick="sendForm();">Añadir</div>
                         </div>
                     </form>
                     
@@ -140,6 +140,13 @@
                             while($row = $result->fetch_assoc()) {
 
                                 $id=1;//ID de filas
+                                $area = $row['area'];
+                                $nombre = $row['nombre'];
+                                $especialidad = $row['especialidad'];
+                                $descripcion = $row['descripcion'];
+                                $ubicacion = $row['ubicacion'];
+                                $bio = $row['bio'];
+                                $foto = $row['foto'];
 
                                 echo '<div class="card-medico">';
                                 echo '<div class="card-categoria">Cultura</div>';
@@ -147,7 +154,7 @@
                                 echo '<div class="card-rama">'.$row['area'].'</div>';
                                 echo '<div class="card-nombre">'.$row['nombre'].'</div>';
                                 echo '<div class="card-especialidad">'.$row['especialidad'].'</div>';
-                                echo '<div class="card-ver-mas">Editar</div>';
+                                echo '<div class="card-ver-mas" onclick="editM('.$row['idMed'].',`'.$area.'`,`'.$nombre.'`,`'.$especialidad.'`,`'.$descripcion.'`,`'.$ubicacion.'`,`'.$bio.'`,`'.$foto.'`);">Editar</div>';
                                 echo '<div class="card-ubicacion">'.$row['ubicacion'].'</div>';
                                 echo '</div>';
                                 

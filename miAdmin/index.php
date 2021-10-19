@@ -36,7 +36,7 @@
                 <button id="b-login">Login</button>
             </div>
         </form>
-        <div id="olvide-div"><p class="icon-info-circled">Olvidé mi contraseña</p></div>
+        <!-- <div id="olvide-div"><p class="icon-info-circled">Olvidé mi contraseña</p></div> -->
 
        
     </section>

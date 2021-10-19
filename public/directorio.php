@@ -153,7 +153,7 @@
         </div>
     </section>
 
-    <section class="afiliarse">
+    <section class="afiliarse" style="border-bottom-left-radius: 0px !important;">
 
         <div class="afiliarse-background-container">
             <div class="afiliarse-background"></div>
@@ -179,7 +179,7 @@
         
     </section>
 
-    <div class="contacto" style="border-top-right-radius: 0;">
+    <div class="contacto" style="border-top-right-radius: 0; padding-top: 150px">
         <div class="message-contact">
             <h1>Contacto</h1>
             <h2>
