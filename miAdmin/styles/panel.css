@@ -42,6 +42,17 @@
   margin: 10px;
 }
 
+.card-medico .eliminarTarjeta {
+  color: #e61919;
+  font-size: 1.5rem;
+  padding-left: .2rem;
+  padding-top: .3rem;
+}
+
+.card-medico .eliminarTarjeta :hover {
+  cursor: pointer;
+}
+
 .card-medico .card-categoria {
   position: relative;
   margin-left: auto;

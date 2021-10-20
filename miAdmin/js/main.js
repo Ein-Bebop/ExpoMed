@@ -38,3 +38,12 @@ function cancelAdd() {
 function sendForm() {
     document.getElementById("form-add").submit();
 }
+
+function deleteById(idDelete){
+
+    if(confirm('¿Esta seguro de que quiere eliminar esta tarjeta?')){
+        document.getElementsByName('idToDelete')[0].value = idDelete;
+        document.getElementById("form-delete").submit();
+    }
+
+}

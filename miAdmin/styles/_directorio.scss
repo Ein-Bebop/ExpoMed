@@ -8,6 +8,17 @@
     overflow: hidden;
     margin: 10px;
 
+    
+    .eliminarTarjeta{
+        color: #e61919; 
+        font-size: 1.5rem; 
+        padding-left: .2rem; 
+        padding-top: .3rem; 
+        :hover{
+            cursor:pointer;
+        }
+    }
+
     .card-categoria{
         position: relative;
         margin-left: auto;

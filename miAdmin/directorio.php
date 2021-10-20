@@ -113,6 +113,12 @@
                     
                 </div>
 
+                <div class="menu-delete" style="display:none;">
+                    <form id="form-delete" action="operaciones/deleteDirectorio.php" method="post" enctype="multipart/form-data">
+                        <input type="text" name="idToDelete" style="">
+                    </form>
+                </div>
+
                 <div class="barra">
                     <input type="text" name="busqueda" id="buscar" placeholder="Buscar Médico, Categoría, Especialidad...">
                     <div class="button" onclick="addM();"><p class="icon-plus-circled"> Agregar Médico</p></div>
@@ -149,6 +155,7 @@
                                 $foto = $row['foto'];
 
                                 echo '<div class="card-medico">';
+                                echo '<div class="icon-cancel-circled2" style="color: #e61919; font-size: 1.5rem; padding-left: .2rem; padding-top: .3rem; height: 2rem; width: 2rem;" onclick="deleteById('.$row['idMed'].');"></div>';
                                 echo '<div class="card-categoria">Cultura</div>';
                                 echo "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../".$row['foto']."');'></div></div>";
                                 echo '<div class="card-rama">'.$row['area'].'</div>';
