@@ -18,21 +18,37 @@
         $descripcion = $_POST['descripcion'];
         $ubicacion = $_POST['ubicacion'];
         $bio = $_POST['bio'];
+        $foto = $_POST['fotoPath'];
 
-        //Sube el archivo a la carpeta de assets
-        // $filename = $_FILES['foto']['name'];
-        // $filesize = $_FILES['foto']['size'];
-        // $tmp_name = $_FILES['foto']['tmp_name'];
-        // $file_type = $_FILES['foto']['type'];
-        // $date = date("d-m-Y_h-i-s A"); //El nuevo nombre de la imagen será la hora actual en ese momento
-        // $temp = explode(".", $filename); //Quita la extensión del archivo
-        // $new_filename = $date . '.' . end($temp);//El nuevo nombre del archivo es la fecha y hora anterior de $date mas la extensión del archivo temporal del navegador
-        // $f_folder = "../../assets/directorio/" . DIRECTORY_SEPARATOR . $new_filename;//Ruta del archivo a la carpeta dentro del host
-        // move_uploaded_file($tmp_name, $f_folder);//Mueve el archivo a la carpeta
+        // Si hay archivo entonces también se debe reemplazar en la db y en la carpeta
+        if($_FILES['foto']['name'] != ""){
+            $filename = $_FILES['foto']['name'];
+            $filesize = $_FILES['foto']['size'];
+            $tmp_name = $_FILES['foto']['tmp_name'];
+            $file_type = $_FILES['foto']['type'];
+            $date = date("d-m-Y_h-i-s A"); //El nuevo nombre de la imagen será la hora actual en ese momento
+            $temp = explode(".", $filename); //Quita la extensión del archivo
+            $new_filename = $date . '.' . end($temp);//El nuevo nombre del archivo es la fecha y hora anterior de $date mas la extensión del archivo temporal del navegador
+            $f_folder = "../../assets/directorio/" . DIRECTORY_SEPARATOR . $new_filename;//Ruta del archivo a la carpeta dentro del host
+            move_uploaded_file($tmp_name, $f_folder);//Mueve el archivo a la carpeta
 
+            // Borramos la imagen anterior
+            // unlink($foto, $f_folder);
+            $fotoPathCompleto = $f_folder.$foto;
+            if(unlink(dirname(__FILE__)."/../../assets/directorio/".$foto)){
+                $noti = "Se borra correctamente";
+            }else{
+                $noti = "No se está borrando";
+                // if(file_exists(dirname(__FILE__)."/../../assets/directorio/".$foto)){
+                //     $noti .= "Sí existe el archivo";
+                // }
+            }
+            $sql = "UPDATE directorio SET area= '".$area."', nombre = '".$nombre."', especialidad='".$especialidad."', descripcion='".$descripcion."', ubicacion='".$ubicacion."', bio='".$bio."', foto='".$new_filename."' WHERE idMed='".$id."'";
+        }else{
+            $sql = "UPDATE directorio SET area= '".$area."', nombre = '".$nombre."', especialidad='".$especialidad."', descripcion='".$descripcion."', ubicacion='".$ubicacion."', bio='".$bio."' WHERE idMed='".$id."'";
+        }
+        
         // $ruta = "assets/directorio/".$new_filename;//La ruta del archivo, se ingresa a la tabla
-
-        $sql = "UPDATE directorio SET area= '".$area."', nombre = '".$nombre."', especialidad='".$especialidad."', descripcion='".$descripcion."', ubicacion='".$ubicacion."', bio='".$bio."' WHERE idMed='".$id."'";
         $result = $conn->query($sql);
         
         //Cerramos conexión

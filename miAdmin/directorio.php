@@ -91,6 +91,7 @@
                     <form id="form-add" action="operaciones/insertDirectorio.php" method="post" enctype="multipart/form-data">
                         <div class="menu-add-titulo">Agregar Médico</div>
                         <input type="text" name="idInvisible" style="display:none;">
+                        <input type="text" name="fotoPath" style="display:none;">
                         <div class="menu-option">Area</div>
                         <input type="text" name="area" placeholder="Ingresa el área de trabajo del médico" required>
                         <div class="menu-option">Nombre</div>
@@ -157,7 +158,7 @@
                                 echo '<div class="card-medico">';
                                 echo '<div class="icon-cancel-circled2" style="color: #e61919; font-size: 1.5rem; padding-left: .2rem; padding-top: .3rem; height: 2rem; width: 2rem;" onclick="deleteById('.$row['idMed'].');"></div>';
                                 echo '<div class="card-categoria">Cultura</div>';
-                                echo "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../".$row['foto']."');'></div></div>";
+                                echo "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../assets/directorio/".$row['foto']."');'></div></div>";
                                 echo '<div class="card-rama">'.$row['area'].'</div>';
                                 echo '<div class="card-nombre">'.$row['nombre'].'</div>';
                                 echo '<div class="card-especialidad">'.$row['especialidad'].'</div>';

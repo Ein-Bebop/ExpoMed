@@ -28,6 +28,7 @@ function editM(id, area, nombre, especialidad, descripcion, ubicacion, bio, foto
     document.getElementsByName('ubicacion')[0].value = ubicacion;
     document.getElementsByName('bio')[0].value = bio;
     document.getElementsByName('idInvisible')[0].value = id;
+    document.getElementsByName('fotoPath')[0].value = foto;
 
 }
 
