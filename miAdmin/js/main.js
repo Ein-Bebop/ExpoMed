@@ -47,3 +47,33 @@ function deleteById(idDelete){
     }
 
 }
+
+
+function addTaller(){
+    document.getElementsByClassName("menu-add")[0].style.display = "flex";
+    document.getElementsByClassName("menu-add-titulo")[0].innerHTML = "Agregar Taller";
+    document.getElementById("form-add").setAttribute('action','operaciones/insertTaller.php');
+    document.getElementsByClassName("button-a")[0].innerHTML = "Añadir";
+
+
+    document.getElementsByName('area')[0].value = "";
+    document.getElementsByName('nombre')[0].value = "";
+    document.getElementsByName('especialidad')[0].value = "";
+    document.getElementsByName('descripcion')[0].value = "";
+    document.getElementsByName('ubicacion')[0].value = "";
+    document.getElementsByName('idInvisible')[0].value = "";
+}
+
+function editTaller(id, tipo, nombre, imparte, descripcion, link) {
+    document.getElementsByClassName("menu-add")[0].style.display = "flex";
+    document.getElementsByClassName("menu-add-titulo")[0].innerHTML = "Editar Taller";
+    document.getElementById("form-add").setAttribute('action','operaciones/editTaller.php');
+    document.getElementsByClassName("button-a")[0].innerHTML = "Actualizar";
+
+    document.getElementsByName('area')[0].value = tipo;
+    document.getElementsByName('nombre')[0].value = nombre;
+    document.getElementsByName('especialidad')[0].value = imparte;
+    document.getElementsByName('descripcion')[0].value = descripcion;
+    document.getElementsByName('ubicacion')[0].value = link;
+    document.getElementsByName('idInvisible')[0].value = id;
+}

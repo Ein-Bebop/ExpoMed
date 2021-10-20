@@ -86,29 +86,30 @@
         
         <div id="panel-der">
             <div class="menu-add">
-                <form id="form-add" action="operaciones/insertDirectorio.php" method="post" enctype="multipart/form-data">
+                <form id="form-add" action="operaciones/insertTaller.php" method="post" enctype="multipart/form-data">
                     <div class="menu-add-titulo">Agregar Taller</div>
-                    <div class="menu-option">Area</div>
-                    <input type="text" name="area" placeholder="Ingresa el área de trabajo del médico" required>
-                    <div class="menu-option">Categoria</div>
-                    <input type="text" name="categoria" placeholder="Ingresa la categoria" required>
+                    <input type="text" name="idInvisible" style="display:none;">
+                    <div class="menu-option">Tipo</div>
+                    <input type="text" name="area" placeholder="Ingresa el tipo de taller" required>
                     <div class="menu-option">Nombre</div>
-                    <input type="text" name="nombre" placeholder="Ingresa el nombre del médico" required>
-                    <div class="menu-option">Especialidad</div>
-                    <input type="text" name="especialidad" placeholder="Ingresa la especialidad del médico" required>
+                    <input type="text" name="nombre" placeholder="Ingresa el nombre del taller" required>
+                    <div class="menu-option">Imparte</div>
+                    <input type="text" name="especialidad" placeholder="Ingresa el nombre de quien imparte" required>
                     <div class="menu-option">Descripción</div>
-                    <input type="text" name="descripcion" placeholder="Ingresa la descripción de su trabajo" required>
-                    <div class="menu-option">Ubicación</div>
-                    <input type="text" name="ubicacion" placeholder="Ingresa la ubicación del médico" required>
-                    <div class="menu-option">Biografía</div>
-                    <input type="text" name="bio" placeholder="Ingresa un enlace de biografía del médico (Opcional)" required>
-                    <div class="menu-option">Foto del Médico</div>
+                    <input type="text" name="descripcion" placeholder="Ingresa la descripción del taller" required>
+                    <div class="menu-option">Link</div>
+                    <input type="text" name="ubicacion" placeholder="Ingresa el link al video del taller" required>
+                    <div class="menu-option">Foto</div>
                     <input style="padding-top:10px" type="file" accept="image/*" name="foto">
                     <div class="form-buttons">
                         <div class="button-b" onclick="cancelAdd();">Cancelar</div>
                         <div class="button-a" onclick="sendDirectorio();">Añadir</div>
                     </div>
                 </form>
+            </div>
+
+            <div class="barra">
+                <div class="button" onclick="addTaller();" style="margin-left: 1rem;"><p class="icon-plus-circled"> Agregar Taller</p></div>
             </div>
 
             <div id="content" style="margin-top: 10rem;">
@@ -134,6 +135,13 @@
 
                                 $id=1;//ID de filas
 
+                                $tipo = $row['tipo'];
+                                $nombre = $row['nombre'];
+                                $imparte = $row['imparte'];
+                                $brief = $row['brief'];
+                                $link = $row['link'];
+                                $foto = $row['img'];
+
                                 echo '<div class="card-medico">';
                                 echo '<div class="card-categoria">'.$row['tipo'].'</div>';
                                 echo "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../assets/talleres/".$row['img']."');'></div></div>";
@@ -141,7 +149,7 @@
                                 echo '<div class="card-nombre">'.$row['nombre'].'</div>';
                                 echo '<div class="card-especialidad">'.$row['imparte'].'</div>';
                                 echo '<div class="card-especialidad" style="color: #bd0000;"><a href="'.$row['link'].'" style="text-decoration:none; color: #bd0000;" target="_blank"">'.$row['link'].'</a></div>';
-                                echo '<div class="card-ver-mas">Editar</div>'; 
+                                echo '<div class="card-ver-mas" onclick="editM('.$row['idTaller'].',`'.$tipo.'`,`'.$nombre.'`,`'.$imparte.'`,`'.$brief.'`,`'.$link.'`);">Editar</div>';
                                 echo '</div>';
                                 
                                 $id++;
@@ -168,5 +176,11 @@
 
         </div>
     </section>
+
+    <div id="notificacion" style="z-index:3"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/notificacion.js"></script>
+
 </body>
 </html>
