@@ -154,6 +154,91 @@
         </div>
     </section>
 
+    <style>
+
+        .afiliarse .afiliarse-background-container{
+            
+        }
+
+        @media (min-width:320px) and (max-width:800px){
+            .afiliarse-info{
+                border-top-right-radius: 0% !important;
+                border-bottom-right-radius: 0% !important;
+                top: -670px !important;
+            }
+
+            .afiliarse-descargar, .afiliarse-boton{
+                margin-left: 20px !important;
+            }
+        }
+
+        @media (min-width:510px) and (max-width:878px){
+            .afiliarse-info{
+                padding-bottom: 60px !important;
+            }
+        }
+
+
+        @media (min-width:768px) and (max-width:801px){
+            .afiliarse-info{
+                top: -525px !important;
+            }
+
+            .se-aprende{
+                height: auto !important;
+                margin-top: 60px !important;
+            }
+
+            .se-aprende .se-aprende-info{
+                width: 100%;
+            }
+        }
+
+        @media (min-width:801px) and (max-width:1000px){
+            .afiliarse-info{
+                top: -530px !important;
+                width: 80% !important;
+                margin-left: 70px;
+            }
+        }
+
+        @media (min-width:880px) and (max-width:1000px){
+            .afiliarse-info{
+                
+            }
+        }
+
+        @media (min-width:1024px) and (max-width:1600px){
+            .afiliarse-info{
+                top: -530px !important;
+            }
+        }
+
+        @media (min-width:1300px) and (max-width:1600px){
+            .afiliarse-info{
+                top: -500px !important;
+            }
+        }
+
+        @media (min-width:1600px) and (max-width:1800px){
+            .afiliarse-info{
+                
+                
+            }
+        }
+
+
+        @media (min-width:1920px) and (max-width:2500px){
+            .afiliarse-info{
+              
+                
+            }
+        }
+        
+        
+
+    </style>
+
     <section class="afiliarse" style="border-bottom-left-radius: 0px !important;">
 
         <div class="afiliarse-background-container">
@@ -162,17 +247,18 @@
         
         <div class="afiliarse-info">
             <div class="afiliarse-titulo">Sé parte de EEMTTC</div>
-            <div class="afiliarse-desccripcion">¿Quieres formar parte de la red de Médicos Tradicionales y Terapeutas más grande? Afiliate a nosotros y obtén increibles beneficios al igual que compartes tu profesión con gente que lo necesita.</div>
-            <div class="afiliarse-beneficios">Beneficios</div>
-            <div class="afiliarse-lista"><li>Colaboración en iniciativas dentro de la Asociación.</li></div>
+            <div class="afiliarse-desccripcion" style="margin-top: 5px;">¿Quieres formar parte de la red de Médicos Tradicionales y Terapeutas más grande? Afiliate a nosotros y obtén increibles beneficios al igual que compartes tu profesión con gente que lo necesita.</div>
+            <div class="afiliarse-beneficios" style="margin-top: 10px; margin-bottom: 0;">Beneficios</div>
+            <div class="afiliarse-lista" style="margin-top: 0;"><li>Colaboración en iniciativas dentro de la Asociación.</li></div>
             <div class="afiliarse-lista"><li>Formar parte del Directorio Internacional.</li></div>
             <div class="afiliarse-lista"><li>Beneficios de network.</li></div>
             <div class="afiliarse-lista"><li>Descuentos, promociones, e invitaciones especiales a eventos o capacitaciones.</li></div>
             <div class="afiliarse-lista"><li>Credencial de Afiliación.</li></div>
             <div class="afiliarse-lista"><li>y muchos más...</li></div>
-            <div class="botones-container">
-                <div class="afiliarse-descargar" bot-d="1"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></div>
-                <div class="afiliarse-boton" bot-d="2"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Quiero Afiliarme</a></div>
+            <div class="afiliarse-desccripcion">Completa el formato de afiliación con la información y documentación requerida y envíalo al correo afiliacion@eemttc.org. Nuestro equipo se comunicará contigo para completar el proceso.</div>
+            <div class="botones-container" style="margin-top: 1rem;">
+                <div class="afiliarse-descargar"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></div>
+                <div class="afiliarse-boton"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Quiero Afiliarme</a></div>
             </div>
             
         </div>
