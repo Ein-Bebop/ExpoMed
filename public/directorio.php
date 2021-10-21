@@ -31,7 +31,7 @@
 
     <section id="home-container" responsive-dir="home">
         <div id="home-titulo">Directorio Internacional</div>
-        <div id="barra-busqueda">
+        <!-- <div id="barra-busqueda">
             <select class="busqueda-filtro" name="filtro" >
                 <option value="area" selected>
                   Área
@@ -42,7 +42,7 @@
             </select>
             <div id="busqueda-caja"><input type="text" placeholder="Palabras claves, nombre, área, lugar, etc."></div>
             <div id="busqueda-boton">Buscar <p class="icon-search-1"></p></div>
-        </div>
+        </div> -->
     </section>
 
     <section id="directorio-container">
