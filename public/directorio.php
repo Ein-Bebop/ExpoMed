@@ -121,7 +121,7 @@
                             
                             echo    '<div class="card-medico slide" data-slide-index="'.$id.'">';
                             echo    '<div class="card-categoria">Cultura</div>';
-                            echo    "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../".$row['foto']."');'></div></div>";
+                            echo    "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../assets/directorio/".$row['foto']."');'></div></div>";
                             echo    '<div class="card-rama">'.$row['area'].'</div>';
                             echo    '<div class="card-nombre">'.$row['nombre'].'</div>';
                             echo    '<div class="card-especialidad">'.$row['especialidad'].'</div>';
