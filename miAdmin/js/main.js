@@ -12,7 +12,7 @@ function addM() {
     document.getElementsByName('ubicacion')[0].value = "";
     document.getElementsByName('bio')[0].value = "";
     document.getElementsByName('idInvisible')[0].value = "";
-
+    document.getElementsByName('fotoPath')[0].value = "";
 }
 
 function editM(id, area, nombre, especialidad, descripcion, ubicacion, bio, foto) {
@@ -63,9 +63,10 @@ function addTaller(){
     document.getElementsByName('descripcion')[0].value = "";
     document.getElementsByName('ubicacion')[0].value = "";
     document.getElementsByName('idInvisible')[0].value = "";
+    document.getElementsByName('fotoPath')[0].value = "";
 }
 
-function editTaller(id, tipo, nombre, imparte, descripcion, link) {
+function editTaller(id, tipo, nombre, imparte, descripcion, link, foto) {
     document.getElementsByClassName("menu-add")[0].style.display = "flex";
     document.getElementsByClassName("menu-add-titulo")[0].innerHTML = "Editar Taller";
     document.getElementById("form-add").setAttribute('action','operaciones/editTaller.php');
@@ -77,4 +78,5 @@ function editTaller(id, tipo, nombre, imparte, descripcion, link) {
     document.getElementsByName('descripcion')[0].value = descripcion;
     document.getElementsByName('ubicacion')[0].value = link;
     document.getElementsByName('idInvisible')[0].value = id;
+    document.getElementsByName('fotoPath')[0].value = foto;
 }

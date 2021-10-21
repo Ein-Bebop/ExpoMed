@@ -11,12 +11,11 @@
         date_default_timezone_set("America/Mexico_City");//Dinfe la zona horaria a la de méxico
 
         //Consigue los datos del form de directorio
-        $area = $_POST['area'];
+        $tipo = $_POST['area'];
         $nombre = $_POST['nombre'];
-        $especialidad = $_POST['especialidad'];
-        $descripcion = $_POST['descripcion'];
-        $ubicacion = $_POST['ubicacion'];
-        $bio = $_POST['bio'];
+        $imparte = $_POST['especialidad'];
+        $brief = $_POST['descripcion'];
+        $link = $_POST['ubicacion'];
 
         //Sube el archivo a la carpeta de assets
         $filename = $_FILES['foto']['name'];
@@ -26,12 +25,12 @@
         $date = date("d-m-Y_h-i-s A"); //El nuevo nombre de la imagen será la hora actual en ese momento
         $temp = explode(".", $filename); //Quita la extensión del archivo
         $new_filename = $date . '.' . end($temp);//El nuevo nombre del archivo es la fecha y hora anterior de $date mas la extensión del archivo temporal del navegador
-        $f_folder = "../../assets/directorio/" . DIRECTORY_SEPARATOR . $new_filename;//Ruta del archivo a la carpeta dentro del host
+        $f_folder = "../../assets/talleres/" . DIRECTORY_SEPARATOR . $new_filename;//Ruta del archivo a la carpeta dentro del host
         move_uploaded_file($tmp_name, $f_folder);//Mueve el archivo a la carpeta
 
         $ruta = $new_filename;//La ruta del archivo, se ingresa a la tabla
 
-        $sql = "INSERT INTO directorio (area, nombre, especialidad, descripcion, ubicacion, bio, foto) VALUES ('".$area."', '".$nombre."', '".$especialidad."', '".$descripcion."', '".$ubicacion."', '2' ,'".$ruta."')";
+        $sql = "INSERT INTO talleres (tipo, nombre, imparte, brief, link, img) VALUES ('".$tipo."', '".$nombre."', '".$imparte."', '".$brief."', '".$link."', '".$ruta."')";
         $result = $conn->query($sql);
         
         $conn->close();
@@ -45,7 +44,7 @@
         $notiCK_value = $noti;
         setcookie($notiCK, $notiCK_value, 0, "/"); // 86400 = 1 day
         
-        header("location: ../directorio.php");
+        header("location: ../talleres.php");
     }
     
 //Finaliza Script PHP

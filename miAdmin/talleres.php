@@ -89,6 +89,7 @@
                 <form id="form-add" action="operaciones/insertTaller.php" method="post" enctype="multipart/form-data">
                     <div class="menu-add-titulo">Agregar Taller</div>
                     <input type="text" name="idInvisible" style="display:none;">
+                    <input type="text" name="fotoPath" style="display:none;">
                     <div class="menu-option">Tipo</div>
                     <input type="text" name="area" placeholder="Ingresa el tipo de taller" required>
                     <div class="menu-option">Nombre</div>
@@ -103,8 +104,14 @@
                     <input style="padding-top:10px" type="file" accept="image/*" name="foto">
                     <div class="form-buttons">
                         <div class="button-b" onclick="cancelAdd();">Cancelar</div>
-                        <div class="button-a" onclick="sendDirectorio();">Añadir</div>
+                        <div class="button-a" onclick="sendForm();">Añadir</div>
                     </div>
+                </form>
+            </div>
+
+            <div class="menu-delete" style="display:none;">
+                <form id="form-delete" action="operaciones/deleteTaller.php" method="post" enctype="multipart/form-data">
+                    <input type="text" name="idToDelete" style="">
                 </form>
             </div>
 
@@ -143,13 +150,14 @@
                                 $foto = $row['img'];
 
                                 echo '<div class="card-medico">';
+                                echo '<div class="icon-cancel-circled2" style="color: #e61919; font-size: 1.5rem; padding-left: .2rem; padding-top: .3rem; height: 2rem; width: 2rem;" onclick="deleteById('.$row['idTaller'].');"></div>';
                                 echo '<div class="card-categoria">'.$row['tipo'].'</div>';
                                 echo "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../assets/talleres/".$row['img']."');'></div></div>";
                                 // echo '<div class="card-rama">'.$row['tipo'].'</div>';
                                 echo '<div class="card-nombre">'.$row['nombre'].'</div>';
                                 echo '<div class="card-especialidad">'.$row['imparte'].'</div>';
                                 echo '<div class="card-especialidad" style="color: #bd0000;"><a href="'.$row['link'].'" style="text-decoration:none; color: #bd0000;" target="_blank"">'.$row['link'].'</a></div>';
-                                echo '<div class="card-ver-mas" onclick="editM('.$row['idTaller'].',`'.$tipo.'`,`'.$nombre.'`,`'.$imparte.'`,`'.$brief.'`,`'.$link.'`);">Editar</div>';
+                                echo '<div class="card-ver-mas" onclick="editTaller('.$row['idTaller'].',`'.$tipo.'`,`'.$nombre.'`,`'.$imparte.'`,`'.$brief.'`,`'.$link.'`,`'.$foto.'`);">Editar</div>';
                                 echo '</div>';
                                 
                                 $id++;

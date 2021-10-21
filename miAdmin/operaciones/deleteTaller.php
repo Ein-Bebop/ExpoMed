@@ -12,9 +12,8 @@
 
         //Consigue los datos del form de directorio
         $id = $_POST['idToDelete'];
-        // TODO: Borrar también la img de la carpeta
 
-        $sql = "DELETE FROM directorio WHERE idMed='".$id."'";
+        $sql = "DELETE FROM talleres WHERE idTaller='".$id."'";
         $result = $conn->query($sql);
         
         //Cerramos conexión
@@ -28,7 +27,7 @@
         $notiCK_value = $noti;
         setcookie($notiCK, $notiCK_value, 0, "/"); // 86400 = 1 day
         
-        header("location: ../directorio.php");
+        header("location: ../talleres.php");
     }
     
 //Finaliza Script PHP
