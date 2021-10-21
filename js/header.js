@@ -28,7 +28,7 @@ function esconderHeader() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("header").style.backgroundColor = "#522d6d";
                 // document.getElementsByClassName("header-o").style = "color:#ffffff";
-                var cols = document.getElementsByTagName("a");
+                var cols = document.getElementById("header").getElementsByTagName("a");
                 for(i=0; i<cols.length; i++) {
                   cols[i].style.color = "#fff";
                 }
@@ -41,7 +41,7 @@ function esconderHeader() {
                 document.getElementById("o-activo").style.color = "";  
                 document.getElementById("color-img-ch").src = "../assets/Logo_Color.svg";  
                 
-                var cols = document.getElementsByTagName("a");
+                var cols = document.getElementById("header").getElementsByTagName("a");
                 for(i=0; i<cols.length; i++) {
                   cols[i].style.color = "#ffb259";
                 }

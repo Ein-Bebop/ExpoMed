@@ -524,6 +524,10 @@
   }
 }
 
+a:link {
+  color: #FFF !important;
+}
+
 .af-tit-text {
   z-index: 10;
   position: relative;
