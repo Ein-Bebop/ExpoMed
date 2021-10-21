@@ -112,6 +112,7 @@
             <div class="menu-delete" style="display:none;">
                 <form id="form-delete" action="operaciones/deleteTaller.php" method="post" enctype="multipart/form-data">
                     <input type="text" name="idToDelete" style="">
+                    <input type="text" name="fotoToDelete" style="">
                 </form>
             </div>
 

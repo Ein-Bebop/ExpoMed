@@ -12,9 +12,20 @@
 
         //Consigue los datos del form de directorio
         $id = $_POST['idToDelete'];
+        // Borrar también la img de la carpeta
+        $pathImg = $_POST['fotoToDelete'];
 
         $sql = "DELETE FROM talleres WHERE idTaller='".$id."'";
         $result = $conn->query($sql);
+
+        // Si no falla el query entonces se borra la img
+        if($result){
+            if(unlink(dirname(__FILE__)."/../../assets/talleres/".$pathImg)){
+                $noti = "Se borra correctamente";
+            }else{
+                $noti = "No se está borrando";
+            }
+        }
         
         //Cerramos conexión
         $conn->close();
