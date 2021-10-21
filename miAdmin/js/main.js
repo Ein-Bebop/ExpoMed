@@ -40,14 +40,17 @@ function sendForm() {
     document.getElementById("form-add").submit();
 }
 
-function deleteById(idDelete){
+function deleteById(idDelete, fotoPath){
 
     if(confirm('¿Esta seguro de que quiere eliminar esta tarjeta?')){
         document.getElementsByName('idToDelete')[0].value = idDelete;
+        document.getElementsByName('fotoToDelete')[0].value = fotoPath;
         document.getElementById("form-delete").submit();
     }
 
 }
+
+// Talleres
 
 
 function addTaller(){
@@ -70,6 +73,40 @@ function editTaller(id, tipo, nombre, imparte, descripcion, link, foto) {
     document.getElementsByClassName("menu-add")[0].style.display = "flex";
     document.getElementsByClassName("menu-add-titulo")[0].innerHTML = "Editar Taller";
     document.getElementById("form-add").setAttribute('action','operaciones/editTaller.php');
+    document.getElementsByClassName("button-a")[0].innerHTML = "Actualizar";
+
+    document.getElementsByName('area')[0].value = tipo;
+    document.getElementsByName('nombre')[0].value = nombre;
+    document.getElementsByName('especialidad')[0].value = imparte;
+    document.getElementsByName('descripcion')[0].value = descripcion;
+    document.getElementsByName('ubicacion')[0].value = link;
+    document.getElementsByName('idInvisible')[0].value = id;
+    document.getElementsByName('fotoPath')[0].value = foto;
+}
+
+
+// Eventos
+
+function addEvento(){
+    document.getElementsByClassName("menu-add")[0].style.display = "flex";
+    document.getElementsByClassName("menu-add-titulo")[0].innerHTML = "Agregar Evento";
+    document.getElementById("form-add").setAttribute('action','operaciones/insertEvento.php');
+    document.getElementsByClassName("button-a")[0].innerHTML = "Añadir";
+
+
+    document.getElementsByName('area')[0].value = "";
+    document.getElementsByName('nombre')[0].value = "";
+    document.getElementsByName('especialidad')[0].value = "";
+    document.getElementsByName('descripcion')[0].value = "";
+    document.getElementsByName('ubicacion')[0].value = "";
+    document.getElementsByName('idInvisible')[0].value = "";
+    document.getElementsByName('fotoPath')[0].value = "";
+}
+
+function editEvento(id, tipo, nombre, imparte, descripcion, link, foto) {
+    document.getElementsByClassName("menu-add")[0].style.display = "flex";
+    document.getElementsByClassName("menu-add-titulo")[0].innerHTML = "Editar Evento";
+    document.getElementById("form-add").setAttribute('action','operaciones/editEvento.php');
     document.getElementsByClassName("button-a")[0].innerHTML = "Actualizar";
 
     document.getElementsByName('area')[0].value = tipo;
