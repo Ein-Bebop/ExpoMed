@@ -57,7 +57,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#522d6d">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="../icons/favicon.png">
     <title>Admin - Expo Encuentro</title>
     <link rel="stylesheet" href="styles/panel.css">
     <link rel="stylesheet" href="../styles/fontello.css">
@@ -67,14 +67,15 @@
         <div id="panel-izq">
             <div id="panel-logo"><img src="../assets/Logo_Blanco.svg"></div>
             <div class="panel-izq-division"></div>
-            <div class="panel-user"><img src="img/default-user.png"><p><?php echo $nombre; ?></p></div>
-            <div class="panel-user-config"><p class="icon-cog"> Configuración</p></div>
+            <div class="panel-user"><img src="user.png"><p><?php echo $nombre; ?></p></div>
+            <!-- <div class="panel-user-config"><p class="icon-cog"> Configuración</p></div> -->
             <div class="panel-izq-division"></div>
             <div class="nav">
                 <div></div>
                 <div class="option" onclick="window.location.href='index.php'"><p class="icon-folder-empty"> Directorio</p></div>
-                <div class="option" style="background:#ff7f30;font-weight:bolder;"><p class="icon-sliders"> Admin</p></div>
                 <div class="option" onclick="window.location.href='talleres.php'"><p class="icon-folder-empty"> Talleres</p></div>
+                <div class="option" onclick="window.location.href='eventos.php'"><p class="icon-folder-empty"> Eventos</p></div>
+                <div class="option" style="background:#ff7f30;font-weight:bolder;"><p class="icon-sliders"> Admin</p></div>
 
             </div>
             <div class="exit">

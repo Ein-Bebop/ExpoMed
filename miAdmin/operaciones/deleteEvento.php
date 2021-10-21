@@ -15,18 +15,18 @@
         // Borrar también la img de la carpeta
         $pathImg = $_POST['fotoToDelete'];
 
-        $sql = "DELETE FROM talleres WHERE idTaller='".$id."'";
+        $sql = "DELETE FROM eventos WHERE idTaller='".$id."'";
         $result = $conn->query($sql);
-
+        
         // Si no falla el query entonces se borra la img
         if($result){
-            if(unlink(dirname(__FILE__)."/../../assets/talleres/".$pathImg)){
+            if(unlink(dirname(__FILE__)."/../../assets/eventos/".$pathImg)){
                 $noti = "Se borra correctamente";
             }else{
                 $noti = "No se está borrando";
             }
         }
-        
+
         //Cerramos conexión
         $conn->close();
 
@@ -38,7 +38,7 @@
         $notiCK_value = $noti;
         setcookie($notiCK, $notiCK_value, 0, "/"); // 86400 = 1 day
         
-        header("location: ../talleres.php");
+        header("location: ../eventos.php");
     }
     
 //Finaliza Script PHP

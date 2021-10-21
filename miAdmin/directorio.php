@@ -57,7 +57,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#522d6d">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="../icons/favicon.png">
     <title>Admin - Expo Encuentro</title>
     <link rel="stylesheet" href="styles/panel.css">
     <link rel="stylesheet" href="../styles/fontello.css">
@@ -68,14 +68,15 @@
         <div id="panel-izq">
             <div id="panel-logo"><img src="../assets/Logo_Blanco.svg"></div>
             <div class="panel-izq-division"></div>
-            <div class="panel-user"><img src="img/default-user.png"><p><?php echo $nombre; ?></p></div>
-            <div class="panel-user-config"><p class="icon-cog"> Configuración</p></div>
+            <div class="panel-user"><img src="user.png"><p><?php echo $nombre; ?></p></div>
+            <!-- <div class="panel-user-config"><p class="icon-cog"> Configuración</p></div> -->
             <div class="panel-izq-division"></div>
             <div class="nav">
                 <div></div>
                 <div class="option" style="background:#ff7f30;font-weight:bolder;"><p class="icon-folder-empty"> Directorio</p></div>
-                <div class="option" onclick="window.location.href='users.php'"><p class="icon-sliders"> Admin</p></div>
                 <div class="option" onclick="window.location.href='talleres.php'"><p class="icon-folder-empty"> Talleres</p></div>
+                <div class="option" onclick="window.location.href='eventos.php'"><p class="icon-folder-empty"> Eventos</p></div>
+                <div class="option" onclick="window.location.href='users.php'"><p class="icon-sliders"> Admin</p></div>
 
 
             </div>
@@ -117,12 +118,13 @@
                 <div class="menu-delete" style="display:none;">
                     <form id="form-delete" action="operaciones/deleteDirectorio.php" method="post" enctype="multipart/form-data">
                         <input type="text" name="idToDelete" style="">
+                        <input type="text" name="fotoToDelete" style="">
                     </form>
                 </div>
 
                 <div class="barra">
-                    <input type="text" name="busqueda" id="buscar" placeholder="Buscar Médico, Categoría, Especialidad...">
-                    <div class="button" onclick="addM();"><p class="icon-plus-circled"> Agregar Médico</p></div>
+                    <!-- <input type="text" name="busqueda" id="buscar" placeholder="Buscar Médico, Categoría, Especialidad..."> -->
+                    <div class="button" onclick="addM();" style="margin-left: 1rem;"><p class="icon-plus-circled"> Agregar Médico</p></div>
                 </div>
 
                 <div id="content">
@@ -156,7 +158,7 @@
                                 $foto = $row['foto'];
 
                                 echo '<div class="card-medico">';
-                                echo '<div class="icon-cancel-circled2" style="color: #e61919; font-size: 1.5rem; padding-left: .2rem; padding-top: .3rem; height: 2rem; width: 2rem;" onclick="deleteById('.$row['idMed'].');"></div>';
+                                echo '<div class="icon-cancel-circled2" style="color: #e61919; font-size: 1.5rem; padding-left: .2rem; padding-top: .3rem; height: 2rem; width: 2rem;" onclick="deleteById('.$row['idMed'].', `'.$foto.'`);"></div>';
                                 echo '<div class="card-categoria">Cultura</div>';
                                 echo "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../assets/directorio/".$row['foto']."');'></div></div>";
                                 echo '<div class="card-rama">'.$row['area'].'</div>';
