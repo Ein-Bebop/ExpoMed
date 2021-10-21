@@ -353,6 +353,17 @@
 
 .se-aprende .se-aprende-img {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .se-aprende .se-aprende-img img {
@@ -2859,10 +2870,19 @@ body {
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .se-aprende .se-aprende-img img {
     display: block;
     margin: 40px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 80% !important;
   }
   .capacitacion-info {

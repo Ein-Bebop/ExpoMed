@@ -192,12 +192,95 @@
             </div>  
         </div>
         -->
+        
         <div class="owl-carousel comunidad-slider">
             <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/1.jpg');"></div>
-            <div class="comunidad-img" style="transform: scaleX(-1);background-image: url('../assets/talleres/slider/1.jpg');"></div>
+            <!-- <div class="comunidad-img" style="transform: scaleX(-1);background-image: url('../assets/talleres/slider/1.jpg');"></div> -->
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/2.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/3.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/4.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/5.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/6.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/7.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/8.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/9.jpg');"></div>
         </div>
     </section>
 
+
+    <style>
+
+        .afiliarse .afiliarse-background-container{
+            height: 600px !important;
+        }
+
+        @media (min-width:320px) and (max-width:800px){
+            .afiliarse-info{
+                border-top-right-radius: 0% !important;
+                top: -750px !important;
+            }
+
+            .afiliarse-descargar, .afiliarse-boton{
+                margin-left: 20px !important;
+            }
+        }
+
+        @media (min-width:510px) and (max-width:878px){
+            .afiliarse-info{
+                border-bottom-right-radius: 0% !important;
+                padding-bottom: 60px !important;
+            }
+        }
+
+
+        @media (min-width:768px) and (max-width:801px){
+            .afiliarse-info{
+                padding-bottom: 80px !important;
+                top: -600px !important;
+            }
+        }
+
+        @media (min-width:801px) and (max-width:1000px){
+            .afiliarse-info{
+                top: -495px !important;
+                margin-left: 100px !important;
+                width: 80% !important;
+            }
+        }
+
+        @media (min-width:880px) and (max-width:1000px){
+            .afiliarse-info{
+                padding-bottom: 60px !important;
+                width: 70% !important;
+            }
+        }
+
+        @media (min-width:1024px) and (max-width:1600px){
+            .afiliarse-info{
+                top: -576px !important;;
+                width: 70% !important;
+                
+            }
+        }
+
+        @media (min-width:1600px) and (max-width:1800px){
+            .afiliarse-info{
+                top: -530px !important;
+                
+            }
+        }
+
+
+        @media (min-width:1920px) and (max-width:2500px){
+            .afiliarse-info{
+                top: -530px !important;
+                
+            }
+        }
+        
+        
+
+    </style>
     <section class="afiliarse" style="border-top-left-radius:0;border-bottom-left-radius:150px;padding-bottom: 100px; height: 625px;">
 
         <div class="afiliarse-background-container">
@@ -214,6 +297,7 @@
             <div class="afiliarse-lista"><li>Descuentos, promociones, e invitaciones especiales a eventos o capacitaciones.</li></div>
             <div class="afiliarse-lista"><li>Credencial de Afiliación.</li></div>
             <div class="afiliarse-lista"><li>y muchos más...</li></div>
+            <div class="afiliarse-desccripcion">Completa el formato de afiliación con la información y documentación requerida y envíalo al correo afiliacion@eemttc.org. Nuestro equipo se comunicará contigo para completar el proceso.</div>
             <div class="botones-container" style="margin-top: 1rem;">
                 <div class="afiliarse-descargar"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></div>
                 <div class="afiliarse-boton"><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Quiero Afiliarme</a></div>
@@ -228,10 +312,12 @@
             Síguenos en nuestras redes
         </div>
         <div class="redes-sociales">
-            <a class="icon-icon_sm_youtube"></a>
-            <a class="icon-icon_sm_twt"></a>
-            <a class="icon-icon_sm_ig"></a>
-            <a class="icon-icon_sm_fb"></a>
+            <a class="icon-icon_sm_fb" href="https://www.facebook.com/ExpoEncuentroMedicinaTradicionalYTerapias" target="_blank"></a>
+            <a class="icon-icon_sm_youtube" href="https://youtube.com/channel/UC4FapmbeW4_EikKqCvbUdRA" target="_blank"></a>
+            <a class="icon-icon_sm_ig" style="margin-left: 15px;" href="https://www.instagram.com/medicinatradicionalyterapias/" target="_blank"></a>
+            <a class="icon-001-tik-tok" href="https://vm.tiktok.com/ZMeyFShYA/" target="_blank"></a>
+            <a class="icon-001-telegram" href="https://t.me/MedicinaTradicionalYTerapias" target="_blank"></a>
+            <a class="icon-icon_sm_twt" href="https://twitter.com/medicin_terapia" target="_blank"></a>
         </div>
     </section>
 
@@ -293,17 +379,19 @@
             <h3>Mapa del sitio</h3>
 
             <ul>
-                <li><a href="/">Talleres</a></li>
-                <li><a href="/">Atención</a></li>
-                <li><a href="/" class="footer-li-dir">Directorio</a></li>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="atencion.html">Atención</a></li>
+                <li><a href="directorio.php" >Directorio</a></li>
+                <li><a href="" class="footer-li-dir">Afiliación</a></li>
             </ul>            
         </div>
 
         <div class="forma-parte-footer">
             <h3>Forma parte de EEMTTC</h3>
             <ul>
-                <li><a href="/">Descargar Bases</a></li>
-                <li><a href="/">Afiliación</a></li>
+                <li><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Descargar Bases</a></li>
+                <li><a href="../assets/bases-expoencuentro.pdf" download="Bases Expoencuentro">Afiliación</a></li>
                 <li><a href="/">¡Contáctanos!</a></li>
             </ul>
         </div>
@@ -313,12 +401,13 @@
         <div class="nuestras-redes">
             <h2>¡Síguenos en nuestras redes!</h2>
             <div class="redes-sociales">
-                <a class="icon-icon_sm_youtube"></a>
-                <a class="icon-icon_sm_twt"></a>
-                <a class="icon-icon_sm_ig"></a>
-                <a class="icon-icon_sm_wa"></a>
-                <a class="icon-linkedin"></a>
-                <a class="icon-icon_sm_fb"></a>
+                <a class="icon-icon_sm_fb" href="https://www.facebook.com/ExpoEncuentroMedicinaTradicionalYTerapias" target="_blank"></a>
+                <a class="icon-icon_sm_youtube" href="https://youtube.com/channel/UC4FapmbeW4_EikKqCvbUdRA" target="_blank"></a>
+                <a class="icon-icon_sm_ig" style="margin-left: 15px;" href="https://www.instagram.com/medicinatradicionalyterapias/" target="_blank"></a>
+                <a class="icon-001-tik-tok" href="https://vm.tiktok.com/ZMeyFShYA/" target="_blank"></a>
+                <a class="icon-001-telegram" href="https://t.me/MedicinaTradicionalYTerapias" target="_blank"></a>
+                <a class="icon-icon_sm_twt" href="https://twitter.com/medicin_terapia" target="_blank"   ></a>
+                
             </div>
         </div>
 
