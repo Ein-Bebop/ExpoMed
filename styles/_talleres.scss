@@ -272,7 +272,8 @@ body{
 // 320
 @media(min-width: 320px){
     .home-bienestar{
-        height: 100vh !important;
+        height: 100% !important;
+        padding-bottom: 20%;
     }
 
     .tall-tit-text{

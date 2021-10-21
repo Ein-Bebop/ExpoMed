@@ -121,7 +121,7 @@
                             
                             echo    '<div class="card-medico slide" data-slide-index="'.$id.'">';
                             echo    '<div class="card-categoria">Cultura</div>';
-                            echo    "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../assets/directorio/".$row['foto']."');'></div></div>";
+                            echo    "<div class='card-img-container'><div class='card-img' style='background-image: url(".'"'."../".$row['foto']."');'></div></div>";
                             echo    '<div class="card-rama">'.$row['area'].'</div>';
                             echo    '<div class="card-nombre">'.$row['nombre'].'</div>';
                             echo    '<div class="card-especialidad">'.$row['especialidad'].'</div>';
@@ -277,7 +277,7 @@
                 pondremos en contacto contigo!
             </h2>
             <div class="datosExpo">
-                <h3><a class="icon-mail"></a>hola@eemttc.org</h3>
+                <h3><a class="icon-magitil"></a>hola@eemttc.org</h3>
                 <h3><a class="icon-cel"></a>55 59 60 7839</h3>
                 <h3><a class="icon-time"></a>Lunes a Viernes 9:00 - 18:00</h3>
                 <h3><a class="icon-phone"></a>01 800 4530 5678</h3>
