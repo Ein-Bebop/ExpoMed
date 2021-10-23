@@ -21,7 +21,7 @@
         <div id="header-bar">
             <label id="menu-close" class="icon-cancel" onclick="closeM();"></label>
             <style>.header-o a{color: #fff;}</style>
-            <div class="header-o" ><a href="talleres.html">Talleres</a><span id="border-b"></span></div>
+            <div class="header-o" ><a href="talleres.php">Talleres</a><span id="border-b"></span></div>
             <div class="header-o" ><a href="atencion.html">Atención</a><span id="border-b"></span></div>
             <div class="header-o" ><a id="o-activo">Directorio</a><span id="border-b"></span></div>
             <div class="header-o" ><a href="afiliacion.html">Afiliación</a><span id="border-b"></span></div>
@@ -181,7 +181,7 @@
 
         @media (min-width:768px) and (max-width:801px){
             .afiliarse-info{
-                top: -525px !important;
+                top: -531px !important;
             }
 
             .se-aprende{
@@ -196,9 +196,13 @@
 
         @media (min-width:801px) and (max-width:1000px){
             .afiliarse-info{
-                top: -530px !important;
-                width: 80% !important;
-                margin-left: 70px;
+                top: -604px !important;
+                width: 90% !important;
+                margin-left: 50px;
+            }
+
+            .afiliarse{
+                height:650px !important;
             }
         }
 
@@ -211,6 +215,7 @@
         @media (min-width:1024px) and (max-width:1600px){
             .afiliarse-info{
                 top: -530px !important;
+                width: 80% !important;
             }
         }
 
@@ -277,7 +282,7 @@
                 pondremos en contacto contigo!
             </h2>
             <div class="datosExpo">
-                <h3><a class="icon-magitil"></a>hola@eemttc.org</h3>
+                <h3><a class="icon-mail"></a>hola@eemttc.org</h3>
                 <h3><a class="icon-cel"></a>55 59 60 7839</h3>
                 <h3><a class="icon-time"></a>Lunes a Viernes 9:00 - 18:00</h3>
                 <h3><a class="icon-phone"></a>01 800 4530 5678</h3>
@@ -330,7 +335,7 @@
 
             <ul>
                 <li><a href="home.html">Inicio</a></li>
-                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="talleres.php">Talleres</a></li>
                 <li><a href="atencion.html">Atención</a></li>
                 <li><a href="directorio.php" >Directorio</a></li>
                 <li><a href="" class="footer-li-dir">Afiliación</a></li>

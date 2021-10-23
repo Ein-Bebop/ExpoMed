@@ -2300,7 +2300,12 @@ body {
 
 .footer a {
   text-decoration: none;
-  color: white;
+  color: white !important;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #ff7f30 !important;
 }
 
 .footer h3 {
@@ -4321,7 +4326,7 @@ body {
 
 @media (min-width: 320px) {
   .home-bienestar, .home-atencion {
-    height: 100% !important;
+    height: 90% !important;
     padding-bottom: 20%;
   }
   .tall-tit-text {

@@ -229,9 +229,9 @@
 
         @media (min-width:801px) and (max-width:1000px){
             .afiliarse-info{
-                top: -495px !important;
+                top: -591px !important;
                 margin-left: 100px !important;
-                width: 80% !important;
+                width: 90% !important;
             }
         }
 
@@ -367,7 +367,7 @@
 
             <ul>
                 <li><a href="home.html">Inicio</a></li>
-                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="talleres.php">Talleres</a></li>
                 <li><a href="atencion.html">Atención</a></li>
                 <li><a href="directorio.php" >Directorio</a></li>
                 <li><a href="" class="footer-li-dir">Afiliación</a></li>
