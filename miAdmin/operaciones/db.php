@@ -1,8 +1,9 @@
 <?php 
 
-    // $servername = " u281527147_eleventy";
+    // Config de desarrollo
+    // $servername = "localhost";
     // $database = "expomed";
-    // $username = "u281527147_root";
+    // $username = "root";
     // $password = 'phpPASS2020';
     // $password = '';
     
@@ -11,7 +12,6 @@
     $servername = "localhost";
     $database = "u281527147_expomed";
     $username = "u281527147_rootMed";
-    // $password = 'phpPASS2020';
     $password = 'xxvLe6Kz4zbqxje';
 
 ?>

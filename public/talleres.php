@@ -107,13 +107,15 @@
     </section>
 
     <section class="profesionalizate">
-        <div class="prof-titulo">¡Profesionalizate!</div>
-        <div class="prof-desc">Capacítate y profesionalizate con nuestros Cursos, Seminarios, Talleres, Conferencias, donde se analizan temas de actualidad, profesionalización o formación, en línea o presenciales
-            ¡Deja tu correo y te mandaremos información de las distintas oportunidades para que crezcas en conocimiento!
-           (Si eres afiliado o socio de EXPO ENCUENTRO MTTC, aprovecha los grandes descuentos)
-        </div>
-        <input class="prof-input" placeholder="Ingresa tu correo para recibir de nuestros talleres, cursos, etc.">
-        <div class="prof-button">Suscribirse</div>
+        <form action="../miAdmin/operaciones/suscribeNews.php" method="post" enctype="multipart/form-data">
+            <div class="prof-titulo">¡Profesionalizate!</div>
+            <div class="prof-desc">Capacítate y profesionalizate con nuestros Cursos, Seminarios, Talleres, Conferencias, donde se analizan temas de actualidad, profesionalización o formación, en línea o presenciales
+                ¡Deja tu correo y te mandaremos información de las distintas oportunidades para que crezcas en conocimiento!
+            (Si eres afiliado o socio de EXPO ENCUENTRO MTTC, aprovecha los grandes descuentos)
+            </div>
+            <input class="prof-input" name="emailSuscribe" placeholder="Ingresa tu correo para recibir de nuestros talleres, cursos, etc.">
+            <input class="prof-button" type="submit" value="Suscribirse"/>
+        </form>
 
         <section class="prox-eventos">
             <div class="eventos-tit">Próximos Eventos</div>
