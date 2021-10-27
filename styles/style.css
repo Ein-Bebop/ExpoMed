@@ -4325,7 +4325,7 @@ body {
 }
 
 @media (min-width: 320px) {
-  .home-bienestar, .home-atencion {
+  .home-bienestar:not([data-120="120vh"]), .home-atencion {
     height: 90% !important;
     padding-bottom: 20%;
   }
