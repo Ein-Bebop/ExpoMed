@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../OwlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="../OwlCarousel/owl.theme.default.min.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -31,18 +33,18 @@
 
     <section id="home-container" responsive-dir="home">
         <div id="home-titulo">Directorio Internacional</div>
-        <!-- <div id="barra-busqueda">
+        <div id="barra-busqueda">
             <select class="busqueda-filtro" name="filtro" >
-                <option value="area" selected>
+                <option value="area">
                   Área
                 </option>
-                <option value="nombre">Nombre</option>
-                <option value="Lugar">Starter </option>
-                <option value="Etc">Professional</option>
+                <option value="nombre" selected>Nombre</option>
+                <option value="Lugar">Ubicación </option>
+                <!-- <option value="Etc">Professional</option> -->
             </select>
-            <div id="busqueda-caja"><input type="text" placeholder="Palabras claves, nombre, área, lugar, etc."></div>
-            <div id="busqueda-boton">Buscar <p class="icon-search-1"></p></div>
-        </div> -->
+            <div id="busqueda-caja"><input id="buscarmedico" type="text" placeholder="Buscar"></div>
+            <div id="busqueda-boton" onclick="filtroBusqueda();">Buscar <p class="icon-search-1"></p></div>
+        </div>
     </section>
 
     <section id="directorio-container">
@@ -62,38 +64,41 @@
              </div>
 
 
-            <div class="container-dir"> 
+             <div class="container-dir"> 
                 <div class="sub-title">Por Área</div>
-                <select class="busqueda-filtro" name="filtro" >
-                    <option value="area" selected>Área</option>
-                    <option value="nombre">Nombre</option>
-                    <option value="Lugar">Starter </option>
-                    <option value="Etc">Professional</option>
+                <select class="busqueda-filtro" name="filtro" id="area-f" onchange="tag()">
+                    <option value="" selected>Seleccionar area</option>
+                    <option value="Aromaterápia" >Aromaterápia</option>
+                    <option value="Terapia Cognitiva">Terapia Cognitiva</option>
+                    <!-- <option value="Lugar">Starter </option>
+                    <option value="Etc">Professional</option> -->
                 </select>
             </div>
 
             <div class="container-dir"> 
                 <div class="sub-title">Por Ubicación</div>
-                <select class="busqueda-filtro" name="filtro" >
-                    <option value="area" selected>Toluca, Edo. Méx</option>
-                    <option value="nombre">Toluca, Edo. Méx</option>
-                    <option value="Lugar">Toluca, Edo. Méx</option>
-                    <option value="Etc">Toluca, Edo. Méx</option>
+                <select class="busqueda-filtro" name="filtro" id="ubicacion-f" onchange="tag2()">
+                    <option value="" selected >Seleccionar Ubicacion</option>
+                    <option value="Toluca">Toluca, Edo. Méx</option>
+                    <option value="Metepec">Metepec, Edo. Méx</option>
+                    <!-- <option value="Lugar">Toluca, Edo. Méx</option>
+                    <option value="Etc">Toluca, Edo. Méx</option> -->
                 </select>
             </div>
 
-            <div class="container-dir"> 
-                <select id="alfa" class="busqueda-filtro" name="filtro" >
+            <!-- <div class="container-dir"> 
+                <select id="alfa" class="busqueda-filtro" name="filtro" id="">
                     <option value="area" selected>Orden Alfbetico</option>
                     <option value="nombre">Orden Alfbetico</option>
                     <option value="Lugar">Orden Alfbetico</option>
                     <option value="Etc">Orden Alfbetico</option>
                 </select>
-            </div>
+            </div> -->
+
         </div>
 
         <div id="directorio-cards">
-            <div id="reslutados-texto">Resultados de la búsqueda</div>
+            <div id="reslutados-texto">Resultados de la búsqueda :&nbsp;<div id="resultado-texto"></div></div>
             <!-- <div class="resultados-paginas">Página<p id="pagina-actual">1</p> de <p id="paginas-totales">5</p>
                 <label class="left-page"><</label>&nbsp;<label class="right-page">></label>
             </div> -->
@@ -370,6 +375,7 @@
     
 
     <script src="../js/header.js"></script>
+    <script src="../js/filtros.js"></script>
     <script src="../OwlCarousel/jquery.min.js"></script>
     <script src="../OwlCarousel/owl.carousel.min.js"></script>
     <script type="text/javascript">
@@ -513,6 +519,8 @@
         //init
         carousel = el.owlCarousel(carouselOptions);
         });
+
+        
 
 
     </script>

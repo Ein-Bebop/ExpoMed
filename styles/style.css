@@ -1203,10 +1203,12 @@ body {
   font-family: 'Montserrat-Bold',sans-serif;
   font-weight: bolder;
   text-align: center;
+  cursor: pointer;
 }
 
 #home-container #busqueda-boton p {
   margin-left: 10px;
+  margin-top: 18px;
 }
 
 .card-medico {
@@ -1430,10 +1432,18 @@ body {
 #directorio-container #reslutados-texto {
   width: 50%;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 10%;
   color: #444;
   font-family: 'Montserrat-Black',sans-serif;
   font-weight: bolder;
+}
+
+#directorio-container #resultado-texto {
+  color: #ff7f30;
+  text-transform: capitalize;
 }
 
 #directorio-container .resultados-paginas {
