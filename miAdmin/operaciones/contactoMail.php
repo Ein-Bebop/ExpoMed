@@ -16,13 +16,13 @@
     $message = '<html><body style="background:#f5f5f5;">';//Inicia Body
     $message .= '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">';//Importa la fuente
     
-    $message .='<img style="width:100%;display:block;margin:20px auto;" src="https://eemttc.org/assets/Logo_Color.svg">';//Agrega la imagen del logo
+    // $message .='<img style="width:100%;display:block;margin:20px auto;" src="https://eemttc.org/assets/Logo_Color.svg">';//Agrega la imagen del logo
     
     $message .= '<div style="width:100%;height:1px;background:#ddd;margin-bottom:50px;"></div>';//Separador
     
     $message .= '<div style="width:80%;margin:0 auto;text-align:justify;style="background:#fff;">';//Inicia contenedor
     $message .='<h2 style="width:100%;text-align:center;color:#000">Alguien desea contactarte</h2>';
-    $message .='<h2 style="width:100%;text-align:center;color:#000">Datos de contacto:'.$nombre.' <br> '.$email.' <br> '.$asunto.' <br> '.$telefono.' <br> '.$msg.'</h2>';
+    $message .='<h2 style="width:100%;text-align:center;color:#000">Datos de contacto: <br> Nombre: '.$nombre.' <br> Correo: '.$email.' <br> Asunto: '.$asunto.' <br> Tel: '.$telefono.' <br> Mensaje: '.$msg.'</h2>';
     $message .= '</div>';//Cierra contenedor
     $message .= '<div style="width:100%;height:1px;background:#ddd;margin-top:50px;margin-bottom:50px;"></div>';//Separador
     
@@ -49,7 +49,6 @@
     $notiCK_value = $noti;
     setcookie($notiCK, $notiCK_value, 0, "/"); // 86400 = 1 day
     
-    echo $noti;
-    // header('Location: ../../public/home.html');
-
+    // echo $noti;
+    header('Location: ../../public/home.html');
 ?>
