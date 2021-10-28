@@ -34,7 +34,7 @@
     <div class="home-bienestar" style="background:#fff;">
         <div class="tall-tit-text">Crecer en<br> compañía<br> es mejor</div>
         <div class="at-desc-text">Desarróllate, aprende y crece de la mano de expertos y profesionales en el área de Medicina Tradicional y Terapias Complementarias.</div>
-        <img class="tall-img" src="../assets/Web_TalleresM_Talleres_IMG.png">
+        <img class="tall-img" src="../assets/Web_TalleresM_Talleres_IMG.webp">
     </div>
 
         <?php
@@ -183,16 +183,15 @@
         -->
         
         <div class="owl-carousel comunidad-slider">
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/1.jpg');"></div>
-            <!-- <div class="comunidad-img" style="transform: scaleX(-1);background-image: url('../assets/talleres/slider/1.jpg');"></div> -->
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/2.jpg');"></div>
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/3.jpg');"></div>
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/4.jpg');"></div>
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/5.jpg');"></div>
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/6.jpg');"></div>
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/7.jpg');"></div>
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/8.jpg');"></div>
-            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/9.jpg');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/1.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/2.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/3.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/4.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/5.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/6.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/7.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/8.webp');"></div>
+            <div class="comunidad-img" style="background-image: url('../assets/talleres/slider/9.webp');"></div>
         </div>
     </section>
 

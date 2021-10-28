@@ -382,7 +382,7 @@
 .capacitacion {
   height: 700px;
   width: 100%;
-  background: url(../assets/Web_Capacitacion_Home_IMG.png);
+  background: url(../assets/Web_Capacitacion_Home_IMG.webp);
   background-color: #fff;
   background-size: auto 90%;
   background-position: left;
@@ -825,7 +825,7 @@ a:link {
   width: auto;
   padding-left: 100px;
   padding-right: 100px;
-  background-image: url("../assets/afiliación/Images_Divider_color.jpg");
+  background-image: url("../assets/afiliación/Images_Divider_color.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1126,7 +1126,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../assets/Web_DirectorioM_Directorio_IMG.png");
+  background-image: url("../assets/Web_DirectorioM_Directorio_IMG.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1513,7 +1513,7 @@ body {
   overflow: hidden;
   width: 60%;
   height: 100%;
-  background-image: url("../assets/directorio/photo-of-mountains-during-dawn-2088169.jpg");
+  background-image: url("../assets/directorio/photo-of-mountains-during-dawn-2088169.webp");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1522,7 +1522,7 @@ body {
 .afiliarse .afiliarse-background-container .afiliarse-background {
   width: 100%;
   height: 500px;
-  background-image: url("../assets/directorio/photo-of-mountains-during-dawn-2088169.jpg");
+  background-image: url("../assets/directorio/photo-of-mountains-during-dawn-2088169.webp");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1877,7 +1877,7 @@ body {
 .home-bienestar {
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/IMG_Home_Main.png");
+  background-image: url("../assets/IMG_Home_Main.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -80px;
@@ -2054,7 +2054,7 @@ body {
 
 .flor-loto {
   width: 100%;
-  background-image: url("../assets/Web_Accesos_Home_IMG.png");
+  background-image: url("../assets/Web_Accesos_Home_IMG.webp");
   min-height: 900px;
   background-position: left;
   background-repeat: no-repeat;
@@ -2085,13 +2085,13 @@ body {
 }
 
 #loto-img-1 {
-  background-image: url("../assets/fotos/shelf.jpg");
+  background-image: url("../assets/fotos/shelf.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #loto-img-2 {
-  background-image: url("../assets/fotos/meditando.jpg");
+  background-image: url("../assets/fotos/meditando.webp");
   width: 60%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2099,7 +2099,7 @@ body {
 }
 
 #loto-img-3 {
-  background-image: url("../assets/fotos/copa.jpg");
+  background-image: url("../assets/fotos/copa.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
@@ -3253,7 +3253,7 @@ body {
   width: auto;
   padding-left: 100px;
   padding-right: 100px;
-  background-image: url("../assets/Web_DividerAtencion_atencion_IMG.png");
+  background-image: url("../assets/Web_DividerAtencion_atencion_IMG.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3342,7 +3342,7 @@ body {
   width: 45rem;
   height: 31rem;
   border-radius: 15px;
-  background-image: url("../assets/fotos/AdobeStock_259803295.jpeg");
+  background-image: url("../assets/fotos/AdobeStock_259803295.webp");
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: 100px;
@@ -4287,7 +4287,7 @@ body {
 }
 
 .siguenos {
-  background-image: url("../assets/Images_Divider_color.jpg");
+  background-image: url("../assets/Images_Divider_color.webp");
   width: 100%;
   height: 700px;
   background-size: cover;
