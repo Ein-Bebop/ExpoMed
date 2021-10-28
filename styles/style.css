@@ -526,6 +526,7 @@
 
 a:link {
   color: #FFF !important;
+  text-decoration: none !important;
 }
 
 .af-tit-text {
@@ -2283,6 +2284,7 @@ body {
   font-size: 1rem;
   color: white;
   background-color: #ff7f30;
+  cursor: pointer;
 }
 
 .footer {

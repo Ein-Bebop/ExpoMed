@@ -290,7 +290,7 @@
         </div>
 
         <div class="formcontact">
-            <form class="contact-form" action="/" method="post">
+            <form class="contact-form" action="../miAdmin/operaciones/contactoMail.php" method="post">
                 <label>Nombre</label><br>
                 <input type="text" class="nombre-input" name="nombre" placeholder="Nombre">
                 
@@ -303,7 +303,7 @@
                 <div class="fila-asunto-tel">
                     <div class="bloque-asunto">
                         <label id="asunto-label">Asunto</label>
-                        <select type="text" class="asunto-input" name="correo" placeholder="Asunto">
+                        <select type="text" class="asunto-input" name="asunto" placeholder="Asunto">
                             Asunto
                             <option value="Consulta Médica">Consulta Médica</option>
                             <option value="Consulta Médica">Talleres</option>
@@ -315,15 +315,15 @@
     
                     <div class="bloque-tel">
                         <label id="tel-label">Teléfono</label>
-                        <input type="text" class="telefono-input" name="correo" placeholder="Teléfono">
+                        <input type="text" class="telefono-input" name="tel" placeholder="Teléfono">
                     </div>
                 </div>
                 <br>
                 <label>Mensaje</label><br>
-                <input type="text" class="mensaje-input" name="correo" placeholder="Mensaje">
+                <input type="text" class="mensaje-input" name="msg" placeholder="Mensaje">
 
                 <br><br>
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
         
