@@ -33,7 +33,25 @@
         <div id="header-dim" onclick="closeM();"></div>
     </header>   
 
-    <div class="home-atencion" style="background:#fff;height: 100vh;">
+
+    <style>
+        .prof-button:hover{
+            background-color:#522d6d;
+            color:#fff;
+        }
+    
+        .med-button:hover, .divider-btn:hover, .divider-btn:hover,.capacitacion-info-button:hover{
+            background-color:#522d6d !important;
+            
+        }
+    
+        form button:hover{
+                background-color:#522d6d !important;
+        }
+    
+    </style>
+
+    <div class="home-atencion" style="background:#fff;height: 100vh;z-index: 5 !important;position: relative;">
         <div class="at-tit-text">Tu salud y <br>bienestar es <br>nuestra prioridad</div>
         <div class="at-desc-text">Tenemos a tu disposición diferentes tratamientos, terapias y programas para garantizar la salud y bienestar de tu cuerpo, alma y espíritu.</div>
          <img class="at-img" src="../assets/Web_AtencionM_Atencion_IMG.webp">
@@ -44,7 +62,7 @@
         <div class="med-tradicional">
             <div class="med-title">Medicina Tradicional y <br> Terapias Complementarias</div>
             <div class="med-desc">Contamos con expertos en diferentes áreas de la medicina tradicional y terapias complementarias,<br>ellos están listos para atender tus necesidades y ayudarte en cada parte del proceso.</div>
-            <div class="med-button">Solicitar información</div>
+            <div class="med-button"onclick="bottom();">Solicitar información</div>
         </div>
 
     </section>
@@ -142,7 +160,7 @@
         <div class="atencion-infoContainer">
             <div class="atencion-tit">atención a la <br>población laboral</div>
             <div class="atencion-desc">Atención a empresas gubernamentales o particulares, con Medicina Tradicional o Terapias Complementarias, que les permita realizar una óptima y saludable jornada laboral que se vea reflejado en su bienestar, en su ambiente laboral y en su productividad.</div>
-            <div class="divider-btn">Solicitar Información</div>
+            <div class="divider-btn"onclick="bottom();">Solicitar información</div>
         </div>
 
     </section>
@@ -163,7 +181,7 @@
             <div class="grupos-info">
                 <div class="grupos-tit">atención a <br>grupos vulnerables</div>
                 <div class="grupos-desc">Los niños, adultos mayores, mujeres embarazadas, pacientes con enfermedades crónico degenerativas o cualquier otra persona que por su condición de vulnerabilidad no pueda absorber los costos de un tratamiento de medicina tradicional o terapia alternativa para su bienestar, serán analizados a través de un estudio socioeconómico para determinar cuál es el aporte mínimo que deben cubrir por su tratamiento.</div>
-                <div class="divider-btn">Solicitar Información</div>
+                <div class="divider-btn"onclick="bottom();">Solicitar información</div>
             </div>
         </div>
         

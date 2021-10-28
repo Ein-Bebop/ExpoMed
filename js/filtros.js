@@ -50,7 +50,11 @@
 
 var n = document.querySelectorAll(".card-medico").length;
 
-
+document.getElementById("buscarmedico").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        filtroBusqueda();
+    }
+});
 
 function filtroBusqueda(){
 
@@ -58,15 +62,31 @@ function filtroBusqueda(){
     document.getElementById("directorio-container").scrollIntoView({block: "center"});
     
 
-    var tag = document.getElementById("buscarmedico").value.toLowerCase();
+    var tag = document.getElementById("buscarmedico").value;
+    tag = tag.toLowerCase();
     var e = 0;
     document.getElementById("resultado-texto").innerHTML = tag;
+
+    var clase = document.getElementById("busquedamain").value;
+    var clase2;
+
+    if (clase == "Area"){
+        clase2 = "rama";
+    }
+
+    if (clase == "Nombre"){
+        clase2 = "nombre";
+    }
+
+    if (clase == "Lugar"){
+        clase2 = "ubicacion";
+    }
     
     if(tag.length > 2 ){
 
         do{
             //    console.log("hola " + e);    
-               if(document.querySelectorAll(".card-nombre")[e].innerText.toLowerCase().indexOf(tag)){
+               if(document.querySelectorAll(".card-" + clase2)[e].innerText.toLowerCase().indexOf(tag)){
                    console.log(e + "No tiene");
                    document.querySelectorAll(".owl-item")[e].style.display = "none";
                }else{
@@ -94,7 +114,7 @@ function filtroBusqueda(){
 
 function tag(){
     
-    var tag = document.getElementById("area-f").value
+    var tag = document.getElementById("area-f").value;
     tag = tag.toLowerCase();
 
     
@@ -105,10 +125,10 @@ function tag(){
         do{
             //    console.log("hola " + e);    
                if(document.querySelectorAll(".card-rama")[e].innerText.toLowerCase().indexOf(tag)){
-                   console.log(e + "No tiene");
+                //    console.log(e + "No tiene");
                    document.querySelectorAll(".owl-item")[e].style.display = "none";
                }else{
-                    console.log(e + "Si tiene");
+                    // console.log(e + "Si tiene");
                     document.querySelectorAll(".owl-item")[e].style.display = "flex";
                }
                e++;
@@ -122,7 +142,7 @@ function tag(){
 
 function tag2(){
     
-    var tag = document.getElementById("ubicacion-f").value
+    var tag = document.getElementById("ubicacion-f").value;
     tag = tag.toLowerCase();
 
     
@@ -133,10 +153,10 @@ function tag2(){
         do{
             //    console.log("hola " + e);    
                if(document.querySelectorAll(".card-ubicacion")[e].innerText.toLowerCase().indexOf(tag)){
-                   console.log(e + "No tiene");
+                //    console.log(e + "No tiene");
                    document.querySelectorAll(".owl-item")[e].style.display = "none";
                }else{
-                    console.log(e + "Si tiene");
+                    // console.log(e + "Si tiene");
                     document.querySelectorAll(".owl-item")[e].style.display = "flex";
                }
                e++;
@@ -144,5 +164,20 @@ function tag2(){
         }while(e < n);
         
    
+    
+}
+
+
+
+function borrarFiltro(){
+        document.getElementById("resultado-texto").innerHTML = "";
+        var e = 0;
+        do{
+            //    console.log("hola " + e);    
+                document.querySelectorAll(".owl-item")[e].style.display = "flex";
+               
+               e++;
+               
+        }while(e < n);
     
 }

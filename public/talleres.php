@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../OwlCarousel/owl.theme.default.min.css">
     
 </head>
-<body>
+<body></body>
     <header id="header">
         <div id="header-logo"><img src="../assets/Logo_Color.svg" id="color-img-ch" onclick="window.location.href='home.html'"></div>
         <label id="menu-open" class="icon-menu" onclick="openM();" style="color: #ffb259;"></label>
@@ -105,6 +105,24 @@
         <div class="resena-resenador">Alejandra de la Parra</div>
         <div class="resena-especialidad">Experta en terapias florales</div>
     </section>
+    
+<!-- Estilo Botones -->
+<style>
+    .prof-button:hover{
+        background-color:#522d6d;
+        color:#fff;
+    }
+
+    .botones-container div:hover{
+        background-color:#522d6d !important;
+        
+    }
+
+    form button:hover{
+            background-color:#522d6d !important;
+    }
+
+</style>
 
     <section class="profesionalizate">
         <form action="../miAdmin/operaciones/suscribeNews.php" method="post" enctype="multipart/form-data">
@@ -269,6 +287,7 @@
         
 
     </style>
+
     <section class="afiliarse" style="border-top-left-radius:0;border-bottom-left-radius:150px;padding-bottom: 100px; height: 625px;">
 
         <div class="afiliarse-background-container">
@@ -413,7 +432,7 @@
         $('.talleres-slider').owlCarousel({
             loop:true,
             margin:0,
-            nav:true,
+            nav:false,
             responsive:{
                 0:{
                     items:1,

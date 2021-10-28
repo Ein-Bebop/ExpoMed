@@ -12,8 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../OwlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="../OwlCarousel/owl.theme.default.min.css">
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </head>
 <body>
 
@@ -34,11 +33,11 @@
     <section id="home-container" responsive-dir="home">
         <div id="home-titulo">Directorio Internacional</div>
         <div id="barra-busqueda">
-            <select class="busqueda-filtro" name="filtro" >
-                <option value="area">
+            <select class="busqueda-filtro" name="filtro" id="busquedamain">
+                <option value="Area">
                   Área
                 </option>
-                <option value="nombre" selected>Nombre</option>
+                <option value="Nombre" selected>Nombre</option>
                 <option value="Lugar">Ubicación </option>
                 <!-- <option value="Etc">Professional</option> -->
             </select>
@@ -46,6 +45,28 @@
             <div id="busqueda-boton" onclick="filtroBusqueda();">Buscar <p class="icon-search-1"></p></div>
         </div>
     </section>
+
+    <style>
+    .prof-button:hover{
+        background-color:#522d6d;
+        color:#fff;
+    }
+
+    #busqueda-boton:hover{
+        background-color:#522d6d !important;
+        color:#fff !important;
+    }
+
+    .botones-container div:hover, .se-nosotros-button:hover, .se-aprende-button:hover,.capacitacion-info-button:hover{
+        background-color:#522d6d !important;
+        
+    }
+
+    form button:hover{
+            background-color:#522d6d !important;
+    }
+
+    </style>    
 
     <section id="directorio-container">
         <div id="directorio-search-bar">
@@ -61,28 +82,82 @@
                     <option value="2">★★☆☆☆</option>
                     <option value="1">★☆☆☆☆</option>
                 </select> -->
-             </div>
+                <div class="sub-title" onclick="borrarFiltro();" style="cursor:pointer">Borrar Filtro</div>
+            </div>
 
 
              <div class="container-dir"> 
                 <div class="sub-title">Por Área</div>
+
                 <select class="busqueda-filtro" name="filtro" id="area-f" onchange="tag()">
-                    <option value="" selected>Seleccionar area</option>
-                    <option value="Aromaterápia" >Aromaterápia</option>
-                    <option value="Terapia Cognitiva">Terapia Cognitiva</option>
-                    <!-- <option value="Lugar">Starter </option>
-                    <option value="Etc">Professional</option> -->
+                    <option value="" >Seleccionar area</option>
+<?php
+                include('../miAdmin/operaciones/db.php');
+                $conn = mysqli_connect($servername, $username, $password, $database);
+
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                    echo "<h3>No se ha podido conectar PHP - MySQL, verifique sus datos.</h3><hr><br>";
+                }
+                else{
+                    //Conexión exitosa
+                    $sql = "SELECT DISTINCT(area) as ar FROM directorio ORDER BY area ASC";
+                    $result = $conn->query($sql);
+                    
+                    if ($result->num_rows >= 1) {
+                        
+                        while($row = $result->fetch_assoc()) {
+                            
+                            echo  '<option value="'.$row['ar'].'">'.$row['ar'].'</option>';
+                            
+                        }
+
+                    }
+                    
+                    else {//Salida de datos si NO existen datos en la tabla
+                          
+                    }
+
+                    $conn->close();
+                }
+?>
                 </select>
             </div>
 
             <div class="container-dir"> 
                 <div class="sub-title">Por Ubicación</div>
                 <select class="busqueda-filtro" name="filtro" id="ubicacion-f" onchange="tag2()">
-                    <option value="" selected >Seleccionar Ubicacion</option>
-                    <option value="Toluca">Toluca, Edo. Méx</option>
-                    <option value="Metepec">Metepec, Edo. Méx</option>
-                    <!-- <option value="Lugar">Toluca, Edo. Méx</option>
-                    <option value="Etc">Toluca, Edo. Méx</option> -->
+                    <option value="" >Seleccionar Ubicacion</option>
+<?php
+                include('../miAdmin/operaciones/db.php');
+                $conn = mysqli_connect($servername, $username, $password, $database);
+
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                    echo "<h3>No se ha podido conectar PHP - MySQL, verifique sus datos.</h3><hr><br>";
+                }
+                else{
+                    //Conexión exitosa
+                    $sql = "SELECT DISTINCT(ubicacion) as ub FROM directorio ORDER BY ubicacion ASC";
+                    $result = $conn->query($sql);
+                    
+                    if ($result->num_rows >= 1) {
+                        
+                        while($row = $result->fetch_assoc()) {
+                            
+                            echo  '<option value="'.$row['ub'].'">'.$row['ub'].'</option>';
+                            
+                        }
+
+                    }
+                    
+                    else {//Salida de datos si NO existen datos en la tabla
+                          
+                    }
+
+                    $conn->close();
+                }
+?>
                 </select>
             </div>
 
@@ -102,7 +177,6 @@
             <!-- <div class="resultados-paginas">Página<p id="pagina-actual">1</p> de <p id="paginas-totales">5</p>
                 <label class="left-page"><</label>&nbsp;<label class="right-page">></label>
             </div> -->
-
 
             <?php
                 include('../miAdmin/operaciones/db.php');

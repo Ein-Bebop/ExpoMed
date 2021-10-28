@@ -3077,7 +3077,6 @@ body {
   padding-top: 200px;
   margin-top: -150px;
   background: #f1f2f2;
-  z-index: -1;
   position: relative;
   padding-bottom: 2rem;
   height: 600px;
@@ -4245,11 +4244,15 @@ body {
   margin-top: auto;
   margin-top: 1rem;
   background-color: #ff7f30;
+  border: none !important;
   height: 2.1rem;
   padding-top: .25rem;
   color: white;
   font-family: 'MontRegular';
   border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .prox-eventos {
@@ -4713,6 +4716,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+  #cartasTalleres {
+    height: 500px !important;
+  }
   .card-taller {
     width: 27rem !important;
   }
