@@ -1,14 +1,3 @@
-<?php 
-        if(isset($_COOKIE['1be067584467e484c5bfc571bb26ef73'])){ 
-
-                header("location: directorio.php");
-        
-        }else{
-                
-        }
-?>
-
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#522d6d">
     <link rel="icon" href="../icons/favicon.png">
-    <title>Login - Expo Encuentro</title>
+    <title>Sign Up - Expo Encuentro</title>
     <link rel="stylesheet" href="styles/panel.css">
     <link rel="stylesheet" href="../styles/fontello.css">
 </head>
 
-<body id="body-login">
+<body id="body-login" style="overflow: hidden;">
     
     <section id="login">
         <div id="login-logo"><img src="../assets/Logo_Color.svg"></div>
-        <div id="login-titulo"><h2>Iniciar Sesión</h2></div>
-        <form action="operaciones/login.php" method="post">
+        <div id="login-titulo"><h2>Registrar nuevo usuario</h2></div>
+        <form action="operaciones/registrar.php" method="post">
+            
             <div><p>Usuario</p><input type="text" placeholder="Usuario" name="user" required></div>
             <div class="div-login"></div>
             <div><p>Contraseña</p><input type="password" placeholder="Contraseña" name="pass" required></div>
             <div class="div-login"></div>
+            <div><p>Nombre Completo</p><input type="text" placeholder="Nombre Completo" name="name" required></div>
+            <div class="div-login"></div>
+            <div><p>Correo</p><input type="text" placeholder="Correo" name="email" required></div>
+            <div class="div-login"></div>
+            <div><p>Clave de registro</p><input type="text" placeholder="Correo" name="claveregistro" required></div>
+            <div class="div-login"></div>
+
             <div id="botones-login">
-                <a id="b-registro" href="register.php" style="text-decoration:none;">Registro</a>
-                <button id="b-login">Login</button>
+                <button id="b-login">Registrar</button>
             </div>
+            <div type="submit" class="div-login"></div>
         </form>
         <!-- <div id="olvide-div"><p class="icon-info-circled">Olvidé mi contraseña</p></div> -->
 
