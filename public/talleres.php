@@ -101,9 +101,9 @@
     </section>  
     <style>.resena{margin-top: 30px;}</style>
     <section class="resena">
-        <div class="resena-texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-        <div class="resena-resenador">Alejandra de la Parra</div>
-        <div class="resena-especialidad">Experta en terapias florales</div>
+        <div class="resena-texto">“Me encantó el taller de Terapia Floral. Lo aprendido es un gran apoyo para los tratamientos a diferentes padecimientos a través de los elixires. La manera en que la maestra Brenda lo realizó, muy bien explicado y el material compartido un gran apoyo. Gracias.”</div>
+        <!-- <div class="resena-resenador">Teresa Ordóñez</div> -->
+        <!-- <div class="resena-especialidad">Experta en terapias florales</div> -->
     </section>
     
 <!-- Estilo Botones -->
