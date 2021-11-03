@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../styles/fontello.css">
 </head>
 
-<body id="body-login" style="overflow: hidden;">
+<body id="body-login" style="overflow-x: hidden;">
     
-    <section id="login">
+    <section id="login" style="margin-top: 3rem;">
         <div id="login-logo"><img src="../assets/Logo_Color.svg"></div>
-        <div id="login-titulo"><h2>Registrar nuevo usuario</h2></div>
-        <form action="operaciones/registrar.php" method="post">
+        <div id="login-titulo" style="margin-top:0px !important; margin-bottom: 30px !important;"><h2>Registrar nuevo usuario</h2></div>
+        <form action="operaciones/registrar.php" method="post" style="height: 450px; overflow-y: scroll;">
             
             <div><p>Usuario</p><input type="text" placeholder="Usuario" name="user" required></div>
             <div class="div-login"></div>
