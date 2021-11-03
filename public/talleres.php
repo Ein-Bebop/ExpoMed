@@ -60,7 +60,7 @@
                     echo '<div class="video-desc">';
                     echo '<div class="taller-tipo">'.$firstrow['tipo'].'</div>';
                     echo '<div class="taller-imparte">'.$firstrow['imparte'].'</div>';
-                    echo '<div class="taller-nombre">'.$firstrow['nombre'].'</div>';
+                    echo '<div class="taller-nombre"><a style="color:#522d6d !important;" target="_blank" href="'.$firstrow['link'].'">'.$firstrow['nombre'].'</a></div>';
                     echo '</div>';
                     echo '</div>';
 
@@ -85,7 +85,7 @@
                         echo '<div class="taller-desc">';
                         echo '<div class="taller-tipo">'.$tipo.'</div>';
                         echo '<div class="taller-imparte">'.$imparte.'</div>';
-                        echo '<div class="taller-nombre">'.$nombre.'</div>';
+                        echo '<div class="taller-nombre"><a style="color:#522d6d !important;" target="_blank" href="'.$link.'">'.$nombre.'</a></div>';
                         echo '<div class="taller-brief">'.$brief.'</div>';
                         echo '</div>';
                         echo '</div>';
@@ -171,7 +171,7 @@
                                 echo '<div class="taller-tipo">'.$tipo.'</div>';
                                 echo '<div class="taller-imparte">'.$imparte.'</div>';
                                 echo '<div class="taller-nombre">'.$nombre.'</div>';
-                                echo '<div class="taller-brief">'.$brief.'</div>';
+                                echo '<div class="taller-brief"><a href="'.$link.'">'.$brief.'</a></div>';
                                 echo '</div>';
                                 echo '</div>';
                                 
