@@ -23,7 +23,7 @@
 
 <body id="body-login">
     
-    <section id="login">
+    <section id="login" style="margin-top: 3rem;">
         <div id="login-logo"><img src="../assets/Logo_Color.svg"></div>
         <div id="login-titulo"><h2>Iniciar Sesión</h2></div>
         <form action="operaciones/login.php" method="post">
