@@ -7,7 +7,7 @@
     font-family: MontBold;
     color: #522d6d;
     text-transform: uppercase;
-    font-size: 40pt;
+    font-size: 3.6rem;
     word-break: break-word;
     
 }
@@ -554,11 +554,11 @@
         padding-top: 300px !important;
         width: 50% !important;
         margin-left: 100px !important;
-        font-size: 40pt !important;
+        font-size: 3.6rem !important;
     }
 
     .af-desc-text{
-        width: 45% !important;
+        width: 43% !important;
         margin-left: 100px !important;
     }
 
@@ -584,6 +584,14 @@
     [afi-2="afiliacion"]{
         margin-top: -100px !important;
     }
+}
+
+
+@media (min-width:1280px) {
+    .af-desc-text{
+        font-size: 1.4rem;
+    }
+
 }
 
 @media (min-width: 1600px){
